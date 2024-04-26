@@ -1,0 +1,42 @@
+.search-header {
+    padding-block: 16px;
+    background-color: rgba(var(--theme-color), 1);
+
+    .theme-form {
+        position: relative;
+
+        &::before {
+            z-index: 1;
+            content: "\f0d1";
+            position: absolute;
+            @include icon;
+            padding: 0 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            font-size: 22px;
+            color: rgba(var(--white), 0.22);
+            border-left: 1px solid rgba(var(--white), 0.22);
+            height: auto;
+
+            @include mq-max(md) {
+                font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        .form-control {
+            background-color: transparent;
+            border: 1px solid rgba(var(--white), 0.2);
+            color: rgba(var(--white), 1);
+            padding-right: 58px;
+
+            @include mq-max(md) {
+                padding-right: calc(44px + (58 - 44) * ((100vw - 320px) / (600 - 320)));
+            }
+
+            &::placeholder {
+                color: rgba(var(--white), 0.7);
+            }
+        }
+    }
+}

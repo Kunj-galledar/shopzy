@@ -1,0 +1,53 @@
+/**=====================
+     Reset css start
+==========================**/
+.theme-color {
+     color: rgba(var(--theme-color), 1);
+}
+
+.theme-bg-color {
+     background-color: rgba(var(--theme-color), 1);
+}
+
+.title-color {
+     color: rgba(var(--title-color), 1);
+}
+
+.content-color {
+     color: rgba(var(--content-color), 1);
+}
+
+.secondary-color {
+     color: rgba(var(--secondary-color), 1);
+}
+
+.white-color {
+     color: rgba(var(--white), 1);
+}
+
+.main-box {
+     background-color: rgba(var(--white), 1);
+     height: calc(100vh - 23px - 24px);
+     overflow: hidden auto;
+     margin-top: 14px;
+     padding-top: 31px;
+     border-radius: 15px 15px 0 0;
+}
+
+.mobile-container {
+     padding-inline: 15px;
+}
+
+.custom-row {
+     @media (min-width: 400px) {
+          .col-sm-4 {
+               flex: 0 0 auto;
+               width: 33.33333%;
+          }
+
+          .col-sm-8 {
+               flex: 0 0 auto;
+               width: 66.66667%;
+          }
+     }
+}
