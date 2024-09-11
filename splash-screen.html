@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopzy</title>
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+
+    <!-- Swiper Slider Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/swiper.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body class="theme-bg-color">
+
+    <section class="splash-slider">
+        <div class="mobile-space">
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 1</h4>
+                                        <p class="card-text">Person 1 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 2</h4>
+                                        <p class="card-text">Person 2 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 3</h4>
+                                        <p class="card-text">Person 3 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 4</h4>
+                                        <p class="card-text">Person 4 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 5</h4>
+                                        <p class="card-text">Person 5 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 6</h4>
+                                        <p class="card-text">Person 6 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="https://placehold.it/300x200" alt="" class="card-img-top">
+                                    <div class="card-block">
+                                        <h4 class="card-title">Person 7</h4>
+                                        <p class="card-text">Person 7 is a member of this team. Find out more by
+                                            checking his/her profile</p>
+                                        <a href="#" class="btn btn-primary">Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper Slider Js -->
+    <script src="./assets/js/vendor/swiper.js"></script>
+    <!-- Icon Js -->
+    <script src="./assets/js/otp.js"></script>
+
+
+        <!-- Theme Settings Javascript -->
+        <script src="./assets/js/theme-setting.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+            loop: true,
+            // If we need pagination
+            pagination: '.swiper-pagination',
+
+            // Navigation arrows
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+    </script>
+</body>
+
+</html>

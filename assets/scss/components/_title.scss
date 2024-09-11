@@ -12,6 +12,21 @@
     }
 }
 
+.title-timer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    background-color: rgba(254, 182, 2, 1);
+    border-radius: 5px;
+
+    span {
+        line-height: 1;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
 .title-2 {
     margin-bottom: 14px;
 

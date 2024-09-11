@@ -1,0 +1,49 @@
+.theme-accordion {
+    .accordion-item {
+        color: rgba(var(--title-color), 1);
+        border: none;
+        background-color: transparent;
+
+        +.accordion-item {
+            margin-top: 17px;
+            padding-top: 17px;
+            border-top: 1px solid rgba(var(--border-color), 1);
+        }
+
+        .accordion-header {
+            color: rgba(var(--title-color), 1);
+
+            .accordion-button {
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0;
+                background-color: transparent;
+                box-shadow: unset;
+                z-index: 0;
+
+                &:not(.collapsed) {
+                    color: rgba(var(--title-color), 1);
+                }
+
+                &::after {
+                    content: "\ea4e";
+                    @include icon;
+                    font-size: 22px;
+                    background: unset;
+                    width: unset;
+                    height: unset;
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 11px 0 0;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgba(var(--content-color), 1);
+            }
+        }
+    }
+}

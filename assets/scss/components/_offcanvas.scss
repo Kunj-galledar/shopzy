@@ -1,0 +1,64 @@
+.offcanvas {
+    &.theme-offcanvas {
+        border: none;
+        border-radius: 20px 20px 0 0;
+        height: auto;
+
+        .offcanvas-header {
+            padding-block: 36px 0;
+        }
+
+        .offcanvas-body {
+            padding-block: 30px 26px;
+        }
+    }
+
+    &.select-address-offcanvas {
+        .offcanvas-body {
+            padding-inline: 15px;
+            padding-top: 21px;
+
+            .select-address-list {
+                display: grid;
+                gap: 21px;
+
+                .address-box {
+                    display: flex;
+                    gap: 15px;
+
+                    i {
+                        @include flex_common;
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 6px;
+                        font-size: 20px;
+                        background-color: rgba(248, 248, 248, 1);
+                    }
+
+                    >div {
+                        width: calc(100% - 42px - 15px);
+                    }
+
+                    p {
+                        margin-top: 6px;
+                        color: rgba(var(--content-color), 1);
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+
+    &.sort-filter-offcanvas {
+        .offcanvas-body {
+            padding-inline: 14px;
+
+            .sort-filter-list {
+                display: grid;
+                gap: 16px;
+            }
+        }
+    }
+}

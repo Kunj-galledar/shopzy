@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopzy</title>
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon CSS Link -->
+    <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" id="theme-stylesheet" href="./assets/css/vendor/bootstrap.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header-section-2">
+        <div class="mobile-container">
+            <div class="d-flex align-items-center justify-content-between position-relative">
+                <a href="#!">
+                    <i class="ri-arrow-left-line"></i>
+                </a>
+
+                <h4 class="header-title">Payment</h4>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Payment Section Start -->
+    <section class="payment-section">
+        <div class="mobile-container">
+            <ul class="select-payment-list">
+                <li class="payment-box">
+                    <label class="form-check-label" for="payment">
+                        <img src="assets/images/payment/visa.svg" class="img-fluid" alt="">
+                        <span>
+                            <span class="name f-w-500">Visa ending with 3212</span>
+                            <span class="content m-t-4">Expiry 08/25</span>
+                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                        </span>
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment" checked>
+                </li>
+
+                <li class="payment-box">
+                    <label class="form-check-label" for="payment1">
+                        <img src="assets/images/payment/master-card.svg" class="img-fluid" alt="">
+                        <span>
+                            <span class="name f-w-500">Visa ending with 3212</span>
+                            <span class="content m-t-4">Expiry 08/25</span>
+                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                        </span>
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment1">
+                </li>
+
+                <li class="payment-box">
+                    <label class="form-check-label" for="payment2">
+                        <img src="assets/images/payment/g-pay.svg" class="img-fluid" alt="">
+                        <span>
+                            <span class="name f-w-500">Visa ending with 3212</span>
+                            <span class="content m-t-4">Expiry 08/25</span>
+                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                        </span>
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment2">
+                </li>
+
+                <li>
+                    <button class="btn outline-btn btn-sm w-100 f-16 f-w-500" data-bs-toggle="offcanvas"
+                        data-bs-target="#addPayment"><i class="ri-add-line"></i> Add Payment
+                        Method</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Payment Section End -->
+
+    <!-- Add Payment Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom theme-offcanvas" tabindex="-1" id="addPayment">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Add Payment Method</h3>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="form-box">
+                    <label for="name" class="form-label">Person Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Person Name">
+                </div>
+                <div class="form-box">
+                    <label for="carNumber" class="form-label">Password</label>
+                    <input type="number" class="form-control" id="carNumber" placeholder="1234 5678 9012">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-box">
+                            <label for="expiry" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="expiry" placeholder="mm/yyyy">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-box">
+                            <label for="cvv" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="cvv" placeholder="****">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Add Payment Offcanvas End -->
+
+    <!-- Product Bottom Fixed Box Start -->
+    <div class="product-bottom-fixed">
+        <div class="button-group">
+            <span class="w-100 bg-light-color text-center h4 f-w-500">Total: $55.00</span>
+            <button class="btn w-100 bg-theme-color text-light">Place Order</button>
+        </div>
+    </div>
+    <!-- Product Bottom Fixed Box End -->
+
+    <!-- Bottom Space Box Start -->
+    <div class="bottom-spacing"></div>
+    <!-- Bottom Space Box End -->
+
+    <!-- Bootstrap Javascript -->
+    <script src="./assets/js/vendor/bootstrap.js"></script>
+
+    <!-- Theme Settings Javascript -->
+    <script src="./assets/js/theme-setting.js"></script>
+</body>
+
+</html>

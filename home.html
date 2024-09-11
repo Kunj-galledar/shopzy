@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopzy</title>
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon CSS Link -->
+    <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+
+    <!-- Swiper Slider CSS Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/swiper.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header-section">
+        <div class="mobile-container">
+            <div class="top-header">
+                <div class="left-header">
+                    <button class="btn p-0 yellow-bg  text-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#address-modal">
+                        <i class="ri-home-4-line"></i>
+                        Home
+                    </button>
+                    <h5>b1/101, mahalaxmi arcade</h5>
+                </div>
+                <div class="right-header">
+                    <div class="user-profile">
+                        <h3>S</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="theme-form input-group">
+                <input type="search" class="form-control" placeholder="Search for products here...">
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Mobile Menu Start -->
+    <ul class="mobile-menu-list">
+        <li class="active">
+            <a href="home.html">
+                <i class="ri-home-3-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="search.html">
+                <i class="ri-menu-search-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="notification.html">
+                <i class="ri-notification-3-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="cart.html">
+                <i class="ri-shopping-cart-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="profile.html">
+                <i class="ri-user-3-line"></i>
+            </a>
+        </li>
+    </ul>
+    <!-- Mobile Menu End -->
+
+    <!-- Banner Section Start -->
+    <section class="banner-section pt-0">
+        <div class="title mobile-container mb-2">
+            <h4>#Special Offers</h4>
+        </div>
+
+        <div class="swiper banner-slider dots-wrapper mobile-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="shop.html">
+                        <img src="./assets/images/banner/1.jpg" class="img-fluid w-100" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="shop.html">
+                        <img src="./assets/images/banner/1.jpg" class="img-fluid w-100" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Banner Section End -->
+
+    <!-- Category Section Start -->
+    <section class="category-section">
+        <div class="title mobile-container mb-2 d-flex justify-content-between align-items-center">
+            <h4>Categories</h4>
+            <a href="category.html" class="text-content-color">See all</a>
+        </div>
+
+        <div class="swiper category-slider category-list mobile-container">
+            <div class="swiper-wrapper">
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/offer-gif.gif" class="img-fluid" alt="">
+                    <h5>Offer</h5>
+                </a>
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/category/1.png" class="img-fluid" alt="">
+                    <h5>Fashion</h5>
+                </a>
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/category/2.png" class="img-fluid" alt="">
+                    <h5>Electronics</h5>
+                </a>
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/category/3.png" class="img-fluid" alt="">
+                    <h5>Mobiles</h5>
+                </a>
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/category/4.png" class="img-fluid" alt="">
+                    <h5>Home</h5>
+                </a>
+                <a href="shop.html" class="swiper-slide">
+                    <img src="./assets/images/category/1.png" class="img-fluid" alt="">
+                    <h5>Fashion</h5>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Category Section End -->
+
+    <!-- Product Box Section Start -->
+    <section class="product-box-section section-b-space">
+        <div class="mobile-container">
+            <div class="title mb-2 d-flex justify-content-between align-items-center">
+                <h4>Today Flash Sale</h4>
+                <div class="title-timer quickClock">
+                    <div class="counter">
+                        <span class="hours"></span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="counter">
+                        <span class="minutes"></span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="counter">
+                        <span class="seconds"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
+                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <h6>50% Sold</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
+                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <h6>50% Sold</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Box Section End -->
+
+    <!-- Saving Product Section Start -->
+    <section class="saving-product-section section-b-space overflow-hidden">
+        <div class="mobile-container">
+            <div class="saving-slider swiper-container continue-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/7.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div dir="rtl" class="saving-slider swiper-container continue-slider mt-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/11.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/10.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/9.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/8.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/7.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/product/5.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="saving-detail">
+                <h5>Starts from 2nd May</h5>
+                <h2>Days of significant savings</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Saving Product Section End -->
+
+    <!-- Product Box Section Start -->
+    <section class="product-box-section section-b-space">
+        <div class="mobile-container">
+            <div class="title mb-2 d-flex justify-content-between align-items-center">
+                <h4>Today Flash Sale</h4>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
+                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <h6>50% Sold</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
+                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <h6>50% Sold</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Box Section End -->
+
+    <!-- Select Location Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom select-address-offcanvas theme-offcanvas" id="address-modal">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Select location</h3>
+            <div class="form-box m-t-18">
+                <input type="text" class="form-control" placeholder="Search for products here...">
+            </div>
+            <button class="btn location-btn w-100 m-t-20" onclick="requestLocation()"><i
+                    class="ri-crosshair-2-line"></i> Use current
+                location <i class="ri-arrow-right-s-line ms-auto"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="select-address-list">
+                <li class="address-box">
+                    <i class="ri-home-2-line"></i>
+                    <div>
+                        <h4>Home</h4>
+                        <p>1201 Willow Greene Drive, Montgo, AL 36107</p>
+                    </div>
+                </li>
+                <li class="address-box">
+                    <i class="ri-home-2-line"></i>
+                    <div>
+                        <h4>Home</h4>
+                        <p>1201 Willow Greene Drive, Montgo, AL 36107</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Select Location Offcanvas End -->
+
+    <!-- Bottom Space Box Start -->
+    <div class="bottom-spacing"></div>
+    <!-- Bottom Space Box End -->
+
+    <!-- Bootstrap Js -->
+    <script src="./assets/js/vendor/bootstrap.js"></script>
+
+    <!-- Swiper Slider Js  -->
+    <script src="./assets/js/vendor/swiper.js"></script>
+    <script src="./assets/js/vendor/custom-swiper.js"></script>
+
+    <!-- Timer Javascript -->
+    <script src="./assets/js/quick-timer.js"></script>
+
+    <!-- Turn On Location Javascript -->
+    <Script src="./assets/js/location.js"></Script>
+    
+        <!-- Theme Settings Javascript -->
+        <script src="./assets/js/theme-setting.js"></script>
+</body>
+
+</html>

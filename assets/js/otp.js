@@ -1,31 +1,20 @@
 /*=====================
     OTP Js
 ==========================*/
-function getCodeBoxElement(index) {
-    return document.getElementById('codeBox' + index);
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const inputs = document.querySelectorAll('.otp-input');
 
-function onKeyUpEvent(index, event) {
-    const eventCode = event.which || event.keyCode;
-    if (getCodeBoxElement(index).value.length === 1) {
-        if (index !== 6) {
-            getCodeBoxElement(index + 1).focus();
-        } else {
-            getCodeBoxElement(index).blur();
-            console.log('submit code ');
-        }
-    }
-    if (eventCode === 5 && index !== 1) {
-        getCodeBoxElement(index - 1).focus();
-    }
-}
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', (e) => {
+            if (input.value.length === 1 && index < inputs.length - 1) {
+                inputs[index + 1].focus();
+            }
+        });
 
-function onFocusEvent(index) {
-    for (item = 1; item < index; item++) {
-        const currentElement = getCodeBoxElement(item);
-        if (!currentElement.value) {
-            currentElement.focus();
-            break;
-        }
-    }
-}
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Backspace' && index > 0 && input.value === '') {
+                inputs[index - 1].focus();
+            }
+        });
+    });
+});

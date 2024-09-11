@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    i {
+        font-size: 14px;
+        color: rgba(var(--rating-color), 1);
+
+        &.fill {
+            &::before {
+                content: "\f186";
+            }
+        }
+    }
+}

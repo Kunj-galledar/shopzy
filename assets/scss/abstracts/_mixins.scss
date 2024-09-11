@@ -1,0 +1,250 @@
+/**=====================
+     Common scss
+==========================**/
+/*====== Border-radius css starts ======*/
+$i: 4;
+
+@while $i<=100 {
+  .b-r-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+
+  $i: $i+1;
+}
+
+/*====== Border-radius css ends ======*/
+
+/*======= Line Count start ======= */
+@mixin line($line: 1) {
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+/*======= Line Count end  ======= */
+
+/*====== Image-sizes css starts ======*/
+$i: 10;
+
+@while $i<=100 {
+  .img-#{$i} {
+    width: #{$i}px !important;
+  }
+
+  $i: $i+10;
+}
+
+/*====== Image-sizes css ends ======*/
+
+/*======= Background-color css starts  ======= */
+$color-map: (theme-color: rgba(var(--theme-color), 1),
+  secondary-color: rgba(var(--secondary-color), 1),
+  black-color: rgba(var(--black-color), 1),
+  title-color: rgba(var(--title-color), 1),
+  content-color: rgba(var(--content-color), 1),
+  transparent: transparent,
+  border-color: rgba(var(--border-color), 1),
+  rating-color: rgba(var(--rating-color), 1),
+  light-color: rgba(var(--light-gray), 1));
+
+@each $name,
+$color in $color-map {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+@each $name,
+$color in $color-map {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+@each $name,
+$color in $color-map {
+  .btn-#{$name} {
+    background-color: $color !important;
+    border: 1px solid transparent !important;
+
+    &:active,
+    &:hover {
+      background-color: transparent !important;
+      border-color: $color !important;
+      color: rgba(var(--title-color), 1) !important;
+    }
+  }
+}
+
+/*======= Background-color css end  ======= */
+
+/* ======= Display Flex Css Start ======= */
+@mixin flex_common($dis: flex, $align: center, $justify: center) {
+  display: $dis;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+/* ======= Display Flex Css End ======= */
+
+/*======= Breakpoint Start  ======= */
+@mixin break($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+/*======= Breakpoint End  ======= */
+
+/* ======= Remix Font Start ======= */
+@mixin icon {
+  font-family: remixicon;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ======= Remix Font End ======= */
+
+/*======= one, two, three line start ======= */
+@mixin line($line: 1) {
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+/*======= one, two, three line end  ======= */
+
+/*======= position css starts  ======= */
+@mixin pos($pos: absolute, $content: "") {
+  content: $content;
+  position: $pos;
+}
+
+@mixin pseudowh($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+@mixin center($position) {
+  @if $position=="vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @else if $position=="horizontal" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @else if $position=="both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*======= position css ends  ======= */
+
+/*======= Image Full Height And Width Start  ======= */
+%img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+%img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*======= Image Full Height And Width ends  ======= */
+
+/*======= Margin Padding starts  ======= */
+@mixin generate-spacing-classes($property, $suffix, $important: false) {
+  $i: 0;
+
+  @while $i <=50 {
+    .#{$suffix}-#{$i} {
+       #{$property}: #{$i}px !important;
+    }
+
+    $i: $i+1;
+  }
+}
+
+/*  Generate padding classes */
+@include generate-spacing-classes(padding, p, true);
+
+/*  Generate padding-left classes */
+@include generate-spacing-classes(padding-left, pl);
+
+/*  Generate padding-top classes */
+@include generate-spacing-classes(padding-top, pt, true);
+
+/*  Generate padding-bottom classes */
+@include generate-spacing-classes(padding-bottom, pb, true);
+
+/*  Generate padding-right classes */
+@include generate-spacing-classes(padding-right, pr);
+
+/*  Generate margin classes */
+@include generate-spacing-classes(margin, m, true);
+
+/*  Generate margin-top classes */
+@include generate-spacing-classes(margin-top, m-t, true);
+
+/*  Generate margin-bottom classes */
+@include generate-spacing-classes(margin-bottom, m-b, true);
+
+/*  Generate margin-left classes */
+@include generate-spacing-classes(margin-left, m-l, true);
+
+/*  Generate margin-right classes */
+@include generate-spacing-classes(margin-right, m-r);
+/*======= Margin Padding ends  ======= */
+
+/*====== Font-size css starts ======*/
+@mixin generate-font-size-classes($min-size, $max-size, $important: false) {
+  $i: $min-size;
+
+  @while $i <=$max-size {
+    .f-#{$i} {
+      font-size: #{$i}px !important;
+    }
+
+    $i: $i+1;
+  }
+}
+
+/* Generate font-size classes from 10px to 50px */
+@include generate-font-size-classes(10, 50, true);
+
+/*====== Font-size css ends ======*/
+
+/*====== Font-weight css starts ======*/
+@mixin generate-font-weight-classes($weights, $important: false) {
+  @each $val in $weights {
+    .f-w-#{$val} {
+      font-weight: $val !important;
+    }
+  }
+}
+
+/* Define the font weights to use */
+$font-weights: 100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900;
+
+/* Generate font-weight classes */
+@include generate-font-weight-classes($font-weights, true);
+
+/*====== Font-weight css ends ======*/

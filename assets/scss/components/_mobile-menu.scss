@@ -1,0 +1,29 @@
+.mobile-menu-list {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgba(var(--white), 1);
+    box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
+    display: flex;
+    align-items: center;
+    padding-block: 15px 27px;
+    z-index: 1;
+
+    li {
+        width: 100%;
+        text-align: center;
+
+        &.active {
+            i {
+                color: rgba(var(--theme-color), 1);
+            }
+        }
+
+        i {
+            font-size: 24px;
+            color: rgba(var(--title-color), 1);
+        }
+    }
+}

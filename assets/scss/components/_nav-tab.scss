@@ -1,4 +1,8 @@
 .custom-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+
     .nav-item {
         display: block;
         width: 100%;
@@ -6,7 +10,7 @@
         .nav-link {
             position: relative;
             color: rgba(var(--title-color), 1);
-            // background-color: rgba(var(--theme-color), 0.05);
+            box-shadow: unset;
             transition: all 0.25s ease-in-out;
             font-size: 15px;
             font-weight: 500;
@@ -15,7 +19,6 @@
             border-bottom: 1px solid #eee;
             padding: 23px 15px;
             border-radius: 0;
-            @include line($line: 2);
 
             @include mq-max(md) {
                 font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (600 - 320)));
@@ -32,6 +35,10 @@
                 opacity: 0;
                 visibility: hidden;
                 transition: all 0.25s ease-in-out;
+            }
+
+            span{
+                 @include line($line: 2);
             }
 
             &.active {

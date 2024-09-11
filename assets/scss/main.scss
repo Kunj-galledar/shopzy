@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import './../css/vendor/remixicon.css';
+@import './../css/vendor/swiper.css';
+
+/* Abstracts */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animation";
+@import "abstracts/breakpoints";
+
+/* base */
+@import "base/typography";
+@import "base/reset";
+
+/* Components */
+@import "components/accordion";
+@import "components/title";
+@import "components/slider";
+@import "components/language";
+@import "components/form";
+@import "components/nav-tab";
+@import "components/offcanvas";
+@import "components/button";
+@import "components/mobile-menu";
+@import "components/rating";
+@import "components/modal";
+
+/* Layout */
+@import "layout/header";
+@import "layout/category";
+@import "layout/product-box";
+
+/* Pages */
+@import "pages/auth";
+@import "pages/inner-page";
