@@ -84,4 +84,4 @@ var productSlider = new Swiper(".product-slider", {
 //     return direction;
 // }
 
-// var swiper = new Swiper(".swiper-container", swiperOptions);
+// var swiper = new Swiper(".vertical-slider", swiperOptions);

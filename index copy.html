@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopzy</title>
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon CSS Link -->
+    <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+
+    <!-- Swiper Slider CSS Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/swiper.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Saving Product Section Start -->
+    <section class="splash-section section-b-space overflow-hidden">
+        <div class="mobile-container">
+            <div class="row">
+                <div class="col-4">
+                    <div dir="rtl" class="vertical-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/10.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/9.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/8.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/7.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/6.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="vertical-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/10.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/9.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/8.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/7.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/6.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div dir="rtl" class="vertical-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/10.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/9.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/8.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/7.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/6.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/product/5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Saving Product Section End -->
+
+    <!-- Bootstrap Js -->
+    <script src="./assets/js/vendor/bootstrap.js"></script>
+
+    <!-- Swiper Slider Js  -->
+    <script src="./assets/js/vendor/swiper.js"></script>
+    <script src="./assets/js/vendor/custom-swiper.js"></script>
+
+    <!-- Timer Javascript -->
+    <script src="./assets/js/quick-timer.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <!-- Turn On Location Javascript -->
+    <script>
+        var swiperOptions = {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Use milliseconds for delay
+                disableOnInteraction: false
+            },
+            direction: getDirection(),
+            slidesPerView: 4.2,
+            speed: 2500,
+            spaceBetween: 18,
+            grabCursor: true,
+            mousewheel: true, // Updated to correct Swiper option
+            keyboard: {
+                enabled: true, // Updated to correct Swiper option
+                onlyInViewport: true
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection()); // Update direction on resize
+                },
+            },
+        };
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            return windowWidth <= 760 ? 'vertical' : 'horizontal';
+        }
+        var swiper = new Swiper(".vertical-slider",
+            swiperOptions);
+    </script>
+    </script>
+</body>
+
+</html>
