@@ -559,10 +559,11 @@
     .form-box {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: calc(7px + (16 - 7) * ((100vw - 320px) / (1920 - 320)));
 
         .search-box {
             position: relative;
+            width: calc(100% - 74px);
 
             .form-control {
                 padding: 14px 14px 14px 52px;

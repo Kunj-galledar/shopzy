@@ -1,0 +1,207 @@
+[dir="rtl"] {
+    .title-2 {
+        h4 {
+            &::after {
+                left: unset;
+                right: 0;
+            }
+        }
+    }
+
+    .theme-form-icon {
+        .form-control {
+            padding-left: 14px;
+            padding-right: 49px;
+        }
+
+        i {
+            left: unset;
+            right: 18px;
+        }
+    }
+
+    .header-section {
+        .theme-form {
+            &::before {
+                right: unset;
+                left: 0;
+                border-right: 1px solid rgba(var(--white), 0.22);
+                border-left: unset;
+            }
+
+            .form-control {
+                padding-right: 14px;
+                padding-left: calc(44px + (58 - 44) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        .header-search-box {
+            &:before {
+                padding-left: 12px;
+                padding-right: 23px;
+                left: unset;
+                right: 0;
+            }
+
+            .form-control {
+                padding-left: 14px;
+                padding-right: 58px;
+            }
+        }
+    }
+
+    .product-filter-section {
+        .filter__input {
+            text-align: right;
+        }
+    }
+
+    .about-mission-section {
+        .mission-list {
+            .list-box {
+                h4 {
+                    &::before {
+                        left: unset;
+                        right: -13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .address-section {
+        .address-list {
+            .address-box {
+                .dropdown {
+                    right: unset;
+                    left: calc(17px + (21 - 17) * ((100vw - 320px) / (1920 - 320)));
+                }
+            }
+        }
+    }
+
+    .custom-nav {
+        .nav-item {
+            .nav-link {
+                &::before {
+                    border-right: unset;
+                    border-left: 1px solid rgba(var(--theme-color), 1);
+                    right: unset;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .product-section {
+        .product-details-box {
+            .product-form {
+                .form-control {
+                    padding: 13px 19px 13px 74px;
+                }
+
+                .check-btn {
+                    right: unset;
+                    left: 19px;
+                }
+            }
+
+            .rating-review-box {
+                .rating-review-list {
+                    padding-left: unset;
+                    padding-right: 20px;
+                    border-left: unset;
+                    border-right: 1px solid rgba(var(--border-color), 1);
+                }
+            }
+
+            .customer-review-list {
+                >li {
+                    .like-dislike-list {
+                        right: unset;
+                        left: 0;
+                    }
+                }
+            }
+
+            .description-list {
+                li {
+                    h6 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart-section {
+        .offer-line {
+            .offer-truck {
+                right: unset;
+                left: 0;
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .search-filter-section {
+        .form-box {
+            .search-box {
+                i {
+                    left: unset;
+                    right: 23px;
+                }
+
+                .form-control {
+                    padding: 14px 52px 14px 14px;
+                }
+            }
+        }
+    }
+
+    .cart-product-section {
+        .cart-box {
+            .cart-item {
+                .cart-bottom {
+                    .cart-option {
+                        .btn {
+                            +.btn {
+                                border-right: 1px solid rgba(var(--border-color), 1);
+                                padding-right: 8px;
+                                margin-right: 8px;
+                                border-left: unset;
+                                margin-left: unset;
+                                padding-left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .theme-setting-section {
+        .theme-setting-list {
+            .theme-setting-box {
+                .form-check {
+                    .form-check-input {
+                        &:checked {
+                            &::before {
+                                transform: translate(-18px, -50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .theme-modal {
+        .modal-contain {
+            .item-list {
+                padding-left: unset;
+                padding-right: 21px;
+            }
+        }
+    }
+}

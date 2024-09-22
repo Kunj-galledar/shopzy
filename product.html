@@ -15,18 +15,18 @@
     <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
 
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.rtl.css">
 
     <!-- Style Link -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
+<body dir="rtl">
     <!-- Header Start -->
     <header class="header-section-2">
         <div class="mobile-container">
             <div class="d-flex gap-3 align-items-center">
-                <a href="#!">
+                <a href="#!" onclick="history.back();">
                     <i class="ri-arrow-left-line"></i>
                 </a>
 
@@ -93,7 +93,7 @@
                         class="h4 text-theme-color">10% off</span></h3>
                 <h5 class="text-content-color mt-1">inclusive of all taxes</h5>
                 <div class="color-variant-box">
-                    <h4 class="product-title">Colour:</h4>
+                    <h4 class="product-title">Colour :</h4>
                     <ul class="color-list">
                         <li>
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
@@ -113,6 +113,25 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="store-variant-box">
+                    <h4 class="product-title">Storage :</h4>
+                    <ul class="color-list">
+                        <li>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="store1" checked>
+                            <label class="form-check-label" for="store1">128GB | 8 GB</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="store2">
+                            <label class="form-check-label" for="store2">256GB | 8 GB</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="store3">
+                            <label class="form-check-label" for="store3">512GB | 8 GB</label>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="description-box top-spacing">
                     <h4 class="product-title">Description:</h4>
                     <ul class="description-list">
@@ -447,7 +466,7 @@
     <script src="./assets/js/vendor/custom-swiper.js"></script>
 
     <!-- Theme Settings Javascript -->
-    <script src="./assets/js/theme-option.js"></script>
+    <!-- <script src="./assets/js/theme-option.js"></script> -->
 </body>
 
 </html>

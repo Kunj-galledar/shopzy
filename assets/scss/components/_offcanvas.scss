@@ -58,7 +58,26 @@
             .sort-filter-list {
                 display: grid;
                 gap: 16px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                }
             }
+        }
+    }
+
+    &.filter-offcanvas {
+        transition: none;
+        height: 100vh;
+
+        ~.offcanvas-backdrop {
+            transition: none;
+        }
+
+        .product-filter-section {
+            height: calc(100vh - 51px);
         }
     }
 }

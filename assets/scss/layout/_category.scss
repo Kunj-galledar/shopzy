@@ -13,6 +13,10 @@
     }
 }
 
+.category-section-2 {
+    height: calc(100vh - 51px);
+}
+
 .category-list-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
