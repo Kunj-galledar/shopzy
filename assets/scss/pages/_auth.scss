@@ -1,3 +1,6 @@
+/**=====================
+    5.1 authentication css start
+==========================**/
 .auth-main-box {
     background-color: rgba(var(--white), 1);
     height: calc(100vh - 36px - 14px - 97px);
@@ -52,7 +55,7 @@
         text-align: center;
 
         @include break(600px) {
-            gap: calc(8px + (15 - 8) * ((100vw - 320px) / (600 - 320)));
+            gap: calc(8px + (15 - 8) * ((100vw - 320px) / (1920 - 320)));
         }
 
         +.theme-form {
@@ -89,3 +92,7 @@
         }
     }
 }
+
+/**=====================
+    5.1 authentication css end
+==========================**/

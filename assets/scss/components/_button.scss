@@ -1,3 +1,6 @@
+/**=====================
+    3.2 Button css start
+==========================**/
 .btn-sticky {
     position: sticky;
     bottom: 0;
@@ -9,11 +12,11 @@
 }
 
 .btn {
-    padding: 19px;
+    padding: calc(16px + (19 - 16) * ((100vw - 320px) / (1920 - 320)));
     background-color: transparent;
     border: unset;
     border-radius: 7px;
-    font-size: 18px;
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
     color: rgba(var(--title-color), 1);
 
@@ -23,10 +26,6 @@
         border-color: inherit;
     }
 
-    @include mq-max(md) {
-        padding: calc(16px + (19 - 16) * ((100vw - 320px) / (600 - 320)));
-        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
-    }
     &-full {
         width: 100%;
     }
@@ -84,4 +83,8 @@
     i {
         font-size: 20px;
     }
-} 
+}
+
+/**=====================
+    3.2 Button css end
+==========================**/

@@ -1,4 +1,15 @@
+/**=====================
+    6.2 RTL css start
+==========================**/
 [dir="rtl"] {
+
+    [type=email],
+    [type=number],
+    [type=tel],
+    [type=url] {
+        direction: rtl; 
+    }
+
     .title-2 {
         h4 {
             &::after {
@@ -31,7 +42,7 @@
 
             .form-control {
                 padding-right: 14px;
-                padding-left: calc(44px + (58 - 44) * ((100vw - 320px) / (600 - 320)));
+                padding-left: calc(44px + (58 - 44) * ((100vw - 320px) / (1920 - 320)));
             }
         }
 
@@ -205,3 +216,7 @@
         }
     }
 }
+
+/**=====================
+    6.2 RTL css end
+==========================**/

@@ -1,3 +1,6 @@
+/**=====================
+    4.2 Product box css start
+==========================**/
 .product-box {
     .product-image {
         background-color: rgba(var(--light-gray), 1);
@@ -103,7 +106,7 @@
             font-weight: 700;
 
             @include break(600px) {
-                font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (600 - 320)));
+                font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }
@@ -548,3 +551,7 @@
         }
     }
 }
+
+/**=====================
+    4.2 Product box css end
+==========================**/

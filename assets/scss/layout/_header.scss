@@ -1,3 +1,6 @@
+/**=====================
+    4.2 Header css start
+==========================**/
 .header-section {
     padding-block: 16px;
     background-color: rgba(var(--theme-color), 1);
@@ -68,7 +71,7 @@
             top: 50%;
             transform: translateY(-50%);
             right: 0;
-            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (600 - 320)));
+            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--white), 0.22);
             border-left: 1px solid rgba(var(--white), 0.22);
             height: auto;
@@ -78,7 +81,7 @@
             background-color: transparent;
             border: 1px solid rgba(var(--white), 0.2);
             color: rgba(var(--white), 1);
-            padding-right: calc(44px + (58 - 44) * ((100vw - 320px) / (600 - 320)));
+            padding-right: calc(44px + (58 - 44) * ((100vw - 320px) / (1920 - 320)));
 
             &::placeholder {
                 color: rgba(var(--white), 0.7);
@@ -100,7 +103,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: 0;
-            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (600 - 320)));
+            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--white), 0.22);
             height: auto;
             font-size: 18px;
@@ -172,3 +175,7 @@
         padding-bottom: 174px;
     }
 }
+
+/**=====================
+    4.2 Header css end
+==========================**/

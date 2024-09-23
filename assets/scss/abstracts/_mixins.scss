@@ -1,5 +1,5 @@
 /**=====================
-     Common scss
+     1.2 Mixin css start
 ==========================**/
 /*====== Border-radius css starts ======*/
 $i: 4;
@@ -248,3 +248,7 @@ $font-weights: 100,
 @include generate-font-weight-classes($font-weights, true);
 
 /*====== Font-weight css ends ======*/
+
+/**=====================
+     1.2 Mixin css end
+==========================**/

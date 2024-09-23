@@ -1,3 +1,6 @@
+/*=====================
+  1.1 Animation css start
+==========================*/
 /* Bouncing animation */
 @keyframes bounce-animation {
     0% {
@@ -39,10 +42,14 @@
 
 @keyframes scroll-y {
     from {
-        transform: translateY(0);
+        transform: translateY(var(--scroll-start));
     }
 
     to {
-        transform: translateY(-100%);
+        transform: translateY(var(--scroll-end));
     }
 }
+
+/*=====================
+  1.1 Animation css end
+==========================*/

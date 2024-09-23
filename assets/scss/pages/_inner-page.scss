@@ -1,6 +1,7 @@
-/*
-* === Cart Section Start ===
-*/
+/**=====================
+    5.2 Inner Pages css start
+==========================**/
+/* Cart Section */
 .cart-section {
     .offer-line {
         position: relative;
@@ -596,6 +597,8 @@
 .product-order-section {
     .product-order-list {
         .order-box {
+            width: 100%;
+
             .order-status {
                 display: flex;
                 align-items: center;
@@ -1277,28 +1280,6 @@
     }
 }
 
-// .splash-box {
-
-//     >div {
-//         transform: rotate(-90deg);
-//     }
-// }
-
-// .splash-section {
-//     height: 100vh;
-//     background-color: #f8f8f8;
-
-//     .swiper-slide {
-//         width: 100% !important;
-//     }
-
-//     .vertical-slider {
-//         transform: rotate(-90deg);
-
-//         img {
-//             width: 33.33vw;
-//             height: 100%;
-//             transform: rotate(90deg);
-//         }
-//     }
-// }
+/**=====================
+    5.2 inner pages css end
+==========================**/
