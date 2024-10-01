@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Shopzy</title>
 
     <!-- Fonts Link -->
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body dir="rtl">
+<body>
     <!-- Header Start -->
     <header class="header-section-2">
         <div class="mobile-container">
@@ -65,13 +66,13 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#editAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-pencil-line"></i>
                                     <h4>Edit</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#deleteAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-delete-bin-line"></i>
                                     <h4>Delete</h4>
                                 </a>
@@ -94,13 +95,13 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#editAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-pencil-line"></i>
                                     <h4>Edit</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#deleteAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-delete-bin-line"></i>
                                     <h4>Delete</h4>
                                 </a>
@@ -124,13 +125,13 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#editAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-pencil-line"></i>
                                     <h4>Edit</h4>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#!">
+                                <a class="dropdown-item" href="#deleteAddress" data-bs-toggle="offcanvas">
                                     <i class="ri-delete-bin-line"></i>
                                     <h4>Delete</h4>
                                 </a>
@@ -146,12 +147,164 @@
     <!-- Product Bottom Fixed Box Start -->
     <div class="product-bottom-fixed">
         <div class="button-group">
-            <button class="btn outline-btn btn-sm w-100 f-16 f-w-500 border-0 text-title-color"><i
-                    class="ri-add-line"></i> Add new</button>
-            <button class="btn w-100 bg-theme-color text-light">Place Order</button>
+            <button class="btn btn-sm w-100 f-16 f-w-500 border-0 text-title-color" data-bs-toggle="offcanvas"
+                data-bs-target="#addAddress"><i class="ri-add-line"></i> Add
+                new</button>
+            <button class="btn w-100 bg-theme-color text-light" onclick="location.href = 'order-success.html';">Place
+                Order</button>
         </div>
     </div>
     <!-- Product Bottom Fixed Box End -->
+
+    <!-- Edit Address Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom edit-address-offcanvas theme-offcanvas" tabindex="-1" id="addAddress">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Add New Address</h3>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row g-3">
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="name" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="name" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <input type="text" class="form-control" id="carNumber"
+                            placeholder="House/Floor Number/Balding Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Street Name</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Street Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Landmark</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Landmark">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="checkbox-form filter-box">
+                        <input class="form-check-input checkbox-form" type="checkbox" checked id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Save address as default</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Save as</label>
+                        <ul class="select-top-list">
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="1" checked>
+                                <label class="form-check-label" for="1">Home</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="2">
+                                <label class="form-check-label" for="2">Office</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="3">
+                                <label class="form-check-label" for="3">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <button type="submit"
+                        class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Edit Address Offcanvas End -->
+
+    <!-- Edit Address Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom edit-address-offcanvas theme-offcanvas" tabindex="-1" id="editAddress">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Edit Address</h3>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row g-3">
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="name" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="name" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <input type="text" class="form-control" id="carNumber" value="1201 Willow Greene"
+                            placeholder="House/Floor Number/Balding Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Street Name</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Street Name"
+                            value="Drive Montgomery">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Landmark</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Landmark" value="AL 36107">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="checkbox-form filter-box">
+                        <input class="form-check-input checkbox-form" type="checkbox" checked id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Save address as default</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Save as</label>
+                        <ul class="select-top-list">
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="1" checked>
+                                <label class="form-check-label" for="1">Home</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="2">
+                                <label class="form-check-label" for="2">Office</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="3">
+                                <label class="form-check-label" for="3">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <button type="submit"
+                        class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Edit Address Offcanvas End -->
+
+    <!-- Delete Address Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom delete-address-offcanvas theme-offcanvas" id="deleteAddress">
+        <div class="offcanvas-body">
+            <div class="delete-address-box">
+                <div class="icon-box">
+                    <i class="ri-delete-bin-line"></i>
+                </div>
+                <h3>Delete Address?</h3>
+                <p>To erase this address, are you sure you want to?</p>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-gray" data-bs-dismiss="offcanvas">Cancel</button>
+                <button class="btn bg-theme-color text-white" data-bs-dismiss="offcanvas">Delete</button>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Address Offcanvas End -->
 
     <!-- Bottom Space Box Start -->
     <div class="bottom-spacing"></div>

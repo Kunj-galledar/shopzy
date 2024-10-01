@@ -32,7 +32,7 @@
 }
 
 .continue-slider {
-    pointer-events: none;
+    // pointer-events: none;
     z-index: 0;
     position: relative;
 
@@ -44,7 +44,7 @@
 .saving-slider {
     .swiper-wrapper {
         .swiper-slide {
-            height: 74px;
+            height: calc(80px + (125 - 80) * ((100vw - 320px) / (1920 - 320)));
             border-radius: 13px;
             padding: 6px;
             background-color: rgba(var(--white), 1);

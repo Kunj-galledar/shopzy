@@ -3,24 +3,38 @@
 ==========================**/
 .auth-main-box {
     background-color: rgba(var(--white), 1);
-    height: calc(100vh - 36px - 14px - 97px);
+    height: calc(100vh - 36px - 20px - 97px);
     overflow: hidden auto;
-    margin-top: 14px;
+    margin-top: 20px;
     padding-top: 31px;
     border-radius: 15px 15px 0 0;
 
     &-2 {
         height: calc(100vh - 85px);
     }
+
+    .auth-btn {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(15px + (17 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin-top: calc(21px + (27 - 21) * ((100vw - 320px) / (1920 - 320)));
+    }
 }
 
 .auth-title {
-    margin-bottom: 22px;
+    margin-bottom: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
 
     h4 {
         font-weight: 400;
         margin-top: 5px;
         color: rgba(var(--content-color), 1);
+    }
+
+    p {
+        font-weight: 400;
+        margin-top: 5px;
+        color: rgba(var(--content-color), 1);
+        line-height: 1.5;
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
 }
 

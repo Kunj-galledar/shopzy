@@ -4,13 +4,13 @@
 .product-box {
     .product-image {
         background-color: rgba(var(--light-gray), 1);
-        padding: 14px 8px;
+        padding: calc(14px + (23 - 14) * ((100vw - 320px) / (1920 - 320))) calc(8px + (26 - 8) * ((100vw - 320px) / (1920 - 320)));
         border-radius: 4px;
         @include flex_common;
         position: relative;
 
         img {
-            width: 115px;
+            height: calc(82px + (163 - 82) * ((100vw - 320px) / (1920 - 320)));
         }
 
         .product-option {

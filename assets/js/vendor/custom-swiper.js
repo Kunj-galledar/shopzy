@@ -20,25 +20,25 @@ var swiperOptions = {
         disableOnInteraction: false
     },
     slidesPerView: 4.2,
-    speed: 2500,
-    spaceBetween: 18,
+    speed: 4500,
+    spaceBetween: 14,
     rewind: true,
     grabCursor: true,
     mousewheelControl: true,
     keyboardControl: true,
     breakpoints: {
         0: {
-            slidesPerView: 2.3,
+            slidesPerView: 3,
             spaceBetween: 15,
         },
         500: {
             slidesPerView: 2.6,
             spaceBetween: 15,
         },
-        // 1024: {
-        //     slidesPerView: 5,
-        //     spaceBetween: 50,
-        // },
+        1024: {
+            slidesPerView: 10.6,
+            spaceBetween: 14,
+        },
     },
 };
 

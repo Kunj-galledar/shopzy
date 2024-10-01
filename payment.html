@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Shopzy</title>
 
     <!-- Fonts Link -->
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body dir="rtl">
+<body>
     <!-- Header Start -->
     <header class="header-section-2">
         <div class="mobile-container">
@@ -46,7 +47,8 @@
                         <span>
                             <span class="name f-w-500">Visa ending with 3212</span>
                             <span class="content m-t-4">Expiry 08/25</span>
-                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                            <span class="number m-t-7">Set as default <a data-bs-toggle="offcanvas"
+                                    href="#editPayment">Edit</a></span>
                         </span>
                     </label>
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment" checked>
@@ -58,7 +60,8 @@
                         <span>
                             <span class="name f-w-500">Visa ending with 3212</span>
                             <span class="content m-t-4">Expiry 08/25</span>
-                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                            <span class="number m-t-7">Set as default <a data-bs-toggle="offcanvas"
+                                    href="#editPayment">Edit</a></span>
                         </span>
                     </label>
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment1">
@@ -70,7 +73,8 @@
                         <span>
                             <span class="name f-w-500">Visa ending with 3212</span>
                             <span class="content m-t-4">Expiry 08/25</span>
-                            <span class="number m-t-7">Set as default <span>Edit</span></span>
+                            <span class="number m-t-7">Set as default <a data-bs-toggle="offcanvas"
+                                    href="#editPayment">Edit</a></span>
                         </span>
                     </label>
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="payment2">
@@ -123,11 +127,59 @@
     </div>
     <!-- Add Payment Offcanvas End -->
 
+    <!-- Edit Payment Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom theme-offcanvas" tabindex="-1" id="editPayment">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Edit Payment Method</h3>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row g-sm-4 g-3">
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="name" class="form-label">Person Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Person Name"
+                            value="John wekles gonse">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Card Number</label>
+                        <input type="number" class="form-control" id="carNumber" placeholder="1111 1111 1111"
+                            value="4111 1111 1111 1111">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row g-sm-4 g-3">
+                        <div class="col-6">
+                            <div class="form-box">
+                                <label for="expiry" class="form-label">Expiry</label>
+                                <input type="date" readonly class="form-control" id="expiry" placeholder="mm/yyyy"
+                                    value="05/2036">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-box">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="password" class="form-control" id="cvv" value="1234">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit"
+                        class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Edit Payment Offcanvas End -->
+
     <!-- Product Bottom Fixed Box Start -->
     <div class="product-bottom-fixed">
         <div class="button-group">
-            <span class="w-100 bg-light-color text-center h4 f-w-500">Total: $55.00</span>
-            <button class="btn w-100 bg-theme-color text-light">Place Order</button>
+            <span class="w-100 text-center h4 f-w-500">Total: $55.00</span>
+            <button onclick="location.href = 'order-success.html';" class="btn w-100 bg-theme-color text-light">Place
+                Order</button>
         </div>
     </div>
     <!-- Product Bottom Fixed Box End -->

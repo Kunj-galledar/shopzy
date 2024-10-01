@@ -12,7 +12,7 @@
 }
 
 .btn {
-    padding: calc(16px + (19 - 16) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(15px + ((17) - (15)) * ((100vw - 320px) / (1920 - 320)));
     background-color: transparent;
     border: unset;
     border-radius: 7px;
@@ -34,10 +34,17 @@
         border-radius: 8px;
         border: 1px solid rgba(var(--theme-color), 1);
         color: rgba(var(--theme-color), 1);
+
+        &:hover {
+            border-color: transparent;
+            background-color: rgba(var(--theme-color), 1);
+            color: rgba(var(--white), 1);
+        }
     }
 
     &-sm {
-        padding: 14px;
+        padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
     }
 }
 
