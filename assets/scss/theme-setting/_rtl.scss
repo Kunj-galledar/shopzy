@@ -7,7 +7,7 @@
     [type=number],
     [type=tel],
     [type=url] {
-        direction: rtl; 
+        direction: rtl;
     }
 
     .title-2 {
@@ -49,14 +49,14 @@
         .header-search-box {
             &:before {
                 padding-left: 12px;
-                padding-right: 23px;
+                padding-right: calc(19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320)));
                 left: unset;
                 right: 0;
             }
 
             .form-control {
-                padding-left: 14px;
-                padding-right: 58px;
+                padding-left: calc(12px + ((14) - (12)) * ((100vw - 320px) / (1920 - 320)));
+                padding-right: calc(49px + ((58) - (49)) * ((100vw - 320px) / (1920 - 320)));
             }
         }
     }

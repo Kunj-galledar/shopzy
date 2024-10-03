@@ -95,15 +95,15 @@
 
         &::before {
             z-index: 1;
+            @include pos($pos: absolute, $content: "\f0d1");
             content: "\f0d1";
             position: absolute;
             @include icon;
             padding: 0 12px;
-            padding-left: 23px;
-            top: 50%;
-            transform: translateY(-50%);
+            padding-left: calc(19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320)));
+            @include center(vertical);
             left: 0;
-            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(18px + ((22) - (18)) * ((100vw - 320px) / (1920 - 320)));
             color: rgba(var(--white), 0.22);
             height: auto;
             font-size: 18px;
@@ -114,8 +114,8 @@
             background-color: transparent;
             border: 1px solid rgba(var(--white), 0.2);
             color: rgba(var(--white), 1);
-            padding: 14px;
-            padding-left: 58px;
+            padding: calc(12px + ((14) - (12)) * ((100vw - 320px) / (1920 - 320)));
+            padding-left: calc(49px + ((58) - (49)) * ((100vw - 320px) / (1920 - 320)));
             border-radius: 7px;
 
             &::placeholder {

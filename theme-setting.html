@@ -45,19 +45,19 @@
         <div class="mobile-container">
             <ul class="theme-setting-list">
                 <li>
-                    <a href="#!" class="theme-setting-box">
+                    <a href="#selectLanguage" class="theme-setting-box" data-bs-toggle="offcanvas">
                         <i class="ri-translate-2 icon"></i>
                         <h4>Language <span>English <i class="ri-arrow-right-s-line"></i></span></h4>
                     </a>
                 </li>
                 <li>
-                    <a href="#!" class="theme-setting-box">
+                    <a href="#selectCurrency" class="theme-setting-box" data-bs-toggle="offcanvas">
                         <i class="ri-money-euro-circle-line icon"></i>
                         <h4>Currency <span>Dollar <i class="ri-arrow-right-s-line"></i></span></h4>
                     </a>
                 </li>
                 <li>
-                    <a href="#!" class="theme-setting-box">
+                    <a href="#notificationOption" class="theme-setting-box" data-bs-toggle="offcanvas">
                         <i class="ri-notification-line icon"></i>
                         <h4>Notification <span>Enabled <i class="ri-arrow-right-s-line"></i></span></h4>
                     </a>
@@ -90,6 +90,98 @@
         </div>
     </section>
     <!-- Theme Setting Section End -->
+
+    <!-- Select Language Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom sort-filter-offcanvas theme-offcanvas" id="selectLanguage">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Select Language</h3>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sort-filter-list">
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lanone" checked>
+                    <label class="form-check-label" for="lanone">English</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lantwo">
+                    <label class="form-check-label" for="lantwo">Spanish</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lanthree">
+                    <label class="form-check-label" for="lanthree">Chinese</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lanfour">
+                    <label class="form-check-label" for="lanfour">French</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lanfive">
+                    <label class="form-check-label" for="lanfive">German</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lansix">
+                    <label class="form-check-label" for="lansix">Arabic</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="lanseven">
+                    <label class="form-check-label" for="lanseven">Portuguese</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="languageChoose" id="laneight">
+                    <label class="form-check-label" for="laneight">Russian</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Select Language Offcanvas End -->
+
+    <!-- Select Currency Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom sort-filter-offcanvas theme-offcanvas" id="selectCurrency">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Select Currency</h3>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sort-filter-list">
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="currency" id="currencyone" checked>
+                    <label class="form-check-label" for="currencyone">USD</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="currency" id="currencytwo">
+                    <label class="form-check-label" for="currencytwo">EUR</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="currency" id="currencythree">
+                    <label class="form-check-label" for="currencythree">GBP</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="currency" id="currencyfour">
+                    <label class="form-check-label" for="currencyfour">JPY</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Select Currency Offcanvas End -->
+
+    <!-- Notification Option Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom sort-filter-offcanvas theme-offcanvas" id="notificationOption">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Sort by:</h3>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sort-filter-list">
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="notification" id="notifione" checked>
+                    <label class="form-check-label" for="notifione">Disable</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="notification" id="notifitwo">
+                    <label class="form-check-label" for="notifitwo">Enable</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Notification Option Offcanvas End -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>

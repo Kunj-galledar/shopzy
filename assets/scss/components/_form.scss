@@ -86,6 +86,7 @@
         filter: unset;
         position: relative;
         transition: all 0.2s ease-in-out;
+        cursor: pointer;
 
         &::before {
             @include pos;
@@ -110,6 +111,7 @@
 
     .form-check-label {
         font-weight: 500;
+        cursor: pointer;
         font-size: 16px;
         color: rgba(var(--content-color), 1);
     }

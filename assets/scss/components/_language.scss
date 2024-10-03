@@ -39,21 +39,21 @@
             padding: 11px 15px;
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: calc(10px + ((15) - (10)) * ((100vw - 320px) / (1920 - 320)));
 
             img {
-                width: 33px;
-                height: 33px;
+                width: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320)));
                 object-fit: cover;
                 border-radius: 100%;
             }
 
             .name {
-                width: calc(100% - 15px - 33px);
+                width: calc(100% - calc(10px + ((15) - (10)) * ((100vw - 320px) / (1920 - 320))) - calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320))));
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                font-size: 17px;
+                font-size: calc(15px + ((17) - (15)) * ((100vw - 320px) / (1920 - 320)));
                 color: rgba(var(--content-color), 1);
                 font-weight: 500;
             }
