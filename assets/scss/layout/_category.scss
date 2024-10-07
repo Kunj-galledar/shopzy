@@ -6,13 +6,15 @@
     background-color: rgba(var(--theme-color), 0.05);
 
     &:before {
-        content: "";
-        position: absolute;
+        @include pos;
         top: 0;
         right: 0;
-        width: 1px;
-        height: 100%;
+        @include pseudowh($width: 1px, $height: 100%);
         border-right: 1px solid #eee;
+
+        body.dark-mode & {
+            border-color: rgba(42, 42, 42, 1);
+        }
     }
 }
 
@@ -42,12 +44,15 @@
             text-align: center;
 
             .category-image {
-                width: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320)));
-                height: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320)));
-                background-color: #F5F5F5;
+                @include pseudowh($width: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320))), $height: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320))));
+                background-color: rgb(245, 245, 245);
                 border-radius: 100%;
                 padding: calc(11px + (9 - 11) * ((100vw - 320px) / (1920 - 320)));
                 margin-inline: auto;
+
+                body.dark-mode & {
+                    background-color: rgba(28,28,28, 1);
+                }
 
                 img {
                     @extend %img-contain;
@@ -76,8 +81,7 @@
             text-align: center;
 
             img {
-                width: 102px;
-                height: auto;
+                @include pseudowh($width: 102px, $height: auto);
                 object-fit: contain;
                 border-radius: 100%;
             }

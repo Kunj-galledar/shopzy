@@ -6,6 +6,8 @@
         border: none;
         border-radius: 20px 20px 0 0;
         height: auto;
+        background-color: rgba(var(--white), 1);
+        color: rgba(var(--title-color), 1);
 
         .offcanvas-header {
             padding-block: calc(25px + (36 - 25) * ((100vw - 320px) / (1920 - 320))) 0;
@@ -35,11 +37,10 @@
 
                     i {
                         @include flex_common;
-                        width: 42px;
-                        height: 42px;
+                        @include pseudowh($width: 42px, $height: 42px);
                         border-radius: 6px;
                         font-size: 20px;
-                        background-color: rgba(248, 248, 248, 1);
+                        background-color: rgba(var(--light-gray), 1);
                     }
 
                     >div {
@@ -119,8 +120,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
-                    height: 100%;
+                    @include pseudowh;
                     opacity: 0;
                     cursor: pointer;
                     margin: 0;
@@ -128,11 +128,10 @@
                     &:checked {
                         ~.form-check-label {
                             background-color: rgba(var(--theme-color), 1);
-                            color: rgba(var(--white), 1);
+                            color: #fff;
 
                             &:before {
-                                width: auto;
-                                height: auto;
+                                @include pseudowh($width: auto, $height: auto);
                                 transform: scale(1);
                             }
                         }
@@ -150,16 +149,6 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
-
-                    // &::before {
-                    //     content: "\eb7b";
-                    //     @include icon;
-                    //     font-size: 15px;
-                    //     color: rgba(var(--white), 1);
-                    //     transform: scale(0);
-                    //     width: 0;
-                    //     height: 0;
-                    // }
                 }
             }
         }
@@ -177,8 +166,7 @@
             text-align: center;
 
             .icon-box {
-                width: 50px;
-                height: 50px;
+                @include pseudowh($width: 50px, $height: 50px);
                 margin-inline: auto;
                 @include flex_common;
                 font-size: 23px;

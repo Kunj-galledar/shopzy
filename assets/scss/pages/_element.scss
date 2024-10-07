@@ -1,0 +1,10 @@
+.element-section {
+    .element-list {
+        display: grid;
+        gap: 10px;
+        .alert{
+            margin: 0;
+            padding: calc(13px + ((16) - (13)) * ((100vw - 320px) / (1920 - 320))) 16px;
+        }
+    }
+}

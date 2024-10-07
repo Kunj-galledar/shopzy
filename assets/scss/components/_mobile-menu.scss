@@ -4,8 +4,7 @@
 .mobile-menu-list {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    @include center(horizontal);
     width: 100%;
     background-color: rgba(var(--white), 1);
     box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);

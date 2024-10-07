@@ -17,12 +17,15 @@
             position: absolute;
             top: 7px;
             right: 7px;
-            height: 24px;
-            width: 24px;
+            @include pseudowh($width: 24px, $height: 24px);
             @include flex_common;
             background-color: rgba(225, 225, 225, 1);
             border-radius: 100%;
             color: rgba(var(--white), 1);
+
+            body.dark-mode & {
+                background-color: #404040;
+            }
 
             i {
                 line-height: 1;
@@ -76,6 +79,10 @@
             background: rgba(243, 243, 243, 1);
             border-radius: 100px;
             margin-top: 18px;
+
+            body.dark-mode & {
+                background-color: rgba(28, 28, 28, 1);
+            }
 
             .progress-bar {
                 border-radius: 100px;
@@ -137,8 +144,7 @@
 
         .badge {
             background-color: rgba(var(--secondary-color), 1);
-            width: 16px;
-            height: 16px;
+            @include pseudowh($width: 16px, $height: 16px);
             display: inline-block;
             border-radius: 100%;
             @include flex_common;
@@ -180,8 +186,7 @@
                 .form-check-input {
                     margin-top: 0;
                     border: none;
-                    width: 26px;
-                    height: 26px;
+                    @include pseudowh($width: 26px, $height: 26px);
                     filter: unset;
                     position: relative;
                     z-index: 0;
@@ -190,18 +195,18 @@
 
                     &::before {
                         z-index: -1;
-                        content: "";
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
+                        @include pos;
+                        @include center(both);
                         border-radius: 100%;
                         border: 1.06px solid rgba(178, 178, 178, 1);
-                        width: 100%;
-                        height: 100%;
+                        @include pseudowh;
                         transition: 0.15s ease-in-out;
                         opacity: 0;
                         visibility: hidden;
+
+                        body.dark-mode &{
+                            border-color: #2a2a2a;
+                        }
                     }
 
                     &:checked {
@@ -210,8 +215,7 @@
                         &::before {
                             opacity: 1;
                             visibility: visible;
-                            width: calc(100% + 6px);
-                            height: calc(100% + 6px);
+                            @include pseudowh($width: calc(100% + 6px), $height: calc(100% + 6px));
                         }
                     }
                 }
@@ -223,9 +227,6 @@
 
             .color-list {
                 margin-top: 5px;
-                // padding: 7px 9px;
-                // border-radius: 100px;
-                // background-color: rgba(var(--light-gray), 1);
                 display: inline-flex;
                 gap: 10px;
 
@@ -237,26 +238,10 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
-                    height: 100%;
+                    @include pseudowh;
                     opacity: 0;
+                    margin: 0;
                     cursor: pointer;
-
-                    // &::before {
-                    //     z-index: -1;
-                    //     content: "";
-                    //     position: absolute;
-                    //     top: 50%;
-                    //     left: 50%;
-                    //     transform: translate(-50%, -50%);
-                    //     border-radius: 100%;
-                    //     border: 1.06px solid rgba(178, 178, 178, 1);
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     transition: 0.15s ease-in-out;
-                    //     opacity: 0;
-                    //     visibility: hidden;
-                    // }
 
                     &:checked {
                         ~.form-check-label {
@@ -267,9 +252,8 @@
                     }
                 }
 
-
                 .form-check-label {
-                    padding: 9px 11px;
+                    padding: calc(6px + ((9) - (6)) * ((100vw - 320px) / (1920 - 320))) calc(8px + ((11) - (8)) * ((100vw - 320px) / (1920 - 320)));
                     font-size: 14px;
                     font-weight: 400;
                     border-radius: 4px;
@@ -322,8 +306,7 @@
 
             .check-btn {
                 position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
+                @include center(vertical);
                 right: 19px;
                 font-size: 14px;
                 font-weight: 600;
@@ -365,7 +348,7 @@
                 gap: 3px;
 
                 h2 {
-                    font-size: 58px;
+                    font-size: calc(47px + ((58) - (47)) * ((100vw - 320px) / (1920 - 320)));
                     font-weight: 500;
                 }
             }
@@ -380,6 +363,7 @@
                     margin-top: 7px;
                     height: 7px;
                     border-radius: 100px;
+                    background-color: rgba(var(--light-gray), 1);
 
                     .progress-bar {
                         background-color: rgba(var(--theme-color), 1);
@@ -411,8 +395,7 @@
                     gap: 15px;
 
                     .review-image {
-                        width: 38px;
-                        height: 38px;
+                        @include pseudowh($width: 38px, $height: 38px);
                         border-radius: 100%;
                     }
 
@@ -450,8 +433,7 @@
                             position: absolute;
                             top: 0;
                             left: 0;
-                            width: 100%;
-                            height: 100%;
+                            @include pseudowh;
                             background-color: transparent;
                             border: none;
                             box-shadow: none;
@@ -525,16 +507,15 @@
     align-items: flex-start;
 
     .cart-image {
-        background: rgba(248, 248, 248, 1);
+        background: rgba(var(--light-gray), 1);
         border-radius: 4px;
-        width: 110px;
-        height: 90px;
+        @include pseudowh($width: calc(102px + ((110) - (102)) * ((100vw - 320px) / (1920 - 320))), $height: calc(79px + ((90) - (79)) * ((100vw - 320px) / (1920 - 320))));
         @include flex_common;
         padding: 8px 5px;
     }
 
     .cart-detail {
-        width: calc(100% - 110px - 10px);
+        width: calc(100% - calc(102px + ((110) - (102)) * ((100vw - 320px) / (1920 - 320))) - 10px);
 
         .name {
             -webkit-line-clamp: 2;
@@ -543,11 +524,16 @@
             overflow: hidden;
         }
 
+        .detail {
+            font-size: calc(15px + ((16) - (15)) * ((100vw - 320px) / (1920 - 320)));
+        }
+
         .item-price {
             display: flex;
             align-items: center;
             gap: 7px;
             margin-top: 6px;
+            font-size: calc(16px + ((18) - (16)) * ((100vw - 320px) / (1920 - 320)));
 
             .offer {
                 padding: 2px 5px;

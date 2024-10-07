@@ -60,6 +60,10 @@
     min-height: 132px;
     padding: 8px;
     border-radius: 20px;
+
+    body.dark-mode & {
+        background-color: #1c1c1c;
+    }
 }
 
 .marquee--vertical svg {

@@ -55,7 +55,7 @@
                 align-items: center;
 
                 .quantity-box {
-                    width: 117px;
+                    width: calc(102px + ((117) - (102)) * ((100vw - 320px) / (1920 - 320)));
                     padding: 9px;
                     border-radius: 3px;
                     background-color: rgba(var(--light-gray), 1);
@@ -63,8 +63,7 @@
                     align-items: center;
 
                     .btn {
-                        width: 18px;
-                        height: 18px;
+                        @include pseudowh($width: 18px, $height: 18px);
                         @include flex_common;
                         padding: 0;
                         font-size: 18px;
@@ -77,6 +76,7 @@
                         background-color: transparent;
                         text-align: center;
                         font-size: 14px;
+                        color: rgba(var(--title-color), 1);
                         font-weight: 500;
                     }
                 }
@@ -85,7 +85,7 @@
                     display: flex;
                     align-items: center;
                     flex-wrap: wrap;
-                    width: calc(100% - 117px - calc(9px + ((14) - (9)) * ((100vw - 320px) / (1920 - 320))));
+                    width: calc(100% - calc(102px + ((117) - (102)) * ((100vw - 320px) / (1920 - 320))) - calc(9px + ((14) - (9)) * ((100vw - 320px) / (1920 - 320))));
 
                     .btn {
                         font-size: 14px;
@@ -183,8 +183,7 @@
             }
 
             .form-check-input {
-                width: 18px;
-                height: 18px;
+                @include pseudowh($width: 18px, $height: 18px);
                 border-radius: 100%;
                 background-color: rgba(var(--white), 1);
                 border: 1px solid rgba(var(--border-color), 1);
@@ -199,8 +198,7 @@
                     left: 50%;
                     transform: translate(-50%, -50%) scale(0);
                     background-color: rgba(var(--theme-color), 1);
-                    width: 10px;
-                    height: 10px;
+                    @include pseudowh($width: 10px, $height: 10px);
                     border-radius: 100%;
                     transition: transform 0.15s ease-in-out;
                 }
@@ -249,6 +247,7 @@
                     border-radius: 5px;
                     border: 1px solid rgba(var(--border-color), 1);
                     padding: 10px 14px;
+                    background-color: rgba(var(--white), 1);
 
                     li {
                         width: 100%;
@@ -288,15 +287,6 @@
                 }
             }
         }
-
-        // .address-btn {
-        //     .btn {
-        //         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-        //         font-weight: 500;
-        //         width: 100%;
-        //         padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
-        //     }
-        // }
     }
 }
 
@@ -342,8 +332,7 @@
             }
 
             .form-check-input {
-                width: 18px;
-                height: 18px;
+                @include pseudowh($width: 18px, $height: 18px);
                 border-radius: 100%;
                 background-color: rgba(var(--white), 1);
                 border: 1px solid rgba(var(--border-color), 1);
@@ -358,8 +347,7 @@
                     left: 50%;
                     transform: translate(-50%, -50%) scale(0);
                     background-color: rgba(var(--theme-color), 1);
-                    width: 10px;
-                    height: 10px;
+                    @include pseudowh($width: 10px, $height: 10px);
                     border-radius: 100%;
                     transition: transform 0.15s ease-in-out;
                 }
@@ -380,8 +368,7 @@
                 gap: 17px;
 
                 img {
-                    width: 46px;
-                    height: 28px;
+                    @include pseudowh($width: 46px, $height: 28px);
                 }
 
                 span {
@@ -457,7 +444,7 @@
                 padding: 2px 14px;
                 border-radius: 100px;
                 background-color: rgba(33, 129, 0, 1);
-                color: rgba(var(--white), 1);
+                color: #fff;
                 font-size: 10px;
                 font-weight: 500;
             }
@@ -473,8 +460,7 @@
         text-align: center;
 
         .image {
-            width: 106px;
-            height: 106px;
+            @include pseudowh($width: 106px, $height: 106px);
             border-radius: 100%;
             margin: 20px auto 0;
             overflow: hidden;
@@ -516,7 +502,7 @@
 .more-option {
     .more-option-list {
         padding: calc(21px + (27 - 21) * ((100vw - 320px) / (1920 - 320))) calc(21px + (29 - 21) * ((100vw - 320px) / (1920 - 320)));
-        background-color: rgba(233, 237, 255, 1);
+        background-color: rgba(var(--theme-color), 0.1);
         border-radius: 9px;
         justify-content: space-between;
         display: flex;
@@ -525,10 +511,9 @@
         text-align: center;
 
         i {
-            width: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320)));
-            height: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320)));
+            @include pseudowh($width: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320))), $height: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320))));
             background-color: rgba(var(--theme-color), 1);
-            color: rgba(var(--white), 1);
+            color: #fff;
             font-size: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
             border-radius: 100%;
             @include flex_common;
@@ -621,11 +606,10 @@
                 margin-bottom: 12px;
 
                 i {
-                    width: 41px;
-                    height: 41px;
+                    @include pseudowh($width: 41px, $height: 41px);
                     border-radius: 100%;
                     background-color: rgba(var(--theme-color), 1);
-                    color: rgba(var(--white), 1);
+                    color: #fff;
                     font-size: 20px;
                     @include flex_common;
                 }
@@ -652,10 +636,13 @@
         &::before {
             @include pos;
             @include center(vertical);
-            width: 1px;
-            height: calc(100% - 20px);
-            border-left: 0.98px solid #ddd;
+            @include pseudowh($width: 1px, $height: calc(100% - 20px));
+            border-left: 0.98px solid rgb(221, 221, 221);
             left: 11px;
+
+            body.dark-mode & {
+                border-color: rgba(42, 42, 42, 1);
+            }
         }
 
         .tracking-box {
@@ -668,8 +655,7 @@
                     &::after {
                         @include pos;
                         @include center(both);
-                        width: 7px;
-                        height: 7px;
+                        @include pseudowh($width: 7px, $height: 7px);
                         border-radius: 100%;
                         background-color: rgba(var(--theme-color), 1);
                     }
@@ -677,17 +663,19 @@
             }
 
             .circle {
-                width: 23px;
-                height: 23px;
+                @include pseudowh($width: 23px, $height: 23px);
                 border-radius: 100%;
                 background-color: rgba(237, 237, 237, 1);
                 position: relative;
 
+                body.dark-mode & {
+                    background-color: #1c1c1c;
+                }
+
                 &::before {
                     @include pos;
                     @include center(both);
-                    width: 9px;
-                    height: 9px;
+                    @include pseudowh($width: 9px, $height: 9px);
                     border-radius: 100%;
                     background-color: rgba(var(--white), 1);
                 }
@@ -793,8 +781,7 @@
         gap: 14px;
 
         i {
-            width: 50px;
-            height: 50px;
+            @include pseudowh($width: 50px, $height: 50px);
             border-radius: 100%;
             background-color: rgba(var(--theme-color), 0.08);
             @include flex_common;
@@ -843,7 +830,7 @@
 
         .help-box {
             background-color: rgba(var(--theme-color), 0.05);
-            border: 1px solid rgba(238, 238, 238, 1);
+            border: 1px solid rgba(var(--border-color), 1);
             padding: 13px;
             border-radius: 4px;
             color: rgba(var(--content-color), 1);
@@ -880,8 +867,7 @@
             gap: 10px;
 
             .icon {
-                width: 38px;
-                height: 38px;
+                @include pseudowh($width: 38px, $height: 38px);
                 @include flex_common;
                 font-size: 20px;
                 color: rgba(var(--content-color), 1);
@@ -918,8 +904,7 @@
                 .form-check-input {
                     margin: 0;
                     float: unset;
-                    width: 42px;
-                    height: 24px;
+                    @include pseudowh($width: 42px, $height: 24px);
                     background: unset;
                     background-color: rgba(120, 120, 128, 0.16);
                     border: 1px solid transparent;
@@ -930,10 +915,8 @@
 
                     &::before {
                         @include pos;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        width: 22px;
-                        height: 22px;
+                        @include center(vertical);
+                        @include pseudowh($width: 22px, $height: 22px);
                         border-radius: 100%;
                         background-color: rgba(var(--white), 1);
                         box-shadow: 0px 0.08px 0.23px 0px rgba(var(--title-color), 0.1);
@@ -1008,11 +991,9 @@
 
                 &::before {
                     @include pos;
-                    top: 50%;
-                    transform: translateY(-50%);
+                    @include center(vertical);
                     left: -13px;
-                    width: 2px;
-                    height: 100%;
+                    @include pseudowh($width: 2px, $height: 100%);
                     background-color: rgba(var(--theme-color), 1);
                 }
             }
@@ -1062,8 +1043,7 @@
             gap: 5px;
 
             img {
-                width: 40px;
-                height: 40px;
+                @include pseudowh($width: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320))), $height: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320))));
             }
 
             h5 {
@@ -1084,8 +1064,7 @@
             @include pos;
             top: 0;
             left: 0;
-            width: calc(100% - 56px);
-            height: 153px;
+            @include pseudowh($width: calc(100% - 56px), $height: 153px);
             background-color: rgba(var(--theme-color), 1);
         }
     }
@@ -1121,12 +1100,12 @@
         li {
             a {
                 font-size: 14px;
-                padding: 11px 24px;
+                padding: calc(9px + ((11) - (9)) * ((100vw - 320px) / (1920 - 320))) calc(18px + ((24) - (18)) * ((100vw - 320px) / (1920 - 320)));
                 font-weight: 500;
                 color: rgba(var(--title-color), 1);
                 border-radius: 100px;
                 background-color: rgba(var(--theme-color), 0.05);
-                border: 1px solid rgba(233, 237, 255, 1);
+                border: 1px solid rgba(var(--border-color), 1);
                 white-space: nowrap;
                 display: block;
             }
@@ -1204,6 +1183,11 @@
             line-height: 1;
             margin-top: 32px;
             font-size: 16px;
+
+            &:hover {
+                background-color: rgba(var(--theme-color), 1);
+                color: #fff;
+            }
         }
     }
 }
@@ -1233,11 +1217,10 @@
     }
 
     .noUi-horizontal .noUi-handle {
-        width: 18px;
-        height: 18px;
-        background-color: #fff;
+        @include pseudowh($width: 18px, $height: 18px);
+        background-color: rgba(var(--white), 1);
         border-radius: 100%;
-        box-shadow: 0px 0px 10.4px 6px rgba(0, 0, 0, 0.03);
+        box-shadow: 0px 0px 10.4px 6px rgba(var(--title-color), 0.03);
         transition: transform .1s;
         border: none;
 
@@ -1262,11 +1245,12 @@
     .filter__input {
         width: 100%;
         padding: 14px 9px;
-        border: 1px solid rgba(233, 237, 255, 1);
+        border: 1px solid rgba(var(--border-color), 1);
         border-radius: 7px;
         font-size: 16px;
         font-weight: 400;
         color: rgba(var(--title-color), 1);
+        background-color: rgba(var(--white), 1);
 
         &::placeholder {
             color: rgba(136, 136, 136, 1);
@@ -1274,11 +1258,10 @@
     }
 
     .filter__slider-price {
-        width: 100%;
+        @include pseudowh($width: 100%, $height: 5px);
         margin: 35px 5px 0;
         background-color: rgba(51, 106, 234, 0.05);
         border-radius: 100px;
-        height: 5px;
         box-shadow: unset;
         border: none;
     }
@@ -1298,8 +1281,7 @@
 /* Order Success */
 .order-success-section {
     img {
-        height: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320)));
-        width: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320)));
+        @include pseudowh($width: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))), $height: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))));
         object-fit: cover;
     }
 }

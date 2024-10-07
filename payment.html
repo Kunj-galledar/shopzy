@@ -96,26 +96,32 @@
             <h3 class="offcanvas-title">Add Payment Method</h3>
         </div>
         <div class="offcanvas-body">
-            <form>
-                <div class="form-box">
-                    <label for="name" class="form-label">Person Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Person Name">
-                </div>
-                <div class="form-box">
-                    <label for="carNumber" class="form-label">Password</label>
-                    <input type="number" class="form-control" id="carNumber" placeholder="1234 5678 9012">
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="form-box">
-                            <label for="expiry" class="form-label">Password</label>
-                            <input type="text" class="form-control" id="expiry" placeholder="mm/yyyy">
-                        </div>
+            <form class="row g-3">
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="name" class="form-label">Person Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Person Name">
                     </div>
-                    <div class="col-6">
-                        <div class="form-box">
-                            <label for="cvv" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="cvv" placeholder="****">
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Card Number</label>
+                        <input type="number" class="form-control" id="carNumber" placeholder="1234 5678 9012">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-box">
+                                <label for="expiry" class="form-label">Expiry</label>
+                                <input type="date" class="form-control" id="expiry" placeholder="mm/yyyy">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-box">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="password" class="form-control" id="cvv" placeholder="****">
+                            </div>
                         </div>
                     </div>
                 </div>

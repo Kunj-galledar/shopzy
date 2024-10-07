@@ -27,7 +27,8 @@
 
 .main-box {
      background-color: rgba(var(--white), 1);
-     height: calc(100vh - 23px - 24px);
+     height: calc(100vh - 146px);
+     padding-bottom: calc(90px + ((100) - (90)) * ((100vw - 320px) / (1920 - 320)));
      overflow: hidden auto;
      margin-top: 14px;
      padding-top: 31px;
@@ -63,9 +64,8 @@ section,
 .fix-bottom-box {
      position: fixed;
      bottom: 0;
-     left: 50%;
+     @include center(horizontal);
      width: 100%;
-     transform: translateX(-50%);
      box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
      padding: 17px 15px 21px;
      background-color: rgba(var(--white), 1);
@@ -80,13 +80,12 @@ section,
 }
 
 .divider {
-     height: 10px;
+     @include pseudowh($width: 100%, $height: 10px);
      background-color: rgba(var(--light-gray), 1);
-     width: 100%;
      margin-block: 17px;
 }
 
-.object-fit-cover{
+.object-fit-cover {
      object-fit: cover;
 }
 

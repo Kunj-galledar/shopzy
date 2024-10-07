@@ -37,13 +37,11 @@
         padding-bottom: 4px;
 
         &::after {
-            content: "";
+            @include pos;
             display: block;
             bottom: 0;
             left: 0;
-            position: absolute;
-            width: 10%;
-            height: 2px;
+            @include pseudowh($width: 10%, $height: 2px);
             border-top: 2px solid rgba(var(--theme-color), 1);
         }
     }

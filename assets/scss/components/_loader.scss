@@ -1,0 +1,31 @@
+/**=====================
+    3.5 Loader css start
+==========================**/
+.placeholder-glow {
+    .placeholder {
+        border-radius: 4px;
+    }
+}
+
+.skeleton-body {
+    @include pseudowh($width: 100vw, $height: 100vh);
+    overflow: hidden;
+
+    .top-header {
+        .left-header {
+
+            button,
+            h5 {
+                display: none;
+            }
+        }
+    }
+
+    .placeholder-glow {
+        display: block;
+    }
+}
+
+/**=====================
+    3.5 Loader css End
+==========================**/

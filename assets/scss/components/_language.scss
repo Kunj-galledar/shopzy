@@ -17,8 +17,8 @@
             left: 0;
             float: unset;
             margin: 0;
-            width: 100%;
-            height: 100%;
+            @include pseudowh;
+            cursor: pointer;
             border-radius: 0;
             opacity: 0;
 
@@ -35,15 +35,14 @@
 
         .form-check-label {
             border-radius: 9px;
-            border: 1px solid #E9EDFF;
+            border: 1px solid rgba(var(--border-color), 1);
             padding: 11px 15px;
             display: flex;
             align-items: center;
             gap: calc(10px + ((15) - (10)) * ((100vw - 320px) / (1920 - 320)));
 
             img {
-                width: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320)));
-                height: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320)));
+                @include pseudowh($width: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320))), $height: calc(28px + ((33) - (28)) * ((100vw - 320px) / (1920 - 320))));
                 object-fit: cover;
                 border-radius: 100%;
             }

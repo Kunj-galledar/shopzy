@@ -63,6 +63,7 @@
 @import "components/button";
 @import "components/form";
 @import "components/language";
+@import "components/loader";
 @import "components/mobile-menu";
 @import "components/modal";
 @import "components/nav-tab";
@@ -80,6 +81,7 @@
 /* Pages */
 @import "pages/auth";
 @import "pages/inner-page";
+@import "pages/element";
 
 /* Theme Setting */
 @import "theme-setting/dark";

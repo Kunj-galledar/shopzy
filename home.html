@@ -18,26 +18,66 @@
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
 
-    <!-- Swiper Slider CSS Link -->
-    <!-- <link rel="stylesheet" href="./assets/css/vendor/swiper.css"> -->
-
     <!-- Style Link -->
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style>
+        /* Basic styling for modal */
+        .box {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: red;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            text-align: center;
+            opacity: 0;
+            z-index: 5;
+            transition: opacity 0.5s ease;
+            /* Transition for fade effect */
+        }
+
+        /* Class to show the box with fade-in animation */
+        .show {
+            display: block;
+            opacity: 1;
+            /* Make the box visible */
+        }
+    </style>
 </head>
 
 <body>
+
+    <button id="openBoxBtn">Open Box</button>
+
+    <div id="myBox" class="box">
+        <p>This is a box with animation!</p>
+    </div>
+
     <!-- Header Start -->
     <header class="header-section">
         <div class="mobile-container">
             <div class="top-header">
-                <div class="left-header">
-                    <button class="btn p-0 yellow-bg  text-light" data-bs-toggle="offcanvas"
+                <div class="left-header ">
+                    <button class="btn p-0 yellow-bg text-light" data-bs-toggle="offcanvas"
                         data-bs-target="#address-modal">
                         <i class="ri-home-4-line"></i>
                         Home
                     </button>
                     <h5>b1/101, mahalaxmi arcade</h5>
                 </div>
+                <h5 class="placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                </h5>
+                <h5 class="placeholder-glow">
+                    <span class="placeholder col-8"></span>
+                </h5>
                 <div class="right-header">
                     <a href="profile.html" class="user-profile">
                         <h3>S</h3>
@@ -574,7 +614,33 @@
     <Script src="./assets/js/location.js"></Script>
 
     <!-- Theme Settings Javascript -->
-    <!-- <script src="./assets/js/theme-option.js"></script> -->
+    <script src="./assets/js/theme-option.js"></script>
+
+    <script>
+        // Get box and button elements
+        const box = document.getElementById("myBox");
+        const openBoxBtn = document.getElementById("openBoxBtn");
+
+        // Function to open the box with fade-in effect
+        function openBox() {
+            box.style.display = "block"; // Ensure the box is displayed
+            setTimeout(() => {
+                box.classList.add("show"); // Add the class to trigger fade-in
+            }, 10); // Small delay for smooth transition
+            setTimeout(closeBox, Math.random() * (10000 - 5000) + 5000); // Close after 5-10 seconds
+        }
+
+        // Function to close the box with fade-out effect
+        function closeBox() {
+            box.classList.remove("show"); // Trigger fade-out by removing the class
+            setTimeout(() => {
+                box.style.display = "none"; // Hide the box after the fade-out
+            }, 500); // Wait for the fade-out transition to complete
+        }
+
+        // Add event listener to the button to open the box on click
+        openBoxBtn.addEventListener("click", openBox);
+    </script>
 </body>
 
 </html>

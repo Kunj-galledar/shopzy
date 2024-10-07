@@ -9,6 +9,7 @@
     .modal-content {
         border: none;
         border-radius: 20px 20px 0 0;
+        background-color: rgba(var(--white), 1);
     }
 
     .modal-title {
@@ -45,9 +46,9 @@
     .apply-btn {
         width: 100%;
         font-weight: 500;
-        font-weight: 16px;
+        font-size: 16px;
         background-color: rgba(var(--theme-color), 1);
-        color: rgba(var(--white), 1);
+        color: #fff;
         padding: 15px;
         border-radius: 8px;
         margin-top: 18px;

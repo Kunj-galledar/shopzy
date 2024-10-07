@@ -16,7 +16,7 @@
     <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
 
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+    <link rel="stylesheet" id="theme-stylesheet" href="./assets/css/vendor/bootstrap.css">
 
     <!-- Style Link -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -24,45 +24,38 @@
 
 <body>
     <!-- Header Start -->
-    <header class="header-section-2">
+    <header class="header-section-2 header-section">
         <div class="mobile-container">
             <div class="d-flex align-items-center justify-content-between position-relative">
                 <a href="#!" onclick="history.back();">
                     <i class="ri-arrow-left-line"></i>
                 </a>
 
-                <h4 class="header-title">404</h4>
+                <h4 class="header-title">Element alert</h4>
             </div>
         </div>
     </header>
     <!-- Header End -->
 
-    <!-- Empty Search Section Start -->
-    <section class="empty-section">
+    <!-- Element Section Start -->
+    <section class="element-section section-b-space">
         <div class="mobile-container">
-            <div class="empty-box">
-                <div class="empty-image text-center">
-                    <!-- <svg>
-                        <use xlink:href="./assets/images/inner-img/page-no-found.svg#noFound"></use>
-                    </svg> -->
-                    <img src="./assets/images/inner-img/page-no-found.svg" class="img-fluid" alt="">
-                </div>
-                <div class="empty-contain text-center">
-                    <h2>Page not found</h2>
-                    <p>This page doesn't exist or was removed! We suggest you back to home.</p>
-                    <button class="btn search-button" onclick="location.href = 'home.html';">Back to home</button>
-                </div>
-            </div>
+            <ul class="element-list">
+                <li class="alert alert-primary">A simple primary alert—check it out!</li>
+                <li class="alert alert-secondary">A simple secondary alert—check it out!</li>
+                <li class="alert alert-success">A simple success alert—check it out!</li>
+                <li class="alert alert-danger">A simple danger alert—check it out!</li>
+                <li class="alert alert-warning">A simple warning alert—check it out!</li>
+                <li class="alert alert-info">A simple info alert—check it out!</li>
+                <li class="alert alert-light">A simple light alert—check it out!</li>
+                <li class="alert alert-dark">A simple dark alert—check it out!</li>
+            </ul>
         </div>
     </section>
-    <!-- Empty Search Section End -->
+    <!-- Element Section End -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
-
-    <!-- Swiper Slider Js  -->
-    <!-- <script src="./assets/js/vendor/swiper.js"></script>
-    <script src="./assets/js/vendor/custom-swiper.js"></script> -->
 
     <!-- Theme Settings Javascript -->
     <script src="./assets/js/theme-option.js"></script>
