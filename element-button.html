@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <title>Shopzy</title>
+    <title>Shopzy PWA</title>
 
     <!-- Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
                     <i class="ri-arrow-left-line"></i>
                 </a>
 
-                <h4 class="header-title">Element alert</h4>
+                <h4 class="header-title">Element Button</h4>
             </div>
         </div>
     </header>
@@ -41,14 +41,77 @@
     <section class="element-section section-b-space">
         <div class="mobile-container">
             <ul class="element-list">
-                <li class="alert alert-primary">A simple primary alert—check it out!</li>
-                <li class="alert alert-secondary">A simple secondary alert—check it out!</li>
-                <li class="alert alert-success">A simple success alert—check it out!</li>
-                <li class="alert alert-danger">A simple danger alert—check it out!</li>
-                <li class="alert alert-warning">A simple warning alert—check it out!</li>
-                <li class="alert alert-info">A simple info alert—check it out!</li>
-                <li class="alert alert-light">A simple light alert—check it out!</li>
-                <li class="alert alert-dark">A simple dark alert—check it out!</li>
+                <li>
+                    <div class="title mb-2">
+                        <h4>Template buttons</h4>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn w-100 bg-theme-color text-white">Button</button>
+                        <button class="btn w-100 bg-secondary-color">Button</button>
+                        <button class="btn w-100 outline-btn">Button</button>
+                        <button class="btn w-100 bg-light-color">Button</button>
+                    </div>
+
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Variants buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn element-btn btn-primary">Primary</button>
+                        <button type="button" class="btn element-btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn element-btn btn-success">Success</button>
+                        <button type="button" class="btn element-btn btn-danger">Danger</button>
+                        <button type="button" class="btn element-btn btn-warning">Warning</button>
+                        <button type="button" class="btn element-btn btn-info">Info</button>
+                        <button type="button" class="btn element-btn btn-light">Light</button>
+                        <button type="button" class="btn element-btn btn-dark">Dark</button>
+                        <button type="button" class="btn element-btn btn-link">Link</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Variants buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn element-btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn element-btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn element-btn btn-outline-success">Success</button>
+                        <button type="button" class="btn element-btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn element-btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn element-btn btn-outline-info">Info</button>
+                        <button type="button" class="btn element-btn btn-outline-light">Light</button>
+                        <button type="button" class="btn element-btn btn-outline-dark">Dark</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Sizes buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn bg-theme-color text-white btn-lg">Large button</button>
+                        <button type="button" class="btn bg-theme-color text-white btn-sm">Small button</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Disabled state buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn bg-theme-color text-white disabled" role="button">Primary link</button>
+                        <button class="btn bg-secondary-color disabled" role="button">Link</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
             </ul>
         </div>
     </section>
@@ -58,7 +121,7 @@
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
     <!-- Theme Settings Javascript -->
-    <script src="./assets/js/theme-option.js"></script>
+    <!-- <script src="./assets/js/theme-option.js"></script> -->
 </body>
 
 </html>
