@@ -1,4 +1,7 @@
- const slider = document.getElementById('sliderPrice');
+ /*=====================
+    Ranger Slider Js
+==========================*/
+const slider = document.getElementById('sliderPrice');
  const rangeMin = parseInt(slider.dataset.min);
  const rangeMax = parseInt(slider.dataset.max);
  const step = parseInt(slider.dataset.step);

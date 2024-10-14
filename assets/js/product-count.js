@@ -1,3 +1,6 @@
+/*=====================
+    Qty Counter Js
+==========================*/
 document.addEventListener('DOMContentLoaded', function () {
     const cartItems = document.querySelectorAll('.cart-item');
     const totalPriceElement = document.getElementById('total-price');

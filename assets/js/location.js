@@ -1,3 +1,6 @@
+/*=====================
+    Location detector Js
+==========================*/
 function requestLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(

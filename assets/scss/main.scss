@@ -6,7 +6,6 @@
 
 *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
 
-
 ////* Abstracts Files *////
 ////* 1.1 Animation CSS *////
 ////* 1.2 Mixin CSS *////
@@ -32,8 +31,9 @@
 ////* Layout Files *////
 ////* 4.1 Category css *////
 ////* 4.2 Header CSS *////
-////* 4.2 Product box CSS *////
-////* 4.2 Splash screen CSS *////
+////* 4.3 Loader CSS *////
+////* 4.4 Product box CSS *////
+////* 4.5 Splash screen CSS *////
 
 ////* Pages Files *////
 ////* 5.1 Authentication CSS *////
@@ -44,10 +44,10 @@
 ////* 6.2 RTL CSS *////
 
 /* Remix icon css */
-@import './../css/vendor/remixicon.css';
+@import "./../css/vendor/remixicon.css";
 
 /* Swiper slider css */
-@import './../css/vendor/swiper.css';
+@import "./../css/vendor/swiper.css";
 
 /* Abstracts */
 @import "abstracts/animation";
@@ -75,6 +75,7 @@
 /* Layout */
 @import "layout/category";
 @import "layout/header";
+@import "layout/loader";
 @import "layout/product-box";
 @import "layout/splash-screen";
 
