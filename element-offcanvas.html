@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <title>Shopzy</title>
+    <title>Shopzy PWA</title>
 
     <!-- Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
                     <i class="ri-arrow-left-line"></i>
                 </a>
 
-                <h4 class="header-title">Element popover</h4>
+                <h4 class="header-title">Element offcanvas</h4>
             </div>
         </div>
     </header>
@@ -40,82 +40,151 @@
     <!-- Element Section Start -->
     <section class="element-section section-b-space">
         <div class="mobile-container">
-            <ul class="element-list gap-4">
-                <li>
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                        data-bs-placement="top" data-bs-content="Top popover">
-                        Popover on top
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                        data-bs-placement="right" data-bs-content="Right popover">
-                        Popover on right
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                        data-bs-placement="bottom" data-bs-content="Bottom popover">
-                        Popover on bottom
-                    </button>
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                        data-bs-placement="left" data-bs-content="Left popover">
-                        Popover on left
-                    </button>
-                </li>
+            <ul class="element-list">
                 <li>
                     <div class="title mb-2">
-                        <h4>Pagination style 2</h4>
+                        <h4>Template offcanvas</h4>
                     </div>
-                    <nav>
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#!" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#!" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+
+                    <a class="dropdown-item" href="#editAddress" data-bs-toggle="offcanvas">
+                        <i class="ri-pencil-line"></i>
+                        <h4>Edit</h4>
+                    </a>
+
+                    <div class="divider"></div>
                 </li>
+
                 <li>
                     <div class="title mb-2">
-                        <h4>Pagination style 3</h4>
+                        <h4>Variants buttons</h4>
                     </div>
-                    <nav aria-label="...">
-                        <ul class="pagination">
-                            <li class="page-item disabled">
-                                <a class="page-link">Previous</a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#!">1</a></li>
-                            <li class="page-item" aria-current="page">
-                                <a class="page-link" href="#!">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#!">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn element-btn btn-primary">Primary</button>
+                        <button type="button" class="btn element-btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn element-btn btn-success">Success</button>
+                        <button type="button" class="btn element-btn btn-danger">Danger</button>
+                        <button type="button" class="btn element-btn btn-warning">Warning</button>
+                        <button type="button" class="btn element-btn btn-info">Info</button>
+                        <button type="button" class="btn element-btn btn-light">Light</button>
+                        <button type="button" class="btn element-btn btn-dark">Dark</button>
+                        <button type="button" class="btn element-btn btn-link">Link</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Variants buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn element-btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn element-btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn element-btn btn-outline-success">Success</button>
+                        <button type="button" class="btn element-btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn element-btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn element-btn btn-outline-info">Info</button>
+                        <button type="button" class="btn element-btn btn-outline-light">Light</button>
+                        <button type="button" class="btn element-btn btn-outline-dark">Dark</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Sizes buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="button" class="btn bg-theme-color text-white btn-lg">Large button</button>
+                        <button type="button" class="btn bg-theme-color text-white btn-sm">Small button</button>
+                    </div>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <div class="title mb-2">
+                        <h4>Disabled state buttons</h4>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="btn bg-theme-color text-white disabled" role="button">Primary link</button>
+                        <button class="btn bg-secondary-color disabled" role="button">Link</button>
+                    </div>
+                    <div class="divider"></div>
                 </li>
             </ul>
         </div>
     </section>
     <!-- Element Section End -->
 
+    <!-- Template Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom theme-offcanvas" tabindex="-1" id="addAddress">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title">Add New Address</h3>
+        </div>
+        <div class="offcanvas-body">
+            <form class="row g-3">
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="name" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="name" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <input type="text" class="form-control" id="carNumber"
+                            placeholder="House/Floor Number/Balding Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Street Name</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Street Name">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Landmark</label>
+                        <input type="text" class="form-control" id="carNumber" placeholder="Landmark">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="checkbox-form filter-box">
+                        <input class="form-check-input checkbox-form" type="checkbox" checked id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Save address as default</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-box">
+                        <label for="carNumber" class="form-label">Save as</label>
+                        <ul class="select-top-list">
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="1" checked>
+                                <label class="form-check-label" for="1">Home</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="2">
+                                <label class="form-check-label" for="2">Office</label>
+                            </li>
+                            <li class="top-box">
+                                <input class="form-check-input" name="top" type="radio" id="3">
+                                <label class="form-check-label" for="3">Other</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 m-0">
+                    <button type="submit"
+                        class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Template Offcanvas End -->
+
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
     <!-- Theme Settings Javascript -->
     <!-- <script src="./assets/js/theme-option.js"></script> -->
-
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    </script>
 </body>
 
 </html>

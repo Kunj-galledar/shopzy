@@ -8,7 +8,7 @@
     <meta name="description" content="Shopzy" />
     <meta name="keywords" content="Shopzy" />
     <meta name="author" content="Shopzy" />
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
     <title>Shopzy PWA</title>
     <link rel="apple-touch-icon" href="./assets/images/favicon.png" />
@@ -169,12 +169,41 @@
         </div>
     </div>
     <!-- Scrolling Long Content Modal End -->
+    <!-- <a href="#!" class="btn theme-btn install-app btn-inline home-screen-btn m-0" id="installapp">Add to Home Screen</a> -->
+
+    <!-- pwa install app popup start -->
+    <div class="offcanvas offcanvas-bottom addtohome-popup theme-offcanvas" tabindex="-1" id="offcanvas">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-body small">
+            <div class="app-info">
+                <img src="assets/images/favicon.png" class="img-fluid" alt="" />
+                <div class="content">
+                    <h4>fuzzy app</h4>
+                    <a href="#">www.fuzzy-app.com</a>
+                </div>
+            </div>
+            <a href="#!" class="btn theme-btn install-app btn-inline home-screen-btn m-0" id="installapp">Add to
+                Home Screen</a>
+        </div>
+    </div>
+    <!-- pwa install app popup start -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
     <!-- Theme Settings Javascript -->
     <!-- <script src="./assets/js/theme-option.js"></script> -->
+
+    <!-- Install Application Javascript -->
+    <script src="./assets/js/install-app.js"></script>
+
+    <!-- Home Screen Popup Modal Javascript -->
+    <script src="./assets/js/homescreen-popup.js"></script>
+
+    <!-- <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script> -->
 
     <script>
         window.addEventListener("load", (event) => {

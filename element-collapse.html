@@ -31,7 +31,7 @@
                     <i class="ri-arrow-left-line"></i>
                 </a>
 
-                <h4 class="header-title">Element popover</h4>
+                <h4 class="header-title">Element collapse</h4>
             </div>
         </div>
     </header>
@@ -40,41 +40,22 @@
     <!-- Element Section Start -->
     <section class="element-section section-b-space">
         <div class="mobile-container">
-            <ul class="element-list gap-0">
+            <ul class="element-list gap-4">
                 <li>
                     <div class="title mb-2">
-                        <h4>Popover Top</h4>
+                        <h4>Collapse Box</h4>
                     </div>
-                    <button type="button" class="btn bg-theme-color text-white" data-bs-container="body"
-                        data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">Popover on
-                        top</button>
-                    <div class="divider"></div>
-                </li>
-                <li>
-                    <div class="title mb-2">
-                        <h4>Popover Right</h4>
+                    <button class="btn bg-theme-color text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-bs-target
+                    </button>
+
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body collapse-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
                     </div>
-                    <button type="button" class="btn bg-theme-color text-white" data-bs-container="body"
-                        data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">Popover on
-                        right</button>
-                    <div class="divider"></div>
-                </li>
-                <li>
-                    <div class="title mb-2">
-                        <h4>Popover Bottom</h4>
-                    </div>
-                    <button type="button" class="btn bg-theme-color text-white" data-bs-container="body"
-                        data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">Popover on
-                        bottom</button>
-                    <div class="divider"></div>
-                </li>
-                <li>
-                    <div class="title mb-2">
-                        <h4>Popover Left</h4>
-                    </div>
-                    <button type="button" class="btn bg-theme-color text-white" data-bs-container="body"
-                        data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">Popover on
-                        left</button>
                     <div class="divider"></div>
                 </li>
             </ul>
