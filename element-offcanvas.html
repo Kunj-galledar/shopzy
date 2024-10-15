@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <!-- Remix Icon CSS Link -->
-    <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/vendor/remixicon.css">
 
     <!-- Bootstrap Link -->
     <link rel="stylesheet" id="theme-stylesheet" href="./assets/css/vendor/bootstrap.css">
@@ -46,68 +46,44 @@
                         <h4>Template offcanvas</h4>
                     </div>
 
-                    <a class="dropdown-item" href="#editAddress" data-bs-toggle="offcanvas">
-                        <i class="ri-pencil-line"></i>
-                        <h4>Edit</h4>
-                    </a>
+                    <button data-bs-target="#templateOffcanvas" data-bs-toggle="offcanvas"
+                        class="btn bg-theme-color text-white">
+                        <h4>Template Offcanvas</h4>
+                    </button>
 
                     <div class="divider"></div>
                 </li>
 
                 <li>
                     <div class="title mb-2">
-                        <h4>Variants buttons</h4>
+                        <h4>Left Offcanvas</h4>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn element-btn btn-primary">Primary</button>
-                        <button type="button" class="btn element-btn btn-secondary">Secondary</button>
-                        <button type="button" class="btn element-btn btn-success">Success</button>
-                        <button type="button" class="btn element-btn btn-danger">Danger</button>
-                        <button type="button" class="btn element-btn btn-warning">Warning</button>
-                        <button type="button" class="btn element-btn btn-info">Info</button>
-                        <button type="button" class="btn element-btn btn-light">Light</button>
-                        <button type="button" class="btn element-btn btn-dark">Dark</button>
-                        <button type="button" class="btn element-btn btn-link">Link</button>
-                    </div>
+
+                    <button class="btn bg-theme-color text-white" data-bs-toggle="offcanvas"
+                        data-bs-target="#leftOffcanvas">Left Offcanvas</button>
+
                     <div class="divider"></div>
                 </li>
 
                 <li>
                     <div class="title mb-2">
-                        <h4>Variants buttons</h4>
+                        <h4>Right Offcanvas</h4>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn element-btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn element-btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn element-btn btn-outline-success">Success</button>
-                        <button type="button" class="btn element-btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn element-btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn element-btn btn-outline-info">Info</button>
-                        <button type="button" class="btn element-btn btn-outline-light">Light</button>
-                        <button type="button" class="btn element-btn btn-outline-dark">Dark</button>
-                    </div>
+
+                    <button class="btn bg-theme-color text-white" data-bs-toggle="offcanvas"
+                        data-bs-target="#rightOffcanvas">Right Offcanvas</button>
+
                     <div class="divider"></div>
                 </li>
 
                 <li>
                     <div class="title mb-2">
-                        <h4>Sizes buttons</h4>
+                        <h4>Top Offcanvas</h4>
                     </div>
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn bg-theme-color text-white btn-lg">Large button</button>
-                        <button type="button" class="btn bg-theme-color text-white btn-sm">Small button</button>
-                    </div>
-                    <div class="divider"></div>
-                </li>
 
-                <li>
-                    <div class="title mb-2">
-                        <h4>Disabled state buttons</h4>
-                    </div>
-                    <div class="d-flex gap-2">
-                        <button class="btn bg-theme-color text-white disabled" role="button">Primary link</button>
-                        <button class="btn bg-secondary-color disabled" role="button">Link</button>
-                    </div>
+                    <button class="btn bg-theme-color text-white" data-bs-toggle="offcanvas"
+                        data-bs-target="#topOffcanvas">Top Offcanvas</button>
+
                     <div class="divider"></div>
                 </li>
             </ul>
@@ -116,69 +92,75 @@
     <!-- Element Section End -->
 
     <!-- Template Offcanvas Start -->
-    <div class="offcanvas offcanvas-bottom theme-offcanvas" tabindex="-1" id="addAddress">
+    <div class="offcanvas offcanvas-bottom theme-offcanvas" tabindex="-1" id="templateOffcanvas">
         <div class="offcanvas-header">
-            <h3 class="offcanvas-title">Add New Address</h3>
+            <h3 class="offcanvas-title">Template Offcanvas</h3>
         </div>
         <div class="offcanvas-body">
-            <form class="row g-3">
-                <div class="col-12">
-                    <div class="form-box">
-                        <label for="name" class="form-label">Mobile Number</label>
-                        <input type="number" class="form-control" id="name" placeholder="Mobile Number">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-box">
-                        <input type="text" class="form-control" id="carNumber"
-                            placeholder="House/Floor Number/Balding Name">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-box">
-                        <label for="carNumber" class="form-label">Street Name</label>
-                        <input type="text" class="form-control" id="carNumber" placeholder="Street Name">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-box">
-                        <label for="carNumber" class="form-label">Landmark</label>
-                        <input type="text" class="form-control" id="carNumber" placeholder="Landmark">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="checkbox-form filter-box">
-                        <input class="form-check-input checkbox-form" type="checkbox" checked id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Save address as default</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-box">
-                        <label for="carNumber" class="form-label">Save as</label>
-                        <ul class="select-top-list">
-                            <li class="top-box">
-                                <input class="form-check-input" name="top" type="radio" id="1" checked>
-                                <label class="form-check-label" for="1">Home</label>
-                            </li>
-                            <li class="top-box">
-                                <input class="form-check-input" name="top" type="radio" id="2">
-                                <label class="form-check-label" for="2">Office</label>
-                            </li>
-                            <li class="top-box">
-                                <input class="form-check-input" name="top" type="radio" id="3">
-                                <label class="form-check-label" for="3">Other</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 m-0">
-                    <button type="submit"
-                        class="btn bg-theme-color text-white p15 f-16 f-w-500 w-100 m-t-32">Submit</button>
-                </div>
-            </form>
+            <p class="f-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae, fuga maiores dolor
+                beatae exercitationem soluta cupiditate, quae recusandae tempore pariatur ut possimus iusto, at odit aut
+                libero iste officiis?</p>
         </div>
     </div>
     <!-- Template Offcanvas End -->
+
+    <!-- Left Offcanvas Start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="leftOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title f-18" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="f-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae, fuga maiores dolor
+                beatae exercitationem soluta cupiditate, quae recusandae tempore pariatur ut possimus iusto, at odit aut
+                libero iste officiis?</p>
+        </div>
+    </div>
+    <!-- Left Offcanvas End -->
+
+    <!-- Right Offcanvas Start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="rightOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title f-18" id="offcanvasExampleLabel">Right Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="f-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae, fuga maiores dolor
+                beatae exercitationem soluta cupiditate, quae recusandae tempore pariatur ut possimus iusto, at odit aut
+                libero iste officiis?</p>
+        </div>
+    </div>
+    <!-- Right Offcanvas End -->
+
+    <!-- Right Offcanvas Start -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="topOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title f-18" id="offcanvasExampleLabel">Top Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="f-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae, fuga maiores dolor
+                beatae exercitationem soluta cupiditate, quae recusandae tempore pariatur ut possimus iusto, at odit aut
+                libero iste officiis?</p>
+        </div>
+    </div>
+    <!-- Right Offcanvas End -->
+
+    <!-- Right Offcanvas Start -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="topOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title f-18" id="offcanvasExampleLabel">Top Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="f-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vitae, fuga maiores
+                dolor
+                beatae exercitationem soluta cupiditate, quae recusandae tempore pariatur ut possimus iusto, at odit
+                aut
+                libero iste officiis?</p>
+        </div>
+    </div>
+    <!-- Right Offcanvas End -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
