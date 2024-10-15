@@ -80,11 +80,11 @@
                             <button class="btn incrementButton">+</button>
                         </div>
                         <div class="cart-option">
-                            <button class="btn">
+                            <button class="btn notify-box">
                                 <i class="ri-heart-line"></i>
                                 <span>Save for later</span>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-target="#removeProduct" data-bs-toggle="offcanvas">
                                 <i class="ri-delete-bin-line"></i>
                                 <span>Remove</span>
                             </button>
@@ -114,11 +114,11 @@
                             <button class="btn incrementButton">+</button>
                         </div>
                         <div class="cart-option">
-                            <button class="btn">
+                            <button class="btn notify-box">
                                 <i class="ri-heart-line"></i>
                                 <span>Save for later</span>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-target="#removeProduct" data-bs-toggle="offcanvas">
                                 <i class="ri-delete-bin-line"></i>
                                 <span>Remove</span>
                             </button>
@@ -148,11 +148,11 @@
                             <button class="btn incrementButton">+</button>
                         </div>
                         <div class="cart-option">
-                            <button class="btn">
+                            <button class="btn notify-box">
                                 <i class="ri-heart-line"></i>
                                 <span>Save for later</span>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-target="#removeProduct" data-bs-toggle="offcanvas">
                                 <i class="ri-delete-bin-line"></i>
                                 <span>Remove</span>
                             </button>
@@ -205,11 +205,43 @@
     <div class="bottom-spacing"></div>
     <!-- Bottom Space Box End -->
 
+    <!-- Delete Address Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom delete-address-offcanvas theme-offcanvas" id="removeProduct">
+        <div class="offcanvas-body">
+            <div class="delete-address-box">
+                <div class="icon-box">
+                    <i class="ri-delete-bin-line"></i>
+                </div>
+                <h3>Move From Beg?</h3>
+                <p>Is it really your intention to remove this item from Beg?</p>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-gray" data-bs-dismiss="offcanvas">Remove</button>
+                <button class="btn bg-theme-color text-white" data-bs-dismiss="offcanvas">Move To wishlist</button>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Address Offcanvas End -->
+
+    <!-- Notify Box Start -->
+    <div class="notification-box">
+        <p>Success! We have moved your product to the wishlist.</p>
+    </div>
+    <!-- Notify Box End -->
+
+
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
     <!-- Cart Product Count Javascript -->
     <script src="./assets/js/product-count.js"></script>
+
+    <!-- Notification Javascript -->
+    <script src="./assets/js/notify.js"></script>
+
+    <!-- Onload vibration Javascript -->
+    <script src="./assets/js/vibration.js"></script>
 
     <!-- Theme Settings Javascript -->
     <script src="./assets/js/theme-option.js"></script>
