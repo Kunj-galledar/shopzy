@@ -1,0 +1,42 @@
+/**=====================
+    4.4 Banner css start
+==========================**/
+.banner-section {
+  margin-bottom: -6px;
+  .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 6px;
+    label {
+      font-size: 12px;
+      background-color: rgba(var(--theme-color), 0.1);
+      padding: 3px 10px;
+      border-radius: 15px;
+      width: max-content;
+      color: rgba(var(--theme-color), 1);
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: calc(14px + ((15) - (14)) * ((100vw - 320px) / (1920 - 320)));
+      color: rgba(var(--title-color), 1);
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .banner-link {
+      color: rgba(var(--theme-color), 1);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      display: inline-block;
+      font-weight: 500;
+    }
+  }
+}

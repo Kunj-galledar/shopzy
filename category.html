@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#336aea" />
+    <meta name="theme-color" content="#336aea" />
     <title>Shopzy PWA</title>
 
     <!-- Fonts Link -->
@@ -23,6 +35,130 @@
 </head>
 
 <body>
+
+    <!--skeleton loader Start  -->
+    <div id="loader" class="skeleton-loader">
+        <header class="header-section-2">
+            <div class="mobile-container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#!">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+
+                    <h4 class="text-white">All Category</h4>
+
+                    <a href="#!">
+                        <i class="ri-search-line"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="pt-0 category-section-2">
+            <div class="row custom-row g-0 h-100">
+                <div class="col-4 category-bg-border-color">
+                    <ul class="nav nav-pills custom-nav">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-5"></span>
+                                <span class="placeholder sm-h col-7"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-7"></span>
+                                <span class="placeholder sm-h col-5"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-5"></span>
+                                <span class="placeholder sm-h col-7"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-5"></span>
+                                <span class="placeholder sm-h col-7"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-5"></span>
+                                <span class="placeholder sm-h col-7"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-7"></span>
+                                <span class="placeholder sm-h col-5"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" type="button">
+                                <span class="placeholder sm-h col-7"></span>
+                                <span class="placeholder sm-h col-5"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content custom-tab">
+                        <div class="tab-pane fade show active">
+                            <div class="title title-2">
+                                <span class="placeholder col-8"></span>
+                            </div>
+                            <ul class="category-list-box category-bottom-space">
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop.html" class="category-list">
+                                        <div class="category-image"></div>
+                                        <span class="placeholder sm-h col-8 mt-2"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--skeleton loader End  -->
+
     <!-- Header Start -->
     <header class="header-section-2">
         <div class="mobile-container">
@@ -1024,6 +1160,12 @@
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
+
+    <!-- Service Worker Js  -->
+    <script src="./assets/js/sw-setup.js"></script>
+
+    <!-- Loader Javascript -->
+    <script src="./assets/js/skeleton-loader.js"></script>
 
     <!-- Theme Settings Javascript -->
     <script src="./assets/js/theme-option.js"></script>

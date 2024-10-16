@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#336aea" />
+    <meta name="theme-color" content="#336aea" />
     <title>Shopzy PWA</title>
 
     <!-- Fonts Link -->
@@ -24,7 +36,88 @@
 
 <body>
 
-    <button class="notify-box">Open Box</button>
+    <!--skeleton loader Start  -->
+    <div id="loader" class="skeleton-loader">
+        <header class="header-section">
+            <div class="mobile-container">
+                <div class="top-header">
+                    <div class="left-header ">
+                        <button class="btn p-0 yellow-bg text-light" data-bs-toggle="offcanvas"
+                            data-bs-target="#address-modal">
+                            <i class="ri-home-4-line"></i>
+                            Home
+                        </button>
+                        <h5>b1/101, mahalaxmi arcade</h5>
+                    </div>
+                    <h5 class="placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <h5 class="placeholder-glow">
+                        <span class="placeholder col-8"></span>
+                    </h5>
+                    <div class="right-header">
+                        <a href="profile.html" class="user-profile">
+                            <h3>S</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-form input-group">
+                    <input type="search" disabled class="form-control" placeholder="Search for products here...">
+                </div>
+            </div>
+        </header>
+        <section class="banner-section pt-0">
+            <div class="title mobile-container mb-2">
+                <span class="placeholder col-5"></span>
+            </div>
+
+            <div class="mobile-container">
+                <a href="shop.html" class="b-r-9 banner-sec overflow-hidden d-block position-relative">
+                    <div class="banner-content">
+                        <span class="placeholder col-8"></span>
+                        <span class="placeholder col-10"></span>
+                        <span class="placeholder col-4"></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="category-section mt-3">
+            <div class="title mobile-container mb-3 d-flex justify-content-between align-items-center">
+                <span class="placeholder col-5"></span>
+                <span class="placeholder col-3"></span>
+            </div>
+
+            <div class="swiper category-slider category-list mobile-container">
+                <div class="swiper-wrapper">
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-8"></span>
+                    </a>
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-8"></span>
+                    </a>
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-8"></span>
+                    </a>
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-9"></span>
+                    </a>
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-8"></span>
+                    </a>
+                    <a href="shop.html" class="swiper-slide">
+                        <div class="offer-skeleton"></div>
+                        <span class="placeholder col-10"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--skeleton loader End  -->
 
     <!-- Header Start -->
     <header class="header-section">
@@ -98,11 +191,23 @@
                 <div class="swiper-slide">
                     <a href="shop.html" class="b-r-9 overflow-hidden d-block">
                         <img src="./assets/images/banner/1.jpg" class="img-fluid w-100" alt="">
+                        <div class="banner-content">
+                            <label>Limited time!</label>
+                            <h4>Get Special Offer
+                                Flat 35% off</h4>
+                            <div class="banner-link">Shop Now<i class="ri-arrow-right-up-line"></i></div>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="shop.html" class="b-r-9 overflow-hidden d-block">
                         <img src="./assets/images/banner/1.jpg" class="img-fluid w-100" alt="">
+                        <div class="banner-content">
+                            <label>Limited time!</label>
+                            <h4>Get Special Offer
+                                Flat 35% off</h4>
+                            <div class="banner-link">Shop Now<i class="ri-arrow-right-up-line"></i></div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -121,7 +226,10 @@
         <div class="swiper category-slider category-list mobile-container">
             <div class="swiper-wrapper">
                 <a href="shop.html" class="swiper-slide">
-                    <img src="./assets/images/offer-gif.gif" class="img-fluid" alt="">
+                    <div class="offer-sec">
+                        <img src="./assets/images/offer-bg.svg" class="img-fluid offer-bg" alt="">
+                        <img src="./assets/images/percentage.svg" class="img-fluid percentage-cls" alt="">
+                    </div>
                     <h5>Offer</h5>
                 </a>
                 <a href="shop.html" class="swiper-slide">
@@ -562,6 +670,26 @@
     </div>
     <!-- Select Location Offcanvas End -->
 
+    <!-- pwa install app popup start -->
+    <div class="offcanvas offcanvas-bottom addtocart-offcanvas theme-offcanvas" tabindex="-1" id="addToCartcanvas"
+        aria-labelledby="offcanvasLabel">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-body">
+            <div class="media">
+                <img src="./assets/images/logo-icon.png" class="img-fluid" alt="" />
+                <div class="media-body">
+                    <h5>Shopzy App</h5>
+                    <a href="#">www.shopzy.com</a>
+                </div>
+            </div>
+            <div class="btn-div">
+                <a href="#!" id="add-to-home" class="btn bg-secondary-color">Add to
+                    Home Screen</a>
+            </div>
+        </div>
+    </div>
+    <!-- pwa install app popup start -->
+
     <!-- Bottom Space Box Start -->
     <div class="bottom-spacing"></div>
     <!-- Bottom Space Box End -->
@@ -573,6 +701,9 @@
     <script src="./assets/js/vendor/swiper.js"></script>
     <script src="./assets/js/vendor/custom-swiper.js"></script>
 
+    <!-- Loader Javascript -->
+    <script src="./assets/js/skeleton-loader.js"></script>
+
     <!-- Timer Javascript -->
     <script src="./assets/js/quick-timer.js"></script>
 
@@ -582,11 +713,19 @@
     <!-- Notification Javascript -->
     <script src="./assets/js/notify.js"></script>
 
-    <!-- Onload vibration Javascript -->
-     <script src="./assets/js/vibration.js"></script>
+    <!-- Offcanvas Javascript  -->
+    <script src="./assets/js/add-to-home-offcanvas.js"></script>
+
+    <!-- Add to home Javascript -->
+    <script src="./assets/js/add-to-install.js"></script>
+
+    <!-- Service Worker Js  -->
+    <script src="./assets/js/sw-setup.js"></script>
 
     <!-- Theme Settings Javascript -->
     <script src="./assets/js/theme-option.js"></script>
+
+
 </body>
 
 </html>

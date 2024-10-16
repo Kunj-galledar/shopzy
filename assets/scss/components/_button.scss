@@ -48,6 +48,12 @@
   }
 }
 
+.btn-close {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 .btn-group-box {
   display: flex;
   align-items: center;
