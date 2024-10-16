@@ -73,6 +73,16 @@
             color: rgba(var(--content-color), 1);
         }
     }
+
+    .form-select {
+        padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) calc(11px + (14 - 11) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+        border: 1px solid rgba(var(--border-color), 1);
+        background-color: rgba(var(--white), 1);
+        box-shadow: unset;
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+    }
 }
 
 .theme-radio {
@@ -105,6 +115,7 @@
 
         &:checked {
             border-color: rgba(var(--theme-color), 1);
+
             body.dark-mode & {
                 border-color: rgba(var(--theme-color), 1);
             }
