@@ -2,91 +2,93 @@
      2.1 Reset css start
 ==========================**/
 .theme-color {
-     color: rgba(var(--theme-color), 1);
+  color: rgba(var(--theme-color), 1);
 }
 
 .theme-bg-color {
-     background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--theme-color), 1);
 }
 
 .title-color {
-     color: rgba(var(--title-color), 1);
+  color: rgba(var(--title-color), 1);
 }
 
 .content-color {
-     color: rgba(var(--content-color), 1);
+  color: rgba(var(--content-color), 1);
 }
 
 .secondary-color {
-     color: rgba(var(--secondary-color), 1);
+  color: rgba(var(--secondary-color), 1);
 }
 
 .white-color {
-     color: rgba(var(--white), 1);
+  color: rgba(var(--white), 1);
 }
 
 .main-box {
-     background-color: rgba(var(--white), 1);
-     height: calc(100vh - 146px);
-     padding-bottom: calc(90px + ((100) - (90)) * ((100vw - 320px) / (1920 - 320)));
-     overflow: hidden auto;
-     margin-top: 14px;
-     padding-top: 31px;
-     border-radius: 15px 15px 0 0;
+  background-color: rgba(var(--white), 1);
+  height: calc(100vh - 146px);
+  padding-bottom: calc(
+    100px + ((120) - (100)) * ((100vw - 320px) / (1920 - 320))
+  );
+  overflow: hidden auto;
+  margin-top: 14px;
+  padding-top: 20px;
+  border-radius: 15px 15px 0 0;
 }
 
 .mobile-container,
 .px-15 {
-     padding-inline: 15px;
+  padding-inline: 15px;
 }
 
 .custom-row {
-     .col-sm-4 {
-          flex: 0 0 auto;
-          width: 33.33333%;
-     }
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333%;
+  }
 
-     .col-sm-8 {
-          flex: 0 0 auto;
-          width: 66.66667%;
-     }
+  .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66667%;
+  }
 }
 
 section,
 .section-t-space {
-     padding-top: 26px;
+  padding-top: 26px;
 }
 
 .section-b-space {
-     padding-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 .fix-bottom-box {
-     position: fixed;
-     bottom: 0;
-     @include center(horizontal);
-     width: 100%;
-     box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
-     padding: 17px 15px 21px;
-     background-color: rgba(var(--white), 1);
+  position: fixed;
+  bottom: 0;
+  @include center(horizontal);
+  width: 100%;
+  box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
+  padding: 17px 15px 21px;
+  background-color: rgba(var(--white), 1);
 }
 
 .center-text {
-     @include flex_common;
+  @include flex_common;
 }
 
 .bottom-spacing {
-     height: 80px;
+  height: 80px;
 }
 
 .divider {
-     @include pseudowh($width: 100%, $height: 10px);
-     background-color: rgba(var(--light-gray), 1);
-     margin-block: 17px;
+  @include pseudowh($width: 100%, $height: 10px);
+  background-color: rgba(var(--light-gray), 1);
+  margin-block: 17px;
 }
 
 .object-fit-cover {
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /**=====================

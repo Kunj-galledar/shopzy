@@ -2,93 +2,93 @@
     3.2 Button css start
 ==========================**/
 .btn-sticky {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(var(--white), 1);
-    box-shadow: 0 -7px 13.2px rgba(var(--title-color), 0.1);
-    padding: 17px 15px 21px;
-    margin-top: 25px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(var(--white), 1);
+  box-shadow: 0 -7px 13.2px rgba(var(--title-color), 0.1);
+  padding: 17px 15px 21px;
+  margin-top: 25px;
 }
 
 .btn {
-    padding: calc(15px + ((17) - (15)) * ((100vw - 320px) / (1920 - 320)));
-    background-color: transparent;
-    border: unset;
-    border-radius: 7px;
-    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
-    font-weight: 500;
-    color: rgba(var(--title-color), 1);
+  padding: calc(10px + ((17) - (10)) * ((100vw - 320px) / (1920 - 320)));
+  background-color: transparent;
+  border: unset;
+  border-radius: 7px;
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 500;
+  color: rgba(var(--title-color), 1);
 
-    &:hover {
-        color: inherit;
-        background-color: inherit;
-        border-color: inherit;
-    }
+  &:hover {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+  }
 
-    &-full {
-        width: 100%;
-    }
-
-    &.outline-btn {
-        border-radius: 8px;
-        border: 1px solid rgba(var(--theme-color), 1);
-        color: rgba(var(--theme-color), 1);
-
-        &:hover {
-            border-color: transparent;
-            background-color: rgba(var(--theme-color), 1);
-            color: #fff;
-        }
-    }
-
-    &-sm {
-        padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
-        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
-    }
-}
-
-.btn-group-box {
-    display: flex;
-    align-items: center;
-}
-
-.btn-yellow {
-    background-color: rgba(var(--secondary-color), 1);
-}
-
-.fixed-btn-box {
-    position: fixed;
-    bottom: 0;
-    @include center(horizontal);
+  &-full {
     width: 100%;
-    box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
-    padding: 17px 15px 21px;
+  }
 
-    .btn {
-        background-color: rgba(var(--light-gray), 1);
-        font-weight: 500;
-    }
-}
-
-.location-btn {
-    padding: 14px 8px;
-    border-radius: 7px;
-    background-color: rgba(var(--theme-color), 0.07);
-    display: flex;
-    align-items: center;
-    line-height: 1.2;
-    gap: 7px;
+  &.outline-btn {
+    border-radius: 8px;
+    border: 1px solid rgba(var(--theme-color), 1);
     color: rgba(var(--theme-color), 1);
 
     &:hover {
-        background-color: rgba(var(--theme-color), 0.07);
-        color: rgba(var(--theme-color), 1);
+      border-color: transparent;
+      background-color: rgba(var(--theme-color), 1);
+      color: #fff;
     }
+  }
 
-    i {
-        font-size: 20px;
-    }
+  &-sm {
+    padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+.btn-group-box {
+  display: flex;
+  align-items: center;
+}
+
+.btn-yellow {
+  background-color: rgba(var(--secondary-color), 1);
+}
+
+.fixed-btn-box {
+  position: fixed;
+  bottom: 0;
+  @include center(horizontal);
+  width: 100%;
+  box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
+  padding: 17px 15px 21px;
+
+  .btn {
+    background-color: rgba(var(--light-gray), 1);
+    font-weight: 500;
+  }
+}
+
+.location-btn {
+  padding: 14px 8px;
+  border-radius: 7px;
+  background-color: rgba(var(--theme-color), 0.07);
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  gap: 7px;
+  color: rgba(var(--theme-color), 1);
+
+  &:hover {
+    background-color: rgba(var(--theme-color), 0.07);
+    color: rgba(var(--theme-color), 1);
+  }
+
+  i {
+    font-size: 20px;
+  }
 }
 
 /**=====================
