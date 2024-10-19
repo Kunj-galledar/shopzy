@@ -90,15 +90,30 @@ a {
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .p-17 {
   padding: calc(
-    10px + ((17) - (10)) * ((100vw - 320px) / (1920 - 320))
+    12px + ((17) - (12)) * ((100vw - 320px) / (1920 - 320))
   ) !important;
 }
 
 .f-18 {
   font-size: calc(
     16px + ((18) - (16)) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
+}
+
+.f-20 {
+  font-size: calc(
+    18px + ((20) - (18)) * ((100vw - 320px) / (1920 - 320))
   ) !important;
 }
 

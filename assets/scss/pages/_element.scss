@@ -1,49 +1,57 @@
 .element-section {
-    .element-list {
-        display: grid;
-        gap: 10px;
+  .element-list {
+    display: grid;
+    gap: 10px;
 
-        .alert {
-            margin: 0;
-            padding: calc(13px + ((16) - (13)) * ((100vw - 320px) / (1920 - 320))) 16px;
-        }
+    .alert {
+      margin: 0;
+      padding: calc(13px + ((16) - (13)) * ((100vw - 320px) / (1920 - 320)))
+        16px;
     }
+  }
 
-    .element-btn {
-        display: inline-block;
-        padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-        font-family: var(--bs-btn-font-family);
-        font-size: var(--bs-btn-font-size);
-        font-weight: var(--bs-btn-font-weight);
-        line-height: var(--bs-btn-line-height);
-        color: var(--bs-btn-color);
-        text-align: center;
-        text-decoration: none;
-        vertical-align: middle;
-        cursor: pointer;
-        user-select: none;
-        border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-        border-radius: var(--bs-btn-border-radius);
-        background-color: var(--bs-btn-bg);
-        transition: color 0.15s ease-in-out,
-            background-color 0.15s ease-in-out,
-            border-color 0.15s ease-in-out,
-            box-shadow 0.15s ease-in-out;
-    }
+  .element-btn {
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
 
-    .btn-sm,
-    .btn-group-sm>.btn {
-        padding-block: .25rem;
-        padding-inline: .5rem;
-        font-size: .875rem;
-        border-radius: var(--bs-border-radius-sm);
-    }
+  .btn-sm,
+  .btn-group-sm > .btn {
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+    font-size: 0.875rem;
+    border-radius: var(--bs-border-radius-sm);
+  }
 
-    .btn-lg,
-    .btn-group-lg>.btn {
-        padding-block: .5rem;
-        padding-inline: 1rem;
-        font-size: 1.25rem;
-        border-radius: var(--bs-border-radius-lg);
-    }
+  .btn-lg,
+  .btn-group-lg > .btn {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    font-size: 1.25rem;
+    border-radius: var(--bs-border-radius-lg);
+  }
+
+  .collapse-body {
+    padding: 13px 16px;
+    font-size: calc(15px + ((16) - (15)) * ((100vw - 320px) / (1920 - 320)));
+    background-color: rgba(var(--light-gray), 1);
+    font-weight: 500;
+    border: 1px solid rgba(var(--border-color), 1);
+    margin-top: 10px;
+  }
 }

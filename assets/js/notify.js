@@ -1,27 +1,30 @@
-// Function to apply fade-in/fade-out effect to the specified box
-function openBox(box) {
-    // box.style.display = "block"; // Ensure the box is displayed
-    setTimeout(() => {
-        box.classList.add("show"); // Trigger fade-in
-    }, 10); // Small delay for smooth transition
+/*=====================
+    Notification Js
+==========================*/
+const notifyBoxes = document.querySelectorAll('.notify-box');
+const notificationBox = document.getElementById('alert-box');
+const notificationText = notificationBox.querySelector('p');
 
-    setTimeout(() => {
-        closeBox(box);
-    }, Math.random() * (10000 - 5000) + 5000); // Random time between 5-10 seconds
-}
+notifyBoxes.forEach(notifyBox => {
+    notifyBox.addEventListener('click', function () {
+        const heartIcon = notifyBox.querySelector('i');
 
-function closeBox(box) {
-    box.classList.remove("show"); // Trigger fade-out
-    setTimeout(() => {
-        box.style.display = "none"; // Hide the box after fade-out
-    }, 500); // Wait for fade-out transition
-}
+        if (heartIcon.classList.contains('ri-heart-line')) {
+            heartIcon.classList.remove('ri-heart-line');
+            heartIcon.classList.add('ri-heart-fill');
 
-// Get all buttons and boxes
-const buttons = document.querySelectorAll(".notify-box");
-const boxes = document.querySelectorAll(".notification-box");
+            notificationText.textContent = "Success! We have moved your product to the wishlist.";
+        } else {
+            heartIcon.classList.remove('ri-heart-fill');
+            heartIcon.classList.add('ri-heart-line');
 
-// Add event listener to each button to open the corresponding box
-buttons.forEach((button, index) => {
-    button.addEventListener("click", () => openBox(boxes[index]));
+            notificationText.textContent = "Success! We have removed your product from the wishlist.";
+        }
+
+        notificationBox.classList.add('show');
+
+        setTimeout(() => {
+            notificationBox.classList.remove('show');
+        }, 5000);
+    });
 });

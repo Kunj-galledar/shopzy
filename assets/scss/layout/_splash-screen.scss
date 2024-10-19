@@ -22,7 +22,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
-  animation: scroll-x 60s linear infinite;
+  animation: scroll-x 455s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -135,11 +135,6 @@
 
   .btn {
     margin-top: 23px;
-    padding: 14px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 7px;
-    width: 100%;
   }
 }
 

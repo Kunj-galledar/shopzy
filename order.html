@@ -57,7 +57,8 @@
                     <i class="ri-search-line"></i>
                     <input type="search" class="form-control" placeholder="Search your orders..">
                 </div>
-                <button class="btn filter-btn"><i class="ri-filter-3-line"></i> Filter</button>
+                <button class="btn filter-btn" data-bs-toggle="offcanvas" data-bs-target="#productFilter"><i
+                        class="ri-filter-3-line"></i> Filter</button>
             </div>
         </div>
     </section>
@@ -65,97 +66,127 @@
 
     <!-- Product Order Section Start -->
     <section class="product-order-section">
-        <div class="mobile-container">
-            <ul class="product-order-list">
-                <li class="order-box">
-                    <div class="order-status">
-                        <i class="ri-truck-line"></i>
-                        <div>
-                            <h4>In transit</h4>
-                            <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
-                        </div>
+        <ul class="product-order-list">
+            <li class="order-box">
+                <div class="order-status">
+                    <i class="ri-truck-line"></i>
+                    <div>
+                        <h4>In transit</h4>
+                        <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
                     </div>
-                    <div class="vertical-product-box">
-                        <a href="product.html" class="cart-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                        </a>
-                        <div class="cart-detail">
-                            <a href="product.html" class="name text-white">Samsung Galaxy Book 2 Intel Core i5 12th Gen
-                                1235U - (8
-                                GB/512 GB
-                                SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
-                            <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
-                            <h3 class="item-price">$20.36</h3>
-                        </div>
+                </div>
+                <div class="vertical-product-box">
+                    <a href="product.html" class="cart-image">
+                        <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="cart-detail">
+                        <a href="product.html" class="name">Samsung Galaxy Book 2 Intel Core i5 12th Gen
+                            1235U - (8
+                            GB/512 GB
+                            SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                        <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
+                        <h3 class="item-price">$20.36</h3>
                     </div>
-                    <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
-                                class="ri-map-2-line"></i> Order tracking</button>
+                </div>
+                <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
+                            class="ri-map-2-line"></i> Order tracking</button>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li class="order-box">
+                <div class="order-status">
+                    <i class="ri-box-3-line"></i>
+                    <div>
+                        <h4>Delivered</h4>
+                        <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
                     </div>
-                </li>
-                <li class="divider"></li>
-                <li class="order-box">
-                    <div class="order-status">
-                        <i class="ri-truck-line"></i>
-                        <div>
-                            <h4>In transit</h4>
-                            <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
-                        </div>
+                </div>
+                <div class="vertical-product-box">
+                    <a href="product.html" class="cart-image">
+                        <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="cart-detail">
+                        <a href="product.html" class="name">Samsung Galaxy Book 2 Intel Core i5 12th Gen
+                            1235U - (8
+                            GB/512 GB
+                            SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                        <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
+                        <h3 class="item-price">$20.36</h3>
                     </div>
-                    <div class="vertical-product-box">
-                        <div class="cart-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="cart-detail">
-                            <h4 class="name">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8 GB/512 GB
-                                SSD/Windows 11 Home) NP550 Thin and Light Laptop</h4>
-                            <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
-                            <h3 class="item-price">$20.36</h3>
-                        </div>
+                </div>
+                <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
+                            class="ri-map-2-line"></i> Order tracking</button>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li class="order-box cancelled">
+                <div class="order-status">
+                    <i class="ri-close-large-line"></i>
+                    <div>
+                        <h4>Canceled</h4>
+                        <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
                     </div>
-                    <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
-                                class="ri-map-2-line"></i> Order tracking</button>
+                </div>
+                <div class="vertical-product-box">
+                    <a href="product.html" class="cart-image">
+                        <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="cart-detail">
+                        <a href="product.html" class="name">Samsung Galaxy Book 2 Intel Core i5 12th Gen
+                            1235U - (8
+                            GB/512 GB
+                            SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                        <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
+                        <h3 class="item-price">$20.36</h3>
                     </div>
-                </li>
-                <li class="divider"></li>
-                <li class="order-box">
-                    <div class="order-status">
-                        <i class="ri-truck-line"></i>
-                        <div>
-                            <h4>In transit</h4>
-                            <h5 class="f-13 f-w-400 m-t-3">on 26 July</h5>
-                        </div>
-                    </div>
-                    <div class="vertical-product-box">
-                        <div class="cart-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="cart-detail">
-                            <h4 class="name">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8 GB/512 GB
-                                SSD/Windows 11 Home) NP550 Thin and Light Laptop</h4>
-                            <h4 class="detail m-t-3 f-w-400 text-content-color">Grey/8 GB</h4>
-                            <h3 class="item-price">$20.36</h3>
-                        </div>
-                    </div>
-                    <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
-                        <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
-                                class="ri-map-2-line"></i> Order tracking</button>
-                    </div>
-                </li>
-                <li class="divider"></li>
-            </ul>
-        </div>
+                </div>
+                <div class="btn-group-box d-flex align-content-center gap-2 m-t-15">
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11">Cancel</button>
+                    <button class="btn w-100 p11 b-r-4 bg-light-color f-15 center-text gap-2 p-11"><i
+                            class="ri-map-2-line"></i> Order tracking</button>
+                </div>
+            </li>
+            <li class="divider"></li>
+        </ul>
     </section>
     <!-- Product Order Section End -->
+
+    <!-- Sort By Filter Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom sort-filter-offcanvas theme-offcanvas" id="productFilter">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Time:</h3>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sort-filter-list">
+                <li class="theme-radio">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="one">
+                    <label class="form-check-label" for="one">Anytime</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="two">
+                    <label class="form-check-label" for="two">Last 30 days</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="three">
+                    <label class="form-check-label" for="three">Last 6 months</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="four">
+                    <label class="form-check-label" for="four">Last year</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sort By Filter Offcanvas End -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
-    <!-- Service Worker Js  -->
+    <!-- Service Worker Javascript -->
     <script src="./assets/js/sw-setup.js"></script>
 
     <!-- Theme Settings Javascript -->

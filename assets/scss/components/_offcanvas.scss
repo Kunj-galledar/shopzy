@@ -112,7 +112,7 @@
     .select-top-list {
       display: flex;
       align-items: center;
-      gap: 13px;
+      gap: 10px;
 
       .top-box {
         position: relative;
@@ -146,7 +146,7 @@
           padding: 10px 17px;
           line-height: 1;
           font-size: 14px;
-          border-radius: 5px;
+          border-radius: 20px;
           display: flex;
           align-items: center;
           gap: 5px;
@@ -156,8 +156,8 @@
 
     .form-box {
       label {
-        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-        color: rgba(var(--content-color), 1);
+        font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1920 - 320)));
+        color: rgba(var(--title-color), 1);
       }
     }
   }
