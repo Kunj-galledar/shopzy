@@ -169,9 +169,18 @@
 
                 <h4 class="text-white">All Category</h4>
 
-                <a href="#!">
+                <a href="#!" id="search-btn">
                     <i class="ri-search-line"></i>
                 </a>
+
+                <div class="header-search-box" id="search-box">
+                    <div class="position-relative">
+                        <input class="form-control" placeholder="Search here.." />
+                        <div class="close-btn" id="close-search">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -1167,8 +1176,25 @@
     <!-- Loader Javascript -->
     <script src="./assets/js/skeleton-loader.js"></script>
 
+    <!-- Search Open Javascript -->
+    <!-- <script src="./assets/js/search-open.js"></script> -->
+
     <!-- Theme Settings Javascript -->
     <script src="./assets/js/theme-option.js"></script>
+
+    <script>
+        const div = document.getElementById('search-box');
+        const addBtn = document.getElementById('search-btn');
+        const removeBtn = document.getElementById('close-search');
+
+        addBtn.addEventListener('click', () => {
+        div.classList.add('show');
+        })
+
+        removeBtn.addEventListener('click', () => {
+        div.classList.remove('show');
+        })
+    </script>
 </body>
 
 </html>

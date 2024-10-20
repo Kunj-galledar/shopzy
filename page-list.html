@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./assets/images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#336aea" />
+    <meta name="theme-color" content="#336aea" />
+    <title>Shopzy PWA</title>
+
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon CSS Link -->
+    <link href="./assets/css/vendor/remixicon.css" rel="stylesheet">
+
+    <!-- Range Slider CSS Link -->
+    <link rel='stylesheet' href='./assets/css/nouislider.css'>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <!--skeleton loader Start  -->
+    <div id="loader" class="skeleton-loader">
+        <header class="header-section-2">
+            <div class="mobile-container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#!">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+
+                    <h4>Page List</h4>
+
+                    <a href="#!">
+                        <i class="ri-search-line"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="shop-filter-box">
+            <button class="btn">Sort By
+                <i class="ri-arrow-down-s-line"></i></button>
+
+            <button class="btn"><i class="ri-equalizer-line"></i> Filter
+            </button>
+        </div>
+        <section class="product-box-section section-b-space">
+            <div class="mobile-container">
+                <div class="title mb-2 d-flex justify-content-between align-items-center">
+                    <span class="placeholder col-5"></span>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="product-box">
+                            <a href="product.html" class="product-image"></a>
+                            <div class="product-detail">
+                                <span class="placeholder sm-h col-10"></span>
+                                <span class="placeholder sm-h col-5 my-2"></span>
+                                <span class="placeholder sm-h col-8"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--skeleton loader End  -->
+
+    <!-- Header Start -->
+    <header class="header-section-2">
+        <div class="mobile-container">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#!" onclick="history.back();">
+                    <i class="ri-arrow-left-line"></i>
+                </a>
+
+                <h4>Electronics</h4>
+
+                <a href="#!">
+                    <i class="ri-search-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Mobile Menu Start -->
+    <ul class="mobile-menu-list">
+        <li class="active">
+            <a href="home.html">
+                <i class="ri-home-3-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="ri-menu-search-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="ri-notification-3-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="ri-shopping-cart-line"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#!">
+                <i class="ri-user-3-line"></i>
+            </a>
+        </li>
+    </ul>
+    <!-- Mobile Menu End -->
+
+    <!-- Shop Filter Box Start -->
+    <div class="shop-filter-box">
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#productFilter">Sort By
+            <i class="ri-arrow-down-s-line"></i></button>
+
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"><i
+                class="ri-equalizer-line"></i> Filter <span class="badge">1</span>
+        </button>
+    </div>
+    <!-- Shop Filter Box End -->
+
+    <!-- Short By Filter Offcanvas Start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="shortFiller">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Short by Filter Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Short By Filter Offcanvas End -->
+
+    <!-- Product Box Section Start -->
+    <section class="product-box-section section-b-space">
+        <div class="mobile-container">
+            <div class="title mb-2 d-flex justify-content-between align-items-center">
+                <h4>Today Flash Sale</h4>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
+                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
+                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
+                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
+                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
+                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                            <div class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </div>
+                        </a>
+                        <div class="product-detail">
+                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
+                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <div class="rating-box">
+                                <ul class="rating">
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line fill"></i>
+                                    </li>
+                                    <li>
+                                        <i class="ri-star-line"></i>
+                                    </li>
+                                </ul>
+                                <span>(2000)</span>
+                            </div>
+                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Box Section End -->
+
+    <!-- Bottom Space Box Start -->
+    <div class="bottom-spacing"></div>
+    <!-- Bottom Space Box End -->
+
+    <!-- Sort By Filter Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom sort-filter-offcanvas theme-offcanvas" id="productFilter">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Sort by:</h3>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="sort-filter-list">
+                <li class="theme-radio">
+                    <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="one">
+                    <label class="form-check-label" for="one">Popularity</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="two">
+                    <label class="form-check-label" for="two">Discount: High to Low</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="three">
+                    <label class="form-check-label" for="three">Discount: Low to High</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="four">
+                    <label class="form-check-label" for="four">Price: High to Low</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="five">
+                    <label class="form-check-label" for="five">Price: Low to High</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="six">
+                    <label class="form-check-label" for="six">Customer top rated</label>
+                </li>
+                <li class="theme-radio">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="seven">
+                    <label class="form-check-label" for="seven">New Arrivals</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Sort By Filter Offcanvas End -->
+
+    <!-- Filter Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom filter-offcanvas theme-offcanvas rounded-0 top-0" id="filterOffcanvas">
+        <div class="header-section-2">
+            <div class="mobile-container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#!" data-bs-dismiss="offcanvas">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+
+                    <h4>Filter</h4>
+
+                    <a href="#!" class="btn f-16 f-w-500 p-0">Clear</a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-0 product-filter-section">
+            <div class="row custom-row g-0 h-100">
+                <div class="col-4 category-bg-border-color h-100">
+                    <ul class="nav nav-pills custom-nav" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-price-tab" data-bs-toggle="pill"
+                                data-bs-target="#1" type="button">
+                                <span>Price</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-size-tab" data-bs-toggle="pill" data-bs-target="#2"
+                                type="button">
+                                <span>Size</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-category-tab" data-bs-toggle="pill" data-bs-target="#3"
+                                type="button">
+                                <span>Categories</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-brand-tab" data-bs-toggle="pill" data-bs-target="#4"
+                                type="button">
+                                <span>Brands</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-material-tab" data-bs-toggle="pill" data-bs-target="#5"
+                                type="button">
+                                <span>Material</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-color-tab" data-bs-toggle="pill" data-bs-target="#6"
+                                type="button">
+                                <span>Color</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-occasion-tab" data-bs-toggle="pill" data-bs-target="#7"
+                                type="button">
+                                <span>Occasion</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-type-tab" data-bs-toggle="pill" data-bs-target="#8"
+                                type="button">
+                                <span>Sleeve type</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-discrount-tab" data-bs-toggle="pill" data-bs-target="#9"
+                                type="button">
+                                <span>Discount</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8 h-100">
+                    <div class="tab-content custom-tab" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="1">
+                            <div class="title title-2">
+                                <h4>Select Range</h4>
+                            </div>
+                            <div class="filter">
+                                <div class="select-box">
+                                    <label class="filter__label">
+                                        <input type="number" class="filter__input">
+                                    </label>
+                                    <span>
+                                        <i class="ri-subtract-fill"></i>
+                                    </span>
+                                    <label class="filter__label">
+                                        <input type="number" class="filter__input">
+                                    </label>
+                                </div>
+
+                                <div id="sliderPrice" class="filter__slider-price" data-min="0" data-max="10000"
+                                    data-step="5"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="2">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size">
+                                    <label class="form-check-label" for="size">2XS</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size1">
+                                    <label class="form-check-label" for="size1">XS</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size2" checked>
+                                    <label class="form-check-label" for="size2">Small</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size3">
+                                    <label class="form-check-label" for="size3">Medium</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size4" checked>
+                                    <label class="form-check-label" for="size4">Large</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size5">
+                                    <label class="form-check-label" for="size5">XL</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size6">
+                                    <label class="form-check-label" for="size6">2XL</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size7">
+                                    <label class="form-check-label" for="size7">3XL</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="size8">
+                                    <label class="form-check-label" for="size8">4XL</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="3">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category" checked>
+                                    <label class="form-check-label" for="category">Urban Chic</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category1">
+                                    <label class="form-check-label" for="category1">Boho Vibes</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category2">
+                                    <label class="form-check-label" for="category2">Classic Essentials</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category3" checked>
+                                    <label class="form-check-label" for="category3">Luxe Athleisure</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category4">
+                                    <label class="form-check-label" for="category4">Edgy Streetwear</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category5" checked>
+                                    <label class="form-check-label" for="category5">Eco-Friendly Threads</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category6">
+                                    <label class="form-check-label" for="category6">Retro Revival</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category7">
+                                    <label class="form-check-label" for="category7">Minimalist Must-Haves</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category8">
+                                    <label class="form-check-label" for="category8">Statement Outerwear</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category9">
+                                    <label class="form-check-label" for="category9">Timeless Tailoring</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category10" checked>
+                                    <label class="form-check-label" for="category10">Summer Breeze</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category11" checked>
+                                    <label class="form-check-label" for="category11">Winter Luxe</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category12">
+                                    <label class="form-check-label" for="category12">Vibrant Prints</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="category13">
+                                    <label class="form-check-label" for="category13">Statement Outerwear</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="4">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand" checked>
+                                    <label class="form-check-label" for="brand">Velvet Reverie</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand1" checked>
+                                    <label class="form-check-label" for="brand1">Urban Thread</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand2">
+                                    <label class="form-check-label" for="brand2">Luxe Loom</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand3" checked>
+                                    <label class="form-check-label" for="brand3">Echo & Thread</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand4">
+                                    <label class="form-check-label" for="brand4">Chic Canvas</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand5">
+                                    <label class="form-check-label" for="brand5">Vogue Vault</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand6" checked>
+                                    <label class="form-check-label" for="brand6">Noir & Blush</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand7">
+                                    <label class="form-check-label" for="brand7">Frosted Silk</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand8">
+                                    <label class="form-check-label" for="brand8">Opal & Ember</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand9">
+                                    <label class="form-check-label" for="brand9">Celestial Couture</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand10">
+                                    <label class="form-check-label" for="brand10">Ethereal Edge</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand11">
+                                    <label class="form-check-label" for="brand11">Silk & Quarry</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand12">
+                                    <label class="form-check-label" for="brand12">Eclipse Essentials</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand13">
+                                    <label class="form-check-label" for="brand13">Mystic Stitches</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="5">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material">
+                                    <label class="form-check-label" for="material">Sustainable Fabrics</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material1">
+                                    <label class="form-check-label" for="material1">Luxurious Silks</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material2">
+                                    <label class="form-check-label" for="material2">Organic Cotton</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material3">
+                                    <label class="form-check-label" for="material3">High-Tech Synthetics</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material4" checked>
+                                    <label class="form-check-label" for="material4">Classic Denim</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material5">
+                                    <label class="form-check-label" for="material5">Elegant Wool</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material6" checked>
+                                    <label class="form-check-label" for="material6">Rich Velvet</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material7">
+                                    <label class="form-check-label" for="material7">Breathable Linen</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material8">
+                                    <label class="form-check-label" for="material8">Soft Cashmere</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material9" checked>
+                                    <label class="form-check-label" for="material9">Innovative Neoprene</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material10">
+                                    <label class="form-check-label" for="material10">Chic Leather</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material11">
+                                    <label class="form-check-label" for="material11">Delicate Lace</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material12" checked>
+                                    <label class="form-check-label" for="material12">Cozy Fleece</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="material13">
+                                    <label class="form-check-label" for="material13">Translucent Mesh</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="6">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color">
+                                    <label class="form-check-label" for="color">Crimson Glow</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color1">
+                                    <label class="form-check-label" for="color1">Ocean Blue</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color2" checked>
+                                    <label class="form-check-label" for="color2">Emerald Envy</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color3">
+                                    <label class="form-check-label" for="color3">Sunset Orange</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color4" checked>
+                                    <label class="form-check-label" for="color4">Midnight Black</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color5">
+                                    <label class="form-check-label" for="color5">Blush Pink</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color6" checked>
+                                    <label class="form-check-label" for="color6">Ivory Elegance</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color7">
+                                    <label class="form-check-label" for="color7">Royal Purple</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color8">
+                                    <label class="form-check-label" for="color8">Slate Grey</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color9" checked>
+                                    <label class="form-check-label" for="color9">Golden Hue</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color10">
+                                    <label class="form-check-label" for="color10">Forest Green</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color11">
+                                    <label class="form-check-label" for="color11">Steel Blue</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color12">
+                                    <label class="form-check-label" for="color12">Burnt Sienna</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="color13">
+                                    <label class="form-check-label" for="color13">Soft Lavender</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="7">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion">
+                                    <label class="form-check-label" for="occasion">Gala Glamour</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion1">
+                                    <label class="form-check-label" for="occasion1">Weekend Getaway</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion2">
+                                    <label class="form-check-label" for="occasion2">Office Chic</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion3">
+                                    <label class="form-check-label" for="occasion3">Bridal Bliss</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion4">
+                                    <label class="form-check-label" for="occasion4">Date Night Delights</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion5">
+                                    <label class="form-check-label" for="occasion5">Holiday Festivities</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion6">
+                                    <label class="form-check-label" for="occasion6">Beach Bliss</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion7">
+                                    <label class="form-check-label" for="occasion7">Casual Comfort</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion8">
+                                    <label class="form-check-label" for="occasion8">Formal Finesse</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion9">
+                                    <label class="form-check-label" for="occasion9">Festival Fun</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion10">
+                                    <label class="form-check-label" for="occasion10">Cocktail Couture</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion11">
+                                    <label class="form-check-label" for="occasion11">Weekend Warrior</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion12">
+                                    <label class="form-check-label" for="occasion12">Holiday Sparkle</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="occasion13">
+                                    <label class="form-check-label" for="occasion13">Summer Soiree</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="8">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve">
+                                    <label class="form-check-label" for="sleeve">Cap Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve1">
+                                    <label class="form-check-label" for="sleeve1">Batwing Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve2">
+                                    <label class="form-check-label" for="sleeve2">Bell Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve3">
+                                    <label class="form-check-label" for="sleeve3">Bishop Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve4">
+                                    <label class="form-check-label" for="sleeve4">Kimono Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve5">
+                                    <label class="form-check-label" for="sleeve5">Puff Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve6">
+                                    <label class="form-check-label" for="sleeve6">Flutter Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve7">
+                                    <label class="form-check-label" for="sleeve7">Three-Quarter Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve8">
+                                    <label class="form-check-label" for="sleeve8">Long Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve9">
+                                    <label class="form-check-label" for="sleeve9">Short Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve10" checked>
+                                    <label class="form-check-label" for="sleeve10">Cold Shoulder Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve11">
+                                    <label class="form-check-label" for="sleeve11">Raglan Sleeve</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve12">
+                                    <label class="form-check-label" for="sleeve12">Slevelette</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="sleeve13">
+                                    <label class="form-check-label" for="sleeve13">Dolman Sleeve</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="9">
+                            <div class="form-box m-b-18">
+                                <input type="search" class="form-control" placeholder="Search here..">
+                            </div>
+                            <ul class="filter-box-list">
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount" checked>
+                                    <label class="form-check-label" for="discount">Seasonal Sale</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount1">
+                                    <label class="form-check-label" for="discount1">Weekly Discounts</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount2">
+                                    <label class="form-check-label" for="discount2">Flash Deals</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount3">
+                                    <label class="form-check-label" for="discount3">End-of-Season Sale</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount4">
+                                    <label class="form-check-label" for="discount4">Special Offers</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount5">
+                                    <label class="form-check-label" for="discount5">Limited-Time Discounts</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount6">
+                                    <label class="form-check-label" for="discount6">Promotion Zone</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount7">
+                                    <label class="form-check-label" for="discount7">Sale Event</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount8">
+                                    <label class="form-check-label" for="discount8">Weekly Deals</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount9">
+                                    <label class="form-check-label" for="discount9">End-of-Line Discounts</label>
+                                </li>
+                                <li class="checkbox-form filter-box">
+                                    <input class="form-check-input" type="checkbox" value="" id="discount10">
+                                    <label class="form-check-label" for="discount10">Discounted Finds</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Filter Offcanvas End -->
+
+    <!-- Bootstrap Javascript -->
+    <script src="./assets/js/vendor/bootstrap.js"></script>
+
+    <!-- Service Worker Javascript -->
+    <script src="./assets/js/sw-setup.js"></script>
+
+    <!-- Range Slider Javascript -->
+    <script src='./assets/js/nouislider.js'></script>
+    <script src="./assets/js/range-slider.js"></script>
+
+    <!-- Loader Javascript -->
+    <script src="./assets/js/skeleton-loader.js"></script>
+
+    <!-- Theme Settings Javascript -->
+    <script src="./assets/js/theme-option.js"></script>
+</body>
+
+</html>
