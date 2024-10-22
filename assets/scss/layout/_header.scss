@@ -1,5 +1,5 @@
 /**=====================
-    4.2 Header css start
+    4.3 Header css start
 ==========================**/
 .header-section {
   padding-block: 16px;
@@ -124,7 +124,6 @@
   background-color: rgba(var(--theme-color), 1);
   padding-block: 17px 13px;
   color: rgba(var(--white), 1);
-  // position: relative;
 
   &::before {
     content: unset;
@@ -220,5 +219,5 @@
 }
 
 /**=====================
-    4.2 Header css end
+    4.3 Header css end
 ==========================**/

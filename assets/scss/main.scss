@@ -20,28 +20,32 @@
 ////* 3.2 Button CSS *////
 ////* 3.3 Form CSS *////
 ////* 3.4 Language CSS *////
-////* 3.5 Mobile menu CSS *////
-////* 3.6 Modal CSS *////
-////* 3.7 Nav-tab CSS *////
-////* 3.8 Offcanvas CSS *////
-////* 3.9 Rating CSS *////
-////* 3.10 Slider CSS *////
-////* 3.11 Title CSS *////
+////* 3.5 Loader CSS *////
+////* 3.6 Mobile Menu CSS *////
+////* 3.7 Modal CSS *////
+////* 3.8 Nav-tab CSS *////
+////* 3.9 Notification CSS *////
+////* 3.10 Offcanvas CSS *////
+////* 3.11 Pagination CSS *////
+////* 3.12 Popover CSS *////
+////* 3.13 Rating CSS *////
+////* 3.14 Slider CSS *////
+////* 3.15 Title CSS *////
 
 ////* Layout Files *////
-////* 4.1 Category css *////
-////* 4.2 Header CSS *////
-////* 4.3 Loader CSS *////
-////* 4.4 Product box CSS *////
-////* 4.5 Splash screen CSS *////
+////* 4.1 Banner CSS *////
+////* 4.2 Category CSS *////
+////* 4.3 Header CSS *////
+////* 4.4 Loader CSS *////
+////* 4.5 Product Box CSS *////
+////* 4.6 Splash screen CSS *////
 
 ////* Pages Files *////
 ////* 5.1 Authentication CSS *////
 ////* 5.2 Inner pages CSS *////
 
 ////* Themes Files *////
-////* 6.1 Dark CSS *////
-////* 6.2 RTL CSS *////
+////* 6.1 RTL CSS *////
 
 /* Remix icon css */
 @import "./../css/vendor/remixicon.css";
@@ -64,13 +68,13 @@
 @import "components/form";
 @import "components/language";
 @import "components/loader";
-@import "components/collapse";
 @import "components/notification";
 @import "components/mobile-menu";
 @import "components/modal";
 @import "components/popover";
 @import "components/nav-tab";
 @import "components/offcanvas";
+@import "components/pagination";
 @import "components/rating";
 @import "components/slider";
 @import "components/title";
@@ -89,5 +93,4 @@
 @import "pages/element";
 
 /* Theme Setting */
-@import "theme-setting/dark";
 @import "theme-setting/rtl";

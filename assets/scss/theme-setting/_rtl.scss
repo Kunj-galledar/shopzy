@@ -1,5 +1,5 @@
 /**=====================
-    6.2 RTL css start
+    6.1 RTL css start
 ==========================**/
 [dir="rtl"] {
 
@@ -28,6 +28,36 @@
         i {
             left: unset;
             right: 18px;
+        }
+    }
+
+    .page-item {
+        &:not(:first-child) {
+            .page-link {
+                margin-left: unset;
+                margin-right: calc(var(--bs-border-width) * -1);
+            }
+        }
+
+        &:first-child {
+            .page-link {
+                border-radius: 0 var(--bs-pagination-border-radius) var(--bs-pagination-border-radius) 0;
+            }
+        }
+
+        &:last-child {
+            .page-link {
+                border-radius: var(--bs-pagination-border-radius) 0 0 var(--bs-pagination-border-radius);
+            }
+        }
+    }
+
+    .team-section {
+        .bg-box {
+            &::before {
+                left: unset;
+                right: 0;
+            }
         }
     }
 
@@ -218,5 +248,5 @@
 }
 
 /**=====================
-    6.2 RTL css end
+    6.1 RTL css end
 ==========================**/

@@ -1,7 +1,9 @@
 /**=====================
-    3.8 Offcanvas css start
+    3.10 Offcanvas css start
 ==========================**/
 .offcanvas {
+  background-color: rgba(var(--white), 1);
+  
   &.theme-offcanvas {
     border: none;
     border-radius: 20px 20px 0 0;
@@ -18,8 +20,7 @@
     }
 
     .offcanvas-body {
-      padding-block: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)))
-        calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
+      padding-block: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
   }
 
@@ -44,7 +45,7 @@
             background-color: rgba(var(--light-gray), 1);
           }
 
-          > div {
+          >div {
             width: calc(100% - 42px - 15px);
           }
 
@@ -85,7 +86,7 @@
     transition: none;
     height: 100vh;
 
-    ~ .offcanvas-backdrop {
+    ~.offcanvas-backdrop {
       transition: none;
     }
 
@@ -97,12 +98,12 @@
   &.edit-address-offcanvas {
     .checkbox-form {
       &:checked {
-        ~ .form-check-label {
+        ~.form-check-label {
           color: rgba(var(--title-color), 1);
         }
       }
 
-      ~ .form-check-label {
+      ~.form-check-label {
         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
         color: rgba(var(--content-color), 1);
         font-weight: normal;
@@ -127,7 +128,7 @@
           margin: 0;
 
           &:checked {
-            ~ .form-check-label {
+            ~.form-check-label {
               background-color: rgba(var(--theme-color), 1);
               color: #fff;
 
@@ -218,25 +219,31 @@
       right: 15px;
       top: 15px;
     }
+
     .media {
       display: flex;
       align-items: center;
       gap: 15px;
+
       img {
         height: 45px;
       }
+
       h5 {
         font-size: 15px;
         font-weight: 500;
         margin-bottom: 6px;
       }
     }
+
     .btn {
       font-size: 14px;
     }
+
     .media-body {
       line-height: 1;
     }
+
     .btn-div {
       text-align: right;
       margin-top: 20px;
@@ -245,5 +252,5 @@
 }
 
 /**=====================
-    3.8 Offcanvas css end
+    3.10 Offcanvas css end
 ==========================**/

@@ -1,6 +1,18 @@
 /**=====================
-    3.6 Modal css start
+    3.7 Modal css start
 ==========================**/
+.modal {
+  .modal-content {
+    border: none;
+    background-color: rgba(var(--white), 1);
+
+    .modal-header,
+    .modal-footer {
+      border-color: rgba(var(--border-color), 1);
+    }
+  }
+}
+
 .theme-modal {
   .modal-dialog {
     max-width: unset;
@@ -68,5 +80,5 @@
 }
 
 /**=====================
-    3.6 Modal css end
+    3.7 Modal css end
 ==========================**/

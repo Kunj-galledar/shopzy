@@ -1,5 +1,5 @@
 /**=====================
-    5.2 Inner Pages css start
+    5.3 Inner Pages css start
 ==========================**/
 /* Cart Section */
 .cart-section {
@@ -85,11 +85,7 @@
           display: flex;
           align-items: center;
           flex-wrap: wrap;
-          width: calc(
-            100% -
-              calc(102px + ((117) - (102)) * ((100vw - 320px) / (1920 - 320))) -
-              calc(9px + ((14) - (9)) * ((100vw - 320px) / (1920 - 320)))
-          );
+          width: calc(100% - calc(102px + ((117) - (102)) * ((100vw - 320px) / (1920 - 320))) - calc(9px + ((14) - (9)) * ((100vw - 320px) / (1920 - 320))));
 
           .btn {
             font-size: 14px;
@@ -100,7 +96,7 @@
             padding: 0;
             border-radius: 0;
 
-            + .btn {
+            +.btn {
               border-left: 1px solid rgba(var(--border-color), 1);
               padding-left: 8px;
               margin-left: 8px;
@@ -122,6 +118,7 @@
 .total-price-section {
   .price-title {
     margin-bottom: 14px;
+
     h3 {
       font-size: 17px;
     }
@@ -167,9 +164,7 @@
       background-color: rgba(var(--white), 1);
       border-radius: 16px;
       border: 1px solid rgba(var(--border-color), 1);
-      padding: calc(12px + ((16) - (12)) * ((100vw - 320px) / (1920 - 320)))
-        calc(17px + ((21) - (17)) * ((100vw - 320px) / (1920 - 320)))
-        calc(19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(12px + ((16) - (12)) * ((100vw - 320px) / (1920 - 320))) calc(17px + ((21) - (17)) * ((100vw - 320px) / (1920 - 320))) calc(19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320)));
       display: flex;
       align-items: flex-start;
       gap: 14px;
@@ -262,7 +257,7 @@
             width: 100%;
             display: block;
 
-            + li {
+            +li {
               margin-top: 9px;
               padding-top: 9px;
               border-top: 1px solid rgba(var(--border-color), 1);
@@ -309,9 +304,7 @@
       background-color: rgba(var(--white), 1);
       border-radius: 12px;
       border: 1px solid rgba(var(--border-color), 1);
-      padding: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)))
-        calc(17px + (21 - 17) * ((100vw - 320px) / (1920 - 320)))
-        calc(19px + (23 - 19) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320))) calc(17px + (21 - 17) * ((100vw - 320px) / (1920 - 320))) calc(19px + (23 - 19) * ((100vw - 320px) / (1920 - 320)));
       display: flex;
       align-items: flex-start;
       gap: 14px;
@@ -487,7 +480,7 @@
       display: block;
       width: 100%;
 
-      + li {
+      +li {
         margin-top: 18px;
         padding-top: 18px;
         border-top: 1px solid rgba(var(--border-color), 1);
@@ -509,8 +502,7 @@
 
 .more-option {
   .more-option-list {
-    padding: calc(21px + (27 - 21) * ((100vw - 320px) / (1920 - 320)))
-      calc(21px + (29 - 21) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(21px + (27 - 21) * ((100vw - 320px) / (1920 - 320))) calc(21px + (29 - 21) * ((100vw - 320px) / (1920 - 320)));
     background-color: rgba(var(--theme-color), 0.1);
     border-radius: 9px;
     justify-content: space-between;
@@ -520,10 +512,8 @@
     text-align: center;
 
     i {
-      @include pseudowh(
-        $width: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320))),
-        $height: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320)))
-      );
+      @include pseudowh($width: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320))),
+        $height: calc(46px + (48 - 46) * ((100vw - 320px) / (1920 - 320))));
       background-color: rgba(var(--theme-color), 1);
       color: #fff;
       font-size: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
@@ -645,16 +635,14 @@
     margin-block: 18px 13px;
     background-color: rgba(var(--white), 1);
     background-size: 16px 16px;
-    background-image: linear-gradient(
-      45deg,
-      rgba(var(--theme-color), 0.06) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(var(--theme-color), 0.06) 50%,
-      rgba(var(--theme-color), 0.06) 75%,
-      transparent 75%,
-      transparent
-    );
+    background-image: linear-gradient(45deg,
+        rgba(var(--theme-color), 0.06) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(var(--theme-color), 0.06) 50%,
+        rgba(var(--theme-color), 0.06) 75%,
+        transparent 75%,
+        transparent);
   }
 
   .order-tracking-box {
@@ -735,7 +723,7 @@
     gap: 21px;
     margin-top: 21px;
 
-    > li {
+    >li {
       p {
         font-size: 14px;
         font-weight: 400;
@@ -879,7 +867,7 @@
       display: block;
       width: 100%;
 
-      + li {
+      +li {
         padding-top: 15px;
         margin-top: 15px;
         border-top: 1px solid rgba(var(--border-color), 1);
@@ -1067,10 +1055,8 @@
       gap: 5px;
 
       img {
-        @include pseudowh(
-          $width: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320))),
-          $height: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320)))
-        );
+        @include pseudowh($width: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320))),
+          $height: calc(33px + ((40) - (33)) * ((100vw - 320px) / (1920 - 320))));
         object-fit: contain;
       }
 
@@ -1127,8 +1113,7 @@
     li {
       a {
         font-size: 14px;
-        padding: calc(9px + ((11) - (9)) * ((100vw - 320px) / (1920 - 320)))
-          calc(18px + ((24) - (18)) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(9px + ((11) - (9)) * ((100vw - 320px) / (1920 - 320))) calc(18px + ((24) - (18)) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 500;
         color: rgba(var(--title-color), 1);
         border-radius: 100px;
@@ -1181,9 +1166,7 @@
 .empty-section {
   @include flex_common;
   padding: 0;
-  padding-top: calc(
-    98px + (158 - 98) * ((100vw - 320px) / (1920 - 320))
-  ) !important;
+  padding-top: calc(98px + (158 - 98) * ((100vw - 320px) / (1920 - 320))) !important;
 
   img {
     width: 55%;
@@ -1299,14 +1282,66 @@
 /* Order Success */
 .order-success-section {
   img {
-    @include pseudowh(
-      $width: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))),
-      $height: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320)))
-    );
+    @include pseudowh($width: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))),
+      $height: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))));
     object-fit: cover;
   }
 }
 
+// .page-list-section {
+//   .page-list {
+//     display: grid;
+//     gap: 7px;
+
+//     li {
+//       a {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         color: rgba(var(--title-color), 1);
+//         font-size: 15px;
+
+//         &::after {
+//           content: "\ea6e";
+//           @include icon;
+//           line-height: 1;
+//           font-size: 17px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.page-list-section {
+  .page-list {
+    display: grid;
+    // gap: 7px;
+
+    li {
+      +li {
+        margin-top: 6px;
+        padding-top: 6px;
+        border-top: 1px solid rgba(var(--border-color), 1);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(var(--title-color), 1);
+        font-size: 15px;
+
+        &::after {
+          content: "\ea6e";
+          @include icon;
+          line-height: 1;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
 /**=====================
-    5.2 inner pages css end
+    5.3 inner pages css end
 ==========================**/
