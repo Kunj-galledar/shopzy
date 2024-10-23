@@ -2,62 +2,64 @@
     3.8 nav tab css start
 ==========================**/
 .custom-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
 
-    .nav-item {
-        display: block;
-        width: 100%;
+  .nav-item {
+    display: block;
+    width: 100%;
 
-        .nav-link {
-            position: relative;
-            color: rgba(var(--title-color), 1);
-            box-shadow: unset;
-            transition: all 0.25s ease-in-out;
-            font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1920 - 320)));
-            font-weight: 500;
-            line-height: 1.7;
-            width: 100%;
-            border-bottom: 1px solid rgb(238, 238, 238);
-            padding: calc(18px + (23 - 18) * ((100vw - 320px) / (1920 - 320))) calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-            border-radius: 0;
+    .nav-link {
+      position: relative;
+      color: rgba(var(--title-color), 1);
+      box-shadow: unset;
+      transition: all 0.25s ease-in-out;
+      font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 500;
+      line-height: 1.7;
+      width: 100%;
+      border-bottom: 1px solid rgb(238, 238, 238);
+      padding: calc(18px + (23 - 18) * ((100vw - 320px) / (1920 - 320)))
+        calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+      border-radius: 0;
 
-            body.dark-mode & {
-                border-color: rgba(42, 42, 42,1);
-            }
+      body.dark-mode & {
+        border-color: rgba(42, 42, 42, 1);
+      }
 
-            &::before {
-                @include pos;
-                top: 0;
-                right: 0;
-                @include pseudowh($width: 1px, $height: 100%);
-                border-right: 1px solid rgba(var(--theme-color), 1);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.25s ease-in-out;
-            }
+      &::before {
+        @include pos;
+        top: 0;
+        right: 0;
+        @include pseudowh($width: 1px, $height: 100%);
+        border-right: 1px solid rgba(var(--theme-color), 1);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease-in-out;
+      }
 
-            span {
-                @include line($line: 2);
-            }
+      span {
+        @include line($line: 2);
+        font-size: 15px;
+      }
 
-            &.active {
-                background-color: rgba(var(--theme-color), 0.1);
-                color: rgba(var(--theme-color), 1);
+      &.active {
+        background-color: rgba(var(--theme-color), 0.1);
+        color: rgba(var(--theme-color), 1);
 
-                &::before {
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
+        &::before {
+          opacity: 1;
+          visibility: visible;
         }
+      }
     }
+  }
 }
 
 .custom-tab {
-    padding: 17px;
-    height: 100%;
+  padding: 17px;
+  height: 100%;
 }
 
 /**=====================

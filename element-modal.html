@@ -54,34 +54,38 @@
 
     <!-- Element Section Start -->
     <section class="element-section section-b-space">
-        <div class="mobile-container">
-            <ul class="element-list gap-0">
-                <li>
+        <ul class="element-list gap-0">
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Template modal</h4>
                     </div>
                     <button data-bs-target="#templateModal" data-bs-toggle="modal"
                         class="btn bg-theme-color text-white">Template modal</button>
-                    <div class="divider"></div>
-                </li>
-                <li>
+                </div>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Static backdrop modal</h4>
                     </div>
                     <button data-bs-target="#staticBackdrop" data-bs-toggle="modal"
                         class="btn bg-theme-color text-white">Static backdrop modal</button>
-                    <div class="divider"></div>
-                </li>
-                <li>
+                </div>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Scrolling long content modal</h4>
                     </div>
                     <button data-bs-target="#scrollingModal" data-bs-toggle="modal"
                         class="btn bg-theme-color text-white">Scrolling long content modal</button>
-                    <div class="divider"></div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="divider"></div>
+            </li>
+        </ul>
     </section>
     <!-- Element Section End -->
 
@@ -170,16 +174,9 @@
     <!-- Service Worker Javascript -->
     <script src="./assets/js/sw-setup.js"></script>
 
-    <!-- Theme Settings Javascript -->
-    <!-- <script src="./assets/js/theme-option.js"></script> -->
+    <!-- Theme Setting Javascript -->
+    <script src="./assets/js/theme-option.js"></script>
 
-    <script>
-        window.addEventListener("load", (event) => {
-            var myOffcanvas = document.getElementById("offcanvas");
-            var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
-            bsOffcanvas.show();
-        });
-    </script>
 </body>
 
 </html>

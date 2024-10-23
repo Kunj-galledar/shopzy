@@ -30,6 +30,7 @@
 
       i {
         line-height: 1;
+        color: rgba(var(--theme-color), 1);
       }
     }
   }
@@ -58,10 +59,11 @@
     .price-text {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 5px;
       font-weight: 500;
       margin-top: 9px;
-      font-size: calc(16px + ((18) - (16)) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(15px + ((18) - (15)) * ((100vw - 320px) / (1920 - 320)));
 
       del {
         color: rgba(var(--content-color), 1);

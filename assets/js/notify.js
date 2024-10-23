@@ -1,7 +1,7 @@
 /*=====================
     Notification Js
 ==========================*/
-const notifyBoxes = document.querySelectorAll('.notify-box');
+const notifyBoxes = document.querySelectorAll('.notify-box, .product-option');
 const notificationBox = document.getElementById('alert-box');
 const notificationText = notificationBox.querySelector('p');
 

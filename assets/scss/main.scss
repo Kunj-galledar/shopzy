@@ -42,7 +42,8 @@
 
 ////* Pages Files *////
 ////* 5.1 Authentication CSS *////
-////* 5.2 Inner pages CSS *////
+////* 5.2 Element CSS *////
+////* 5.3 Inner pages CSS *////
 
 ////* Themes Files *////
 ////* 6.1 RTL CSS *////
@@ -68,13 +69,13 @@
 @import "components/form";
 @import "components/language";
 @import "components/loader";
-@import "components/notification";
 @import "components/mobile-menu";
 @import "components/modal";
-@import "components/popover";
 @import "components/nav-tab";
+@import "components/notification";
 @import "components/offcanvas";
 @import "components/pagination";
+@import "components/popover";
 @import "components/rating";
 @import "components/slider";
 @import "components/title";
@@ -89,8 +90,8 @@
 
 /* Pages */
 @import "pages/auth";
-@import "pages/inner-page";
 @import "pages/element";
+@import "pages/inner-page";
 
 /* Theme Setting */
 @import "theme-setting/rtl";

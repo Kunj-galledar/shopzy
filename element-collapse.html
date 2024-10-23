@@ -51,9 +51,9 @@
 
     <!-- Element Section Start -->
     <section class="element-section section-b-space">
-        <div class="mobile-container">
-            <ul class="element-list gap-4">
-                <li>
+        <ul class="element-list gap-4">
+            <li>
+                <div class="px-3">
                     <div class="title m-b-10">
                         <h4>Collapse Box</h4>
                     </div>
@@ -68,10 +68,10 @@
                             revealed when the user activates the relevant trigger.
                         </div>
                     </div>
-                    <div class="divider"></div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="divider"></div>
+            </li>
+        </ul>
     </section>
     <!-- Element Section End -->
 
@@ -81,13 +81,8 @@
     <!-- Service Worker Javascript -->
     <script src="./assets/js/sw-setup.js"></script>
 
-    <!-- Theme Settings Javascript -->
-    <!-- <script src="./assets/js/theme-option.js"></script> -->
-
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    </script>
+    <!-- Theme Setting Javascript -->
+    <script src="./assets/js/theme-option.js"></script>
 </body>
 
 </html>

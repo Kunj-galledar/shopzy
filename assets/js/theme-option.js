@@ -1,84 +1,52 @@
-// const toggleSwitch = document.getElementById('dark');
-// const body = document.body;
-
-// // Check localStorage for the dark mode setting
-// const darkMode = localStorage.getItem('darkMode');
-
-// if (darkMode === 'enabled') {
-//     body.classList.add('dark-mode');
-//     toggleSwitch.checked = true;
-// }
-
-// toggleSwitch.addEventListener('change', function () {
-//     if (toggleSwitch.checked) {
-//         body.classList.add('dark-mode');
-//         localStorage.setItem('darkMode', 'enabled');
-//     } else {
-//         body.classList.remove('dark-mode');
-//         localStorage.setItem('darkMode', 'disabled');
-//     }
-// });
-
-
-// document.getElementById('rtl').addEventListener('change', function () {
-//     // Get the current stylesheet
-//     const stylesheet = document.querySelector('link[rel="stylesheet"]');
-
-//     // Toggle between two stylesheets based on the checkbox state
-//     if (this.checked) {
-//         stylesheet.setAttribute('href', './assets/css/vendor/bootstrap.rtl.css');
-//     } else {
-//         stylesheet.setAttribute('href', './assets/css/vendor/bootstrap.css');
-//     }
-// });
-
-// document.getElementById('rtl').addEventListener('change', function () {
-//     // Apply RTL if the checkbox is checked, otherwise LTR
-//     document.body.dir = this.checked ? 'rtl' : 'ltr';
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-const toggleSwitch = document.getElementById('dark');
+/*=====================
+    Theme Setting Js
+==========================*/
+const darkToggle = document.getElementById('dark');
+const rtlToggle = document.getElementById('rtl');
 const body = document.body;
+const html = document.documentElement;
+let bootstrapLink = document.querySelector('link[href*="bootstrap"]');
 
-// Check localStorage for the dark mode setting
-const darkMode = localStorage.getItem('darkMode');
+function applySavedSettings() {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        if (darkToggle) darkToggle.checked = true;
+    }
 
-if (darkMode === 'enabled') {
-    body.classList.add('dark-mode');
-    toggleSwitch.checked = true;
+    if (localStorage.getItem('rtlMode') === 'enabled') {
+        html.setAttribute('dir', 'rtl');
+        bootstrapLink.href = './assets/css/vendor/bootstrap.rtl.css';
+        if (rtlToggle) rtlToggle.checked = true;
+    }
 }
 
-toggleSwitch.addEventListener('change', function () {
-    if (toggleSwitch.checked) {
-        body.classList.add('dark-mode');
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        body.classList.remove('dark-mode');
-        localStorage.setItem('darkMode', 'disabled');
-    }
-});
+// Load saved settings from localStorage on page load
+window.onload = applySavedSettings;
 
-document.getElementById('rtl').addEventListener('change', function () {
-    // Get the current stylesheet
-    const stylesheet = document.querySelector('link[rel="stylesheet"]');
+// Dark Mode Toggle
+if (darkToggle) {
+    darkToggle.addEventListener('change', function () {
+        if (this.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.removeItem('darkMode');
+        }
+    });
+}
 
-    // Toggle between two stylesheets and apply RTL or LTR direction based on the checkbox state
-    if (this.checked) {
-        stylesheet.setAttribute('href', './assets/css/vendor/bootstrap.rtl.css');
-        document.body.dir = 'rtl'; // Set body direction to RTL
-    } else {
-        stylesheet.setAttribute('href', './assets/css/vendor/bootstrap.css');
-        document.body.dir = 'ltr'; // Set body direction to LTR
-    }
-});
+// RTL Mode Toggle
+if (rtlToggle) {
+    rtlToggle.addEventListener('change', function () {
+        if (this.checked) {
+            html.setAttribute('dir', 'rtl');
+            bootstrapLink.href = './assets/css/vendor/bootstrap.rtl.css';
+            localStorage.setItem('rtlMode', 'enabled');
+        } else {
+            html.removeAttribute('dir');
+            bootstrapLink.href = './assets/css/vendor/bootstrap.css';
+            localStorage.removeItem('rtlMode');
+        }
+    });
+}

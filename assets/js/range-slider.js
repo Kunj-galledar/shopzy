@@ -1,7 +1,7 @@
  /*=====================
     Ranger Slider Js
 ==========================*/
-const slider = document.getElementById('sliderPrice');
+ const slider = document.getElementById('sliderPrice');
  const rangeMin = parseInt(slider.dataset.min);
  const rangeMax = parseInt(slider.dataset.max);
  const step = parseInt(slider.dataset.step);
@@ -16,14 +16,12 @@ const slider = document.getElementById('sliderPrice');
          'max': rangeMax
      },
 
-     // make numbers whole
      format: {
          to: value => value,
          from: value => value
      }
  });
 
- // bind inputs with noUiSlider
  slider.noUiSlider.on('update', (values, handle) => {
      filterInputs[handle].value = values[handle];
  });

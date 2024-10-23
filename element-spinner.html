@@ -51,9 +51,10 @@
 
     <!-- Element Section Start -->
     <section class="element-section section-b-space">
-        <div class="mobile-container">
-            <ul class="element-list gap-4">
-                <li>
+
+        <ul class="element-list gap-4">
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Spinner theme color variation</h4>
                     </div>
@@ -63,9 +64,11 @@
                     <div class="spinner-grow text-theme-color">
                         <span class="visually-hidden">Loading...</span>
                     </div>
-                    <div class="divider"></div>
-                </li>
-                <li>
+                </div>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Spinner color variation</h4>
                     </div>
@@ -96,10 +99,12 @@
                     <div class="spinner-border text-theme-color">
                         <span class="visually-hidden">Loading...</span>
                     </div>
-                    <div class="divider"></div>
-                </li>
+                </div>
+                <div class="divider"></div>
+            </li>
 
-                <li>
+            <li>
+                <div class="mobile-container">
                     <div class="title m-b-10">
                         <h4>Growing color variation</h4>
                     </div>
@@ -130,10 +135,10 @@
                     <div class="spinner-grow text-theme-color">
                         <span class="visually-hidden">Loading...</span>
                     </div>
-                    <div class="divider"></div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="divider"></div>
+            </li>
+        </ul>
     </section>
     <!-- Element Section End -->
 
@@ -143,13 +148,8 @@
     <!-- Service Worker Javascript -->
     <script src="./assets/js/sw-setup.js"></script>
 
-    <!-- Theme Settings Javascript -->
-    <!-- <script src="./assets/js/theme-option.js"></script> -->
-
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    </script>
+    <!-- Theme Setting Javascript -->
+    <script src="./assets/js/theme-option.js"></script>
 </body>
 
 </html>

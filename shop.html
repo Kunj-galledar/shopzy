@@ -31,7 +31,7 @@
     <link rel='stylesheet' href='./assets/css/nouislider.css'>
 
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.rtl.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.css">
 
     <!-- Style Link -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -145,9 +145,18 @@
 
                 <h4>Electronics</h4>
 
-                <a href="#!">
+                <a href="#!" id="search-btn">
                     <i class="ri-search-line"></i>
                 </a>
+
+                <div class="header-search-box" id="search-box">
+                    <div class="position-relative">
+                        <input class="form-control" placeholder="Search here.." />
+                        <div class="close-btn" id="close-search">
+                            <i class="ri-close-line"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -155,28 +164,28 @@
 
     <!-- Mobile Menu Start -->
     <ul class="mobile-menu-list">
-        <li class="active">
+        <li>
             <a href="home.html">
                 <i class="ri-home-3-line"></i>
             </a>
         </li>
         <li>
-            <a href="#!">
+            <a href="search.html">
                 <i class="ri-menu-search-line"></i>
             </a>
         </li>
         <li>
-            <a href="#!">
+            <a href="notification.html">
                 <i class="ri-notification-3-line"></i>
             </a>
         </li>
         <li>
-            <a href="#!">
+            <a href="cart.html">
                 <i class="ri-shopping-cart-line"></i>
             </a>
         </li>
         <li>
-            <a href="#!">
+            <a href="profile.html">
                 <i class="ri-user-3-line"></i>
             </a>
         </li>
@@ -229,15 +238,16 @@
             <div class="row g-3">
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/1.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
-                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <a href="product.html" class="h4">Laptop,with High Performance Quad Core-12th Alder Lake
+                                N97</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -256,23 +266,24 @@
                                         <i class="ri-star-line"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(110)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$389 <del>$450</del> <span>15% off</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/2.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
-                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <a href="product.html" class="h4">Smart Watch for Men Women Answer/Make Calls, 1.96" HD
+                                Fitness Watch with Heart Rate Monitor Sleep Monitor</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -288,26 +299,27 @@
                                         <i class="ri-star-line fill"></i>
                                     </li>
                                     <li>
-                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line fill"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(658)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$39 <del>$99</del> <span>60% off</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/6.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
-                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <a href="product.html" class="h4">Watch Series 9 GPS 41mm Midnight Aluminium Case with
+                                Midnight Sport Band</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -326,23 +338,24 @@
                                         <i class="ri-star-line"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(45)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$45 <del>$50</del> <span>5% off</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/5.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
-                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <a href="product.html" class="h4">14 inch Win 10/11 brand new notebook HD screen laptop
+                                computer laptops</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -361,23 +374,24 @@
                                         <i class="ri-star-line"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(1800)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$100 <del>$110</del> <span>5% off</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/3.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Samsung Galaxy Book 2 Intel Core i5 12th Gen 1235U - (8
-                                GB/512 GB SSD/Windows 11 Home) NP550 Thin and Light Laptop</a>
+                            <a href="product.html" class="h4">Shopzy Essentials Men's Regular-Fit Long-Sleeve
+                                T-Shirt</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -393,26 +407,27 @@
                                         <i class="ri-star-line fill"></i>
                                     </li>
                                     <li>
-                                        <i class="ri-star-line"></i>
+                                        <i class="ri-star-line fill"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(500)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$14 <del>$28</del> <span>50% off</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="product-box">
-                        <a href="product.html" class="product-image">
-                            <img src="./assets/images/product/2.png" class="img-fluid" alt="">
+                        <div class="product-image">
+                            <a href="product.html"><img src="./assets/images/product/4.png" class="img-fluid"
+                                    alt=""></a>
                             <div class="product-option">
                                 <i class="ri-heart-line"></i>
                             </div>
-                        </a>
+                        </div>
                         <div class="product-detail">
-                            <a href="product.html" class="h4">Zenith Crown: 1.9 Screen, BT Calling, Working Dial, Zinc
-                                Alloy Frame, 950 Nits, SpO2 Smartwatch (Black Strap, Adjustable)</a>
+                            <a href="product.html" class="h4">Bluetooth Speaker with HD Sound, Portable Wireless, IPX5
+                                Waterproof, Up to 20H Playtime</a>
                             <div class="rating-box">
                                 <ul class="rating">
                                     <li>
@@ -425,15 +440,15 @@
                                         <i class="ri-star-line fill"></i>
                                     </li>
                                     <li>
-                                        <i class="ri-star-line fill"></i>
+                                        <i class="ri-star-line"></i>
                                     </li>
                                     <li>
                                         <i class="ri-star-line"></i>
                                     </li>
                                 </ul>
-                                <span>(2000)</span>
+                                <span>(367)</span>
                             </div>
-                            <h3 class="price-text">$20 <del>$25</del> <span>5% off</span></h3>
+                            <h3 class="price-text">$26 <del>$60</del> <span>55% off</span></h3>
                         </div>
                     </div>
                 </div>
@@ -1063,6 +1078,12 @@
     </div>
     <!-- Filter Offcanvas End -->
 
+    <!-- Notify Box Start -->
+    <div class="alert-box" id="alert-box">
+        <p>Success! We have moved your product to the wishlist.</p>
+    </div>
+    <!-- Notify Box End -->
+
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
 
@@ -1070,15 +1091,21 @@
     <script src="./assets/js/sw-setup.js"></script>
 
     <!-- Range Slider Javascript -->
-    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.js'></script> -->
-    <script src='./assets/js/nouislider.js'></script>
+    <script src='./assets/js/vendor/nouislider.js'></script>
     <script src="./assets/js/range-slider.js"></script>
+
+    <!-- Search Open Javascript -->
+    <script src="./assets/js/search-open.js"></script>
 
     <!-- Loader Javascript -->
     <script src="./assets/js/skeleton-loader.js"></script>
 
-    <!-- Theme Settings Javascript -->
+    <!-- Notification Javascript -->
+    <script src="./assets/js/notify.js"></script>
+
+    <!-- Theme Setting Javascript -->
     <script src="./assets/js/theme-option.js"></script>
+
 </body>
 
 </html>
