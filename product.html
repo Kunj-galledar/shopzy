@@ -52,7 +52,7 @@
         </header>
         <section class="product-section">
             <div class="mobile-container">
-                <div class="product-slider">
+                <div class="product-slider-loader">
                     <div class="product-image">
                     </div>
                 </div>
@@ -61,16 +61,24 @@
                     <span class="placeholder sm-h col-10 mb-2"></span>
                     <span class="placeholder sm-h col-7 mb-2"></span>
                     <span class="placeholder sm-h col-5 mb-2"></span>
-                    <span class="placeholder sm-h col-7 mb-2"></span>
+                    <div>
+                        <span class="placeholder sm-h col-2 mb-2"></span>
+                        <span class="placeholder sm-h col-3 mb-2"></span>
+                        <span class="placeholder sm-h col-2 mb-2"></span>
+                    </div>
                     <span class="placeholder sm-h col-5 mb-2"></span>
                     <div class="color-variant-box">
                         <span class="placeholder sm-h col-3 mb-2"></span>
-                        <span class="placeholder col-9"></span>
+                        <span class="placeholder col-5 d-block"></span>
                     </div>
 
                     <div class="store-variant-box">
                         <span class="placeholder sm-h col-3 mb-2"></span>
-                        <span class="placeholder col-10"></span>
+                        <div>
+                            <span class="placeholder col-3"></span>
+                            <span class="placeholder col-3"></span>
+                            <span class="placeholder col-3"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,8 +153,10 @@
                     </ul>
                     <span>(2000)</span>
                 </div>
-                <h3 class="mt-2">$250.00 <del class="h4 text-content-color">$289.36</del> <span
-                        class="h4 text-theme-color">10% off</span></h3>
+                <h3 class="mt-2 price-wrapper"><span class="main-price">$250.00</span> <del
+                        class="h4 text-content-color discounted-price">$289.36</del> <span
+                        class="discount-percentage h4 text-theme-color">10% off</span>
+                </h3>
                 <h5 class="text-content-color mt-1">inclusive of all taxes</h5>
                 <div class="color-variant-box">
                     <h4 class="product-title">Colour :</h4>
@@ -332,19 +342,14 @@
                             </div>
                         </div>
 
-                        <p>This laptop is good for general use. Performance is good as per price range.
-                            <br>
-                            <br>
-                            Pros : build and design.
-                            <br>
-                            Cons : storage</p>
+                        <p>This laptop is good for general use. Performance is good as per price range.</p>
 
                         <ul class="like-dislike-list">
                             <li>
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="like">
                                 <label class="form-check-label" for="like">
                                     <span class="ri-thumb-up-line"></span>
-                                    <span>15</span>
+                                    <span>Helpful for 15</span>
                                 </label>
 
                             </li>
@@ -391,7 +396,7 @@
                                 <input class="form-check-input" type="radio" name="radio1" id="like1">
                                 <label class="form-check-label" for="like1">
                                     <span class="ri-thumb-up-line"></span>
-                                    <span>15</span>
+                                    <span>Helpful for 12</span>
                                 </label>
 
                             </li>
@@ -530,6 +535,9 @@
 
     <!-- Notification Javascript -->
     <script src="./assets/js/notify.js"></script>
+
+    <!-- Price Animation Javascript -->
+    <script src="./assets/js/price-animation.js"></script>
 
     <!-- Theme Setting Javascript -->
     <script src="./assets/js/theme-option.js"></script>

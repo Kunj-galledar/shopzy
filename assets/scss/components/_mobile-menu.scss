@@ -2,32 +2,47 @@
     3.6 Mobile menu css start
 ==========================**/
 .mobile-menu-list {
-    position: fixed;
-    bottom: 0;
-    @include center(horizontal);
+  position: fixed;
+  bottom: 0;
+  @include center(horizontal);
+  width: 100%;
+  background-color: rgba(var(--white), 1);
+  box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
+  display: flex;
+  align-items: center;
+  padding-block: 15px 27px;
+  z-index: 1;
+
+  li {
     width: 100%;
-    background-color: rgba(var(--white), 1);
-    box-shadow: 0px -7px 13.2px 0px rgba(var(--black), 0.03);
-    display: flex;
-    align-items: center;
-    padding-block: 15px 27px;
-    z-index: 1;
+    text-align: center;
+    position: relative;
 
-    li {
-        width: 100%;
-        text-align: center;
-
-        &.active {
-            i {
-                color: rgba(var(--theme-color), 1);
-            }
-        }
-
-        i {
-            font-size: 24px;
-            color: rgba(var(--title-color), 1);
-        }
+    &::before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 28%;
+      background-color: rgba(var(--theme-color), 1);
+      border-radius: 11px;
+      bottom: -2px;
     }
+
+    &.active {
+      &::before {
+        content: "";
+      }
+      i {
+        color: rgba(var(--theme-color), 1);
+      }
+    }
+
+    i {
+      font-size: 24px;
+      color: rgba(var(--title-color), 1);
+    }
+  }
 }
 
 /**=====================

@@ -68,11 +68,11 @@
     padding: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)))
       calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
-    color: rgba(var(--title-color), 1);
+    color: rgba(var(--title-color), 0.7);
     border: 1px solid rgba(var(--border-color), 1);
     background-color: #fbfbfb;
     box-shadow: unset;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 40px;
 
     body.dark-mode & {
@@ -157,7 +157,7 @@
   gap: 10px;
 
   .form-check-input {
-    @include pseudowh($width: 22px, $height: 22px);
+    @include pseudowh($width: 20px, $height: 20px);
     background-color: rgba(var(--white), 1);
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -170,8 +170,8 @@
 
     &::before {
       @include pos;
-      left: 8px;
-      top: 4px;
+      left: 7px;
+      top: 3px;
       display: none;
       @include pseudowh($width: 5px, $height: 10px);
       border: solid white;

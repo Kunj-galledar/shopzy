@@ -2,49 +2,49 @@
     3.15 Title css start
 ==========================**/
 .title-margin {
-    margin-top: 109px;
+  margin-top: 68px;
 }
 
 .brand-logo {
-    text-align: center;
-    margin-top: 97px;
+  text-align: center;
+  margin-top: 56px;
 
-    img {
-        height: 40px;
-    }
+  img {
+    height: 40px;
+  }
 }
 
 .title-timer {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 4px 10px;
-    background-color: rgba(254, 182, 2, 1);
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background-color: rgba(254, 182, 2, 1);
+  border-radius: 5px;
 
-    span {
-        line-height: 1;
-        font-size: 13px;
-        font-weight: 500;
-    }
+  span {
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 500;
+  }
 }
 
 .title-2 {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 
-    h4 {
-        position: relative;
-        padding-bottom: 4px;
+  h4 {
+    position: relative;
+    padding-bottom: 4px;
 
-        &::after {
-            @include pos;
-            display: block;
-            bottom: 0;
-            left: 0;
-            @include pseudowh($width: 10%, $height: 2px);
-            border-top: 2px solid rgba(var(--theme-color), 1);
-        }
+    &::after {
+      @include pos;
+      display: block;
+      bottom: 0;
+      left: 0;
+      @include pseudowh($width: 10%, $height: 2px);
+      border-top: 2px solid rgba(var(--theme-color), 1);
     }
+  }
 }
 
 /**=====================

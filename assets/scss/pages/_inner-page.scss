@@ -258,6 +258,7 @@
           border: 1px solid rgba(var(--border-color), 1);
           padding: 10px 14px;
           background-color: rgba(var(--white), 1);
+          box-shadow: 0 0 8px rgba(221, 221, 221, 0.6);
 
           li {
             width: 100%;
@@ -283,7 +284,7 @@
 
               i {
                 line-height: 1;
-                font-size: 18px;
+                font-size: 16px;
                 color: rgba(var(--content-color), 1);
               }
 
@@ -291,6 +292,7 @@
                 font-weight: 400;
                 color: rgba(var(--content-color), 1);
                 line-height: 1.4;
+                font-size: 14px;
               }
             }
           }
@@ -552,12 +554,12 @@
     .form-label {
       font-weight: 500;
       font-size: 16px;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .form-control {
-      padding: 14px 15px;
-      font-size: 16px;
+      padding: 12px 15px;
+      font-size: 14px;
       font-weight: 500;
       box-shadow: none;
       border-radius: 7px;
@@ -578,11 +580,11 @@
       width: calc(100% - 74px);
 
       .form-control {
-        padding: 14px 14px 14px 52px;
+        padding: 12px 14px 12px 52px;
         border: 1px solid rgba(var(--border-color), 1);
-        border-radius: 7px;
+        border-radius: 34px;
         box-shadow: unset;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
       }
 
@@ -1187,8 +1189,8 @@
   ) !important;
 
   img {
-    width: 55%;
-    padding-bottom: 60px;
+    width: 78%;
+    padding-bottom: 40px;
   }
 
   .empty-contain {
@@ -1299,43 +1301,15 @@
 
 /* Order Success */
 .order-success-section {
-  img {
-    @include pseudowh(
-      $width: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320))),
-      $height: calc(220px + ((280) - (220)) * ((100vw - 320px) / (1920 - 320)))
-    );
-    object-fit: cover;
+  .success-img {
+    width: 70%;
+    padding-top: 40px;
   }
 }
-
-// .page-list-section {
-//   .page-list {
-//     display: grid;
-//     gap: 7px;
-
-//     li {
-//       a {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         color: rgba(var(--title-color), 1);
-//         font-size: 15px;
-
-//         &::after {
-//           content: "\ea6e";
-//           @include icon;
-//           line-height: 1;
-//           font-size: 17px;
-//         }
-//       }
-//     }
-//   }
-// }
 
 .page-list-section {
   .page-list {
     display: grid;
-    // gap: 7px;
 
     li {
       + li {

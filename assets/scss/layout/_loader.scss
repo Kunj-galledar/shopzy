@@ -45,7 +45,7 @@
     }
   }
 
-  .category-slider {
+  .category-list {
     .offer-skeleton {
       width: 100%;
       height: auto;
@@ -80,6 +80,15 @@
   .product-box {
     .product-image {
       aspect-ratio: 29 / 20;
+    }
+  }
+  .product-slider-loader {
+    .product-image {
+      @include flex_common;
+      height: calc(240px + (300 - 240) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+      border-radius: 12px;
+      background-color: rgba(var(--light-gray), 1);
     }
   }
 }

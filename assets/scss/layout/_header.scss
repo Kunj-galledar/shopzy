@@ -45,6 +45,13 @@
         color: rgba(var(--theme-color), 1);
         border-radius: 100%;
 
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+
         h3 {
           font-size: 20px;
           font-weight: 600;
@@ -63,17 +70,17 @@
       content: "\f0d1";
       position: absolute;
       @include icon;
-      padding: 0 12px;
+      padding: 0 15px 0 12px;
       @include center(vertical);
       right: 0;
       font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1920 - 320)));
-      color: rgba(255, 255, 255, 0.22);
+      color: rgba(255, 255, 255, 0.8);
       border-left: 1px solid rgba(255, 255, 255, 0.22);
       height: auto;
     }
 
     .form-control {
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff;
       padding-right: calc(44px + (58 - 44) * ((100vw - 320px) / (1920 - 320)));
@@ -156,9 +163,9 @@
 
   .header-search {
     .form-control {
-      border-radius: 7px;
+      border-radius: 26px;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, 0.08);
       font-weight: 400;
       font-size: calc(15px + ((16) - (15)) * ((100vw - 320px) / (1920 - 320)));
       color: rgba(255, 255, 255, 0.9);
