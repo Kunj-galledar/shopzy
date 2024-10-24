@@ -20,8 +20,7 @@
     }
 
     .offcanvas-body {
-      padding-block: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)))
-        calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
+      padding-block: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320))) calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
   }
 
@@ -46,7 +45,7 @@
             background-color: rgba(var(--light-gray), 1);
           }
 
-          > div {
+          >div {
             width: calc(100% - 42px - 15px);
           }
 
@@ -87,7 +86,7 @@
     transition: none;
     height: 100vh;
 
-    ~ .offcanvas-backdrop {
+    ~.offcanvas-backdrop {
       transition: none;
     }
 
@@ -99,12 +98,12 @@
   &.edit-address-offcanvas {
     .checkbox-form {
       &:checked {
-        ~ .form-check-label {
+        ~.form-check-label {
           color: rgba(var(--title-color), 1);
         }
       }
 
-      ~ .form-check-label {
+      ~.form-check-label {
         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
         color: rgba(var(--content-color), 1);
         font-weight: normal;
@@ -129,7 +128,7 @@
           margin: 0;
 
           &:checked {
-            ~ .form-check-label {
+            ~.form-check-label {
               border-color: rgba(var(--theme-color), 1);
               color: rgba(var(--theme-color), 1);
 
@@ -248,6 +247,50 @@
     .btn-div {
       text-align: right;
       margin-top: 20px;
+    }
+  }
+
+  &.share-offcanvas {
+    .share-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      li {
+        text-align: center;
+
+        a {
+          display: inline-block;
+          text-align: center;
+
+          i {
+            width: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(var(--light-gray), 1);
+            color: rgba(var(--title-color), 1);
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid rgba(var(--border-color), 1);
+            font-size: 22px;
+            margin-inline: auto;
+          }
+
+          span {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
+            margin-top: 4px;
+            display: block;
+          }
+        }
+      }
     }
   }
 }

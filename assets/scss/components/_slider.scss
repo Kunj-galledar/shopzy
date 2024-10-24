@@ -71,6 +71,43 @@
             @extend %img-contain;
         }
 
+        .product-option-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 11px 7px 0;
+            display: flex;
+            align-items: flex-start;
+
+            label {
+                background-color: rgba(var(--secondary-color), 1);
+                padding: 3px 10px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 17.52px;
+                border-radius: 3px;
+            }
+
+            .option-list {
+                margin-left: auto;
+                display: grid;
+                gap: 10px;
+
+                li {
+                    a {
+                        width: 28px;
+                        height: 28px;
+                        @include flex_common;
+                        color: rgba(var(--white), 1);
+                        background-color: rgba(225, 225, 225, 1);
+                        border-radius: 100%;
+                        font-size: 16px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
     }
 }
 
