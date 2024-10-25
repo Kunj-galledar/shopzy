@@ -29,6 +29,9 @@
     right: 15px;
     top: 15px;
     z-index: 1;
+    .dark-mode & {
+      filter: invert(1);
+    }
   }
 
   .modal-content {

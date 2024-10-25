@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="./assets/images/icons/icon-72x72.png" />
     <link rel="apple-touch-icon" href="./assets/images/icons/icon-96x96.png" />
@@ -106,90 +106,43 @@
     <!-- Product Section Start -->
     <section class="product-section">
         <div class="mobile-container">
-            <div class="swiper product-slider dots-wrapper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                            <div class="product-option-list">
-                                <label>Best Seller</label>
-                                <ul class="option-list">
-                                    <li>
-                                        <a href="#!">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#shareOffcanvas" data-bs-toggle="offcanvas">
-                                            <i class="ri-share-forward-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                            <div class="product-option-list">
-                                <label>Best Seller</label>
-                                <ul class="option-list">
-                                    <li>
-                                        <a href="#!">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#shareOffcanvas" data-bs-toggle="offcanvas">
-                                            <i class="ri-share-forward-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                            <div class="product-option-list">
-                                <label>Best Seller</label>
-                                <ul class="option-list">
-                                    <li>
-                                        <a href="#!">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#shareOffcanvas" data-bs-toggle="offcanvas">
-                                            <i class="ri-share-forward-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="product-image">
-                            <img src="./assets/images/product/1.png" class="img-fluid" alt="">
-                            <div class="product-option-list">
-                                <label>Best Seller</label>
-                                <ul class="option-list">
-                                    <li>
-                                        <a href="#!">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#shareOffcanvas" data-bs-toggle="offcanvas">
-                                            <i class="ri-share-forward-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="product-slider-img-sec">
+                <div class="product-option-list">
+                    <label>Best Seller</label>
+                    <ul class="option-list">
+                        <li>
+                            <a href="#!" class="product-option">
+                                <i class="ri-heart-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#shareOffcanvas" data-bs-toggle="offcanvas">
+                                <i class="ri-share-forward-line"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper product-slider dots-wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-image">
+                                <img src="./assets/images/product/1.png" class="img-fluid" alt="">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-image">
+                                <img src="./assets/images/product/01.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-image">
+                                <img src="./assets/images/product/02.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
 
             <div class="product-details-box">
@@ -587,46 +540,49 @@
     <div class="offcanvas offcanvas-bottom share-offcanvas theme-offcanvas" id="shareOffcanvas">
         <div class="offcanvas-body">
             <div class="delete-address-box">
-                <!-- <div class="icon-box">
-                    <i class="ri-delete-bin-line"></i>
-                </div> -->
                 <h3>Share This Product</h3>
             </div>
 
             <ul class="share-list">
                 <li>
                     <a href="https://www.facebook.com/" target="_blank">
-                        <i class="ri-facebook-line fb-bg"></i>
+                        <i class="ri-facebook-line"></i>
                         <span>Facebook</span>
                     </a>
                 <li>
                     <a href="https://www.google.com/" target="_blank">
-                        <i class="ri-google-line google-bg"></i>
+                        <i class="ri-google-line"></i>
                         <span>Google</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://web.whatsapp.com/" target="_blank">
-                        <i class="ri-whatsapp-line whatsapp-bg"></i>
+                        <i class="ri-whatsapp-line"></i>
                         <span>Whatsapp</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://mail.google.com/" target="_blank">
-                        <i class="ri-mail-line mail-bg"></i>
+                        <i class="ri-mail-line"></i>
                         <span>Gmail</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.twitter.com/" target="_blank">
-                        <i class="ri-twitter-line twitter-bg"></i>
+                        <i class="ri-twitter-line"></i>
                         <span>Twitter</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.pinterest.com/" target="_blank">
-                        <i class="ri-pinterest-line pinterest-bg"></i>
+                        <i class="ri-pinterest-line"></i>
                         <span>Pinterest</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!" target="_blank">
+                        <i class="ri-link"></i>
+                        <span>Copy Link</span>
                     </a>
                 </li>
             </ul>

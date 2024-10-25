@@ -2,113 +2,118 @@
     3.14 Slider css start
 ==========================**/
 .dots-wrapper {
-    .swiper-pagination {
-        position: relative;
-        inset: unset;
-        margin-top: 11px;
-        z-index: 0;
+  .swiper-pagination {
+    position: relative;
+    inset: unset;
+    margin-top: 11px;
+    z-index: 0;
 
-        .swiper-pagination-bullet {
-            @include pseudowh($width: 9px, $height: 9px);
-            border-radius: 100px;
-            opacity: 1;
-            transition: all 0.5s ease;
-            background-color: rgba(245, 245, 245, 1);
+    .swiper-pagination-bullet {
+      @include pseudowh($width: 9px, $height: 9px);
+      border-radius: 100px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      background-color: rgba(245, 245, 245, 1);
 
-            body.dark-mode & {
-                background-color: rgba(28, 28, 28, 1);
-            }
+      body.dark-mode & {
+        background-color: rgba(28, 28, 28, 1);
+      }
 
-            &-active {
-                width: 46px;
-            }
-        }
+      &-active {
+        width: 46px;
+      }
     }
+  }
 }
 
 .swiper {
-    z-index: 0;
+  z-index: 0;
 
-    .swiper-wrapper {
-        z-index: 0;
-    }
+  .swiper-wrapper {
+    z-index: 0;
+  }
 }
 
 .continue-slider {
-    z-index: 0;
-    position: relative;
+  z-index: 0;
+  position: relative;
 
-    >.swiper-wrapper {
-        transition-timing-function: linear;
-    }
+  > .swiper-wrapper {
+    transition-timing-function: linear;
+  }
 }
 
 .saving-slider {
-    .swiper-wrapper {
-        .swiper-slide {
-            height: calc(80px + (125 - 80) * ((100vw - 320px) / (1920 - 320)));
-            border-radius: 13px;
-            padding: 6px;
-            background-color: rgba(var(--white), 1);
+  .swiper-wrapper {
+    .swiper-slide {
+      height: calc(80px + (125 - 80) * ((100vw - 320px) / (1920 - 320)));
+      border-radius: 13px;
+      padding: 6px;
+      background-color: rgba(var(--white), 1);
 
-            img {
-                object-fit: contain;
-                @include pseudowh;
-            }
-        }
+      img {
+        object-fit: contain;
+        @include pseudowh;
+      }
     }
+  }
 }
 
 .product-slider {
-    .product-image {
-        @include flex_common;
-        height: calc(240px + (300 - 240) * ((100vw - 320px) / (1920 - 320)));
-        padding: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
-        border-radius: 12px;
-        background-color: rgba(var(--light-gray), 1);
+  .product-image {
+    @include flex_common;
+    height: calc(240px + (300 - 240) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    border-radius: 12px;
+    background-color: rgba(var(--light-gray), 1);
 
-        img {
-            @extend %img-contain;
-        }
-
-        .product-option-list {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 11px 7px 0;
-            display: flex;
-            align-items: flex-start;
-
-            label {
-                background-color: rgba(var(--secondary-color), 1);
-                padding: 3px 10px;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 17.52px;
-                border-radius: 3px;
-            }
-
-            .option-list {
-                margin-left: auto;
-                display: grid;
-                gap: 10px;
-
-                li {
-                    a {
-                        width: 28px;
-                        height: 28px;
-                        @include flex_common;
-                        color: rgba(var(--white), 1);
-                        background-color: rgba(225, 225, 225, 1);
-                        border-radius: 100%;
-                        font-size: 16px;
-                        line-height: 1;
-                    }
-                }
-            }
-        }
+    img {
+      @extend %img-contain;
     }
+  }
+}
+
+.product-slider-img-sec {
+  position: relative;
+  .product-option-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+
+    label {
+      background-color: rgba(var(--secondary-color), 1);
+      padding: 3px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17.52px;
+      border-radius: 3px;
+      color: rgba(34, 34, 34, 1);
+    }
+
+    .option-list {
+      margin-left: auto;
+      display: grid;
+      gap: 10px;
+
+      li {
+        a {
+          width: 28px;
+          height: 28px;
+          @include flex_common;
+          color: rgba(var(--theme-color), 1);
+          background-color: rgba(225, 225, 225, 1);
+          border-radius: 100%;
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+    }
+  }
 }
 
 /**=====================

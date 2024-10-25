@@ -20,6 +20,10 @@
   font-weight: 500;
   color: rgba(var(--title-color), 1);
 
+  &.bg-secondary-color {
+    color: rgba(34, 34, 34, 1) !important;
+  }
+
   &:hover {
     color: inherit;
     background-color: inherit;
