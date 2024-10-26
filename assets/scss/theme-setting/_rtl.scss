@@ -2,6 +2,7 @@
     6.1 RTL css start
 ==========================**/
 [dir="rtl"] {
+
   [type="email"],
   [type="number"],
   [type="tel"],
@@ -44,15 +45,13 @@
 
     &:first-child {
       .page-link {
-        border-radius: 0 var(--bs-pagination-border-radius)
-          var(--bs-pagination-border-radius) 0;
+        border-radius: 0 var(--bs-pagination-border-radius) var(--bs-pagination-border-radius) 0;
       }
     }
 
     &:last-child {
       .page-link {
-        border-radius: var(--bs-pagination-border-radius) 0 0
-          var(--bs-pagination-border-radius);
+        border-radius: var(--bs-pagination-border-radius) 0 0 var(--bs-pagination-border-radius);
       }
     }
   }
@@ -84,20 +83,14 @@
     .header-search-box {
       &:before {
         padding-left: 12px;
-        padding-right: calc(
-          19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320))
-        );
+        padding-right: calc(19px + ((23) - (19)) * ((100vw - 320px) / (1920 - 320)));
         left: unset;
         right: 0;
       }
 
       .form-control {
-        padding-left: calc(
-          12px + ((14) - (12)) * ((100vw - 320px) / (1920 - 320))
-        );
-        padding-right: calc(
-          49px + ((58) - (49)) * ((100vw - 320px) / (1920 - 320))
-        );
+        padding-left: calc(12px + ((14) - (12)) * ((100vw - 320px) / (1920 - 320)));
+        padding-right: calc(49px + ((58) - (49)) * ((100vw - 320px) / (1920 - 320)));
       }
     }
   }
@@ -106,10 +99,12 @@
     .header-search-box {
       right: unset;
       left: 15px;
+
       .close-btn {
         right: unset;
         left: 18px;
       }
+
       .form-control {
         padding-left: calc(44px + (58 - 44) * ((100vw - 320px) / (1920 - 320)));
         padding-right: 14px;
@@ -183,7 +178,7 @@
       }
 
       .customer-review-list {
-        > li {
+        >li {
           .like-dislike-list {
             right: unset;
             left: 0;
@@ -244,13 +239,17 @@
     }
   }
 
+  .marquee {
+    direction: ltr;
+  }
+
   .cart-product-section {
     .cart-box {
       .cart-item {
         .cart-bottom {
           .cart-option {
             .btn {
-              + .btn {
+              +.btn {
                 border-right: 1px solid rgba(var(--border-color), 1);
                 padding-right: 8px;
                 margin-right: 8px;
@@ -286,6 +285,7 @@
       right: unset;
       left: 15px;
     }
+
     .modal-contain {
       .item-list {
         padding-left: unset;

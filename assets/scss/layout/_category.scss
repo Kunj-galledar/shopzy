@@ -25,8 +25,7 @@
 .category-list-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(11px + (13 - 11) * ((100vw - 320px) / (1920 - 320)))
-    calc(13px + (21 - 13) * ((100vw - 320px) / (1920 - 320)));
+  gap: calc(11px + (13 - 11) * ((100vw - 320px) / (1920 - 320))) calc(13px + (21 - 13) * ((100vw - 320px) / (1920 - 320)));
   justify-content: space-between;
 
   @media (max-width: 450px) {
@@ -45,13 +44,10 @@
       text-align: center;
 
       .category-image {
-        @include pseudowh(
-          $width: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320))),
-          $height: calc(74px + (62 - 74) * ((100vw - 320px) / (1920 - 320)))
-        );
+        @include pseudowh($width: calc(74px + (144 - 74) * ((100vw - 320px) / (1920 - 320))), $height: calc(74px + (144 - 74) * ((100vw - 320px) / (1920 - 320))));
         background-color: rgb(245, 245, 245);
         border-radius: 100%;
-        padding: calc(11px + (9 - 11) * ((100vw - 320px) / (1920 - 320)));
+        padding: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
         margin-inline: auto;
 
         body.dark-mode & {
@@ -65,8 +61,9 @@
 
       h5 {
         line-height: 1.3;
-        width: 80px;
+        // width: 80px;
         overflow: hidden;
+        text-transform: capitalize;
         white-space: nowrap;
         text-overflow: ellipsis;
         margin-top: 8px;
@@ -86,9 +83,11 @@
 
       .offer-sec {
         position: relative;
+
         .offer-bg {
           animation: spin 25s linear infinite;
         }
+
         .percentage-cls {
           position: absolute;
           left: 50%;
