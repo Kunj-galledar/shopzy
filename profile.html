@@ -181,13 +181,13 @@
         <div class="mobile-container">
             <ul class="more-option-list">
                 <li>
-                    <a href="about.html" class="option-box">
+                    <a href="about-us.html" class="option-box">
                         <i class="ri-info-i"></i>
                         <h5>About</h5>
                     </a>
                 </li>
                 <li>
-                    <a href="#!" class="option-box">
+                    <a href="#!" data-bs-target="#ratingProduct" data-bs-toggle="offcanvas" class="option-box">
                         <i class="ri-star-line"></i>
                         <h5>Rate us</h5>
                     </a>
@@ -212,6 +212,40 @@
     <!-- Bottom Space Box Start -->
     <div class="bottom-spacing"></div>
     <!-- Bottom Space Box End -->
+
+    <!-- Rating Product Offcanvas Start -->
+    <div class="offcanvas offcanvas-bottom rating-offcanvas theme-offcanvas" id="ratingProduct">
+        <div class="offcanvas-header d-block">
+            <h3 class="offcanvas-title">Rating Product</h3>
+        </div>
+        <div class="offcanvas-body">
+            <div class="rating-box form-box">
+                <label class="form-label">Rating :</label>
+                <div class="rating">
+                    <input type="radio" name="rating" id="rating-4">
+                    <label for="rating-4"></label>
+                    <input type="radio" name="rating" id="rating-3">
+                    <label for="rating-3"></label>
+                    <input type="radio" name="rating" id="rating-2">
+                    <label for="rating-2"></label>
+                    <input type="radio" name="rating" id="rating-1">
+                    <label for="rating-1"></label>
+                    <input type="radio" name="rating" id="rating-5">
+                    <label for="rating-5"></label>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <label for="exampleFormControlTextarea1" class="form-label">Comment :</label>
+                <textarea class="form-control b-r-15" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Enter your product review"></textarea>
+            </div>
+
+            <button class="btn w-100 f-18 p-17 mt-4 bg-secondary-color" type="submit"
+                data-bs-dismiss="offcanvas">Submit</button>
+        </div>
+    </div>
+    <!-- Rating Product Offcanvas End -->
 
     <!-- Bootstrap Javascript -->
     <script src="./assets/js/vendor/bootstrap.js"></script>
